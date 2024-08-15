@@ -173,11 +173,21 @@ public sealed class AmeNodeGroup : BaseNodeGroup
         // Balanced around a single core AME with injection level 2 producing 120KW.
         // Two core with four injection is 150kW. Two core with two injection is 90kW.
 
-        // Increasing core count creates diminishing returns, increasing injection amount increases 
-        // Unlike the previous solution, increasing fuel and cores always leads to an increase in power, even if by very small amounts.
-        // Increasing core count without increasing fuel always leads to reduced power as well.
-        // At 18+ cores and 2 inject, the power produced is less than 0, the Max ensures the AME can never produce "negative" power.
-        return MathF.Max(200000f * MathF.Log10(2 * fuel * MathF.Pow(cores, (float)-0.5)), 0);
+        // The adjustment for cores make it so that a 1 core AME at 2 injections is better than a 2 core AME at 2 injections.
+        // However, for the relative amounts for each (1 core at 2 and 2 core at 4), more cores has more output.
+        // return 200000f * MathF.Log10(fuel * fuel) * MathF.Pow(0.75f, cores - 1); 
+
+        // DeltaV code
+        // Check if there's any cores attached to the controller
+        if (cores == 0)
+        {
+            return 0f;
+        }
+
+        // Power generation curve assuming x is the number of cores and the injection scales linearly to always be the twice the number of cores. 
+        // https://www.wolframalpha.com/input?i=200000+*+log10%28%28x*2%29%5E1.9%29+*+%280.4+*+%28%28x*2%29+%2F+x%29%29+for+x+from+1+to+10
+        return 200000f * MathF.Log10(MathF.Pow(fuel, 1.9f)) * (0.4f * (fuel / cores));
+        // End of DeltaV code
     }
 
     public int GetTotalStability()
