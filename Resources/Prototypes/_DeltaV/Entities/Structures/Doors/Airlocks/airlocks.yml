@@ -2,7 +2,9 @@
   parent: AirlockScience
   id: AirlockRobotics
   suffix: Robotics
-  # TODO: make a sprite for it
+  components:
+  - type: Sprite
+    sprite: _DeltaV/Structures/Doors/Airlocks/Standard/roboticist.rsi
 
 # Glass
 
@@ -10,4 +12,6 @@
   parent: AirlockScienceGlass
   id: AirlockRoboticsGlass
   suffix: Robotics
-  # TODO: make a sprite for it
+  components:
+  - type: Sprite
+    sprite: _DeltaV/Structures/Doors/Airlocks/Glass/roboticist.rsi
