@@ -12,7 +12,19 @@
     job: Courier
 
 - type: entity
-  parent: IDCardStandard
+  parent: ResearchIDCard
+  id: RoboticistIDCard
+  name: roboticist ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idroboticist
+  - type: PresetIdCard
+    job: Roboticist
+
+- type: entity
+  parent: IDCardStandardd
   id: CargoAssistantIDCard
   name: cargo assistant ID card
   components:
