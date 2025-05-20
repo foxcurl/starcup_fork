@@ -1,0 +1,13 @@
+- type: entity
+  parent: AirlockScience
+  id: AirlockRobotics
+  suffix: Robotics
+  # TODO: make a sprite for it
+
+# Glass
+
+- type: entity
+  parent: AirlockScienceGlass
+  id: AirlockRoboticsGlass
+  suffix: Robotics
+  # TODO: make a sprite for it
