@@ -223,7 +223,6 @@
   name: loadout-group-roboticist-shoes
   loadouts:
   - BlackShoes
-  - RoboticsWinterBoots
   - WhiteShoes
   - ScienceWinterBoots
 

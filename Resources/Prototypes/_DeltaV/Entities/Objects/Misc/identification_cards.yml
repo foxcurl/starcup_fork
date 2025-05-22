@@ -24,7 +24,7 @@
     job: Roboticist
 
 - type: entity
-  parent: IDCardStandardd
+  parent: IDCardStandard
   id: CargoAssistantIDCard
   name: cargo assistant ID card
   components:
