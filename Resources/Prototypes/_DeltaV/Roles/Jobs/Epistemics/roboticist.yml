@@ -8,8 +8,10 @@
   - !type:DepartmentTimeRequirement
     department: Epistemics
     time: 14400 # 4 hours
-  - !type:OverallPlaytimeRequirement
-    time: 43200 # 12 hours
+  # begin starcup
+  #- !type:OverallPlaytimeRequirement
+  #  time: 43200 # 12 hours
+  # end starcup
   startingGear: RoboticistGear
   icon: JobIconRoboticist
   supervisors: job-supervisors-rd
@@ -22,3 +24,4 @@
   id: RoboticistGear
   equipment:
     ears: ClothingHeadsetRobotics
+    id: RoboticistPDA # starcup

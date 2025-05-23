@@ -40,7 +40,7 @@
   - RoboticistOuterClothing
   - RoboticistGloves
   - RoboticistShoes
-  - RoboticistPDA
+  #- RoboticistPDA # starcup: given in startingGear
   - Glasses
   - Survival
   - Trinkets
