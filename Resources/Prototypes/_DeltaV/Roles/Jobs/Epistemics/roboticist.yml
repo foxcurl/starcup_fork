@@ -6,8 +6,8 @@
   antagAdvantage: 6 # The shadow factory + scientist advantage
   requirements:
   - !type:DepartmentTimeRequirement
-    department: Epistemics
-    time: 14400 # 4 hours
+    department: Science # starcup: science, was epistemics
+    time: 7200 # starcup: 2 hours, was 4
   # begin starcup
   #- !type:OverallPlaytimeRequirement
   #  time: 43200 # 12 hours

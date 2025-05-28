@@ -5,7 +5,7 @@
   suffix: Robotics
   components:
   - type: Sprite
-    sprite: _DeltaV/Structures/Doors/Airlocks/Standard/roboticist.rsi 
+    sprite: _DeltaV/Structures/Doors/Airlocks/Standard/roboticist.rsi
     state: "assembly"
 
 - type: entity
@@ -14,5 +14,5 @@
   suffix: Robotics, Glass
   components:
   - type: Sprite
-    sprite: _DeltaV/Structures/Doors/Airlocks/Glass/roboticist.rsi 
+    sprite: _DeltaV/Structures/Doors/Airlocks/Glass/roboticist.rsi
     state: "assembly"
