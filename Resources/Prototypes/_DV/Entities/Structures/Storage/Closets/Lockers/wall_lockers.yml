@@ -205,14 +205,16 @@
   - type: AccessReader
     access: [["Kitchen"]]
 
-- type: entity
-  parent: BaseWallLockerDeltaV
-  id: WallLockerJustice
-  name: justice wall locker
-  components:
-  - type: EntityStorageVisuals
-    stateBaseClosed: justice
-    stateDoorClosed: justice_door
-    stateDoorOpen: justice_open
-  - type: AccessReader
-    access: [["Justice"]]
+# begin starcup: no justice
+#- type: entity
+#  parent: BaseWallLockerDeltaV
+#  id: WallLockerJustice
+#  name: justice wall locker
+#  components:
+#  - type: EntityStorageVisuals
+#    stateBaseClosed: justice
+#    stateDoorClosed: justice_door
+#    stateDoorOpen: justice_open
+#  - type: AccessReader
+#    access: [["Justice"]]
+# end starcup
