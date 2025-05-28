@@ -170,8 +170,14 @@ public sealed class AmeNodeGroup : BaseNodeGroup
     /// </summary>
     public float CalculatePower(int fuel, int cores)
     {
+        // Balanced around a single core AME with injection level 2 producing 120KW.
+        // Two core with four injection is 150kW. Two core with two injection is 90kW.
 
-        // Begin DeltaV
+        // The adjustment for cores make it so that a 1 core AME at 2 injections is better than a 2 core AME at 2 injections.
+        // However, for the relative amounts for each (1 core at 2 and 2 core at 4), more cores has more output.
+        // return 200000f * MathF.Log10(fuel * fuel) * MathF.Pow(0.75f, cores - 1); 
+
+        // DeltaV code
         // Check if there's any cores attached to the controller
         if (cores == 0)
         {
@@ -192,7 +198,7 @@ public sealed class AmeNodeGroup : BaseNodeGroup
             efficency -= (fuel - (2 * cores)) * (1 - startEfficency) * tailPenaltyFactor;
 
         return efficency * wattsPerCore * cores;
-        // End DeltaV
+        // End of DeltaV code
     }
 
     public int GetTotalStability()
