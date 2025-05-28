@@ -3,13 +3,15 @@
   id: BlastDoorUnlinkedRobotics
   suffix: Robotics
   components:
-  - type: AccessReader
-    access: [["Robotics"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentralCommand ]
 
 - type: entity
   parent: BlastDoorOpen
   id: BlastDoorUnlinkedRoboticsOpen
   suffix: Open, Robotics
   components:
-  - type: AccessReader
-    access: [["Robotics"]]
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsCentralCommand ]
