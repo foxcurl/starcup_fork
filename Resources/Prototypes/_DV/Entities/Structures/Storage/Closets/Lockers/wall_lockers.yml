@@ -171,17 +171,19 @@
   - type: AccessReader
     access: [["Janitor"]]
 
-- type: entity
-  parent: BaseWallLockerDeltaV
-  id: WallLockerEpistemics
-  name: epistemics wall locker
-  components:
-  - type: EntityStorageVisuals
-    stateBaseClosed: epi
-    stateDoorClosed: epi_door
-    stateDoorOpen: epi_open
-  - type: AccessReader
-    access: [["Research"]]
+# begin starcup
+#- type: entity
+#  parent: BaseWallLockerDeltaV
+#  id: WallLockerEpistemics
+#  name: epistemics wall locker
+#  components:
+#  - type: EntityStorageVisuals
+#    stateBaseClosed: epi
+#    stateDoorClosed: epi_door
+#    stateDoorOpen: epi_open
+#  - type: AccessReader
+#    access: [["Research"]]
+# end starcup
 
 - type: entity
   parent: BaseWallLockerDeltaV
