@@ -187,14 +187,14 @@ public sealed class AmeNodeGroup : BaseNodeGroup
         {
             return 0f;
         }
-        
+
         //more parametrized and linear AME power function https://www.desmos.com/calculator/r523dxiqna
         float wattsPerCore = 80000f;
         float startEfficency = 0.5f;
         float tailPenaltyFactor = 0.9f;
-        
+
         float efficency = startEfficency * fuel / (2 * cores);
-        
+
         if (fuel >= 2 * cores - 1)
             efficency += (fuel - (2 * cores - 1)) * (1 - startEfficency);
 
