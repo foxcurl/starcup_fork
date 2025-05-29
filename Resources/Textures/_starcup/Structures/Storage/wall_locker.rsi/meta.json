@@ -8,13 +8,34 @@
     "license": "CC-BY-SA-3.0",
     "states": [
         {
-            "name": "epi"
+            "name": "sci"
         },
         {
-            "name": "epi_door"
+            "name": "sci_door"
         },
         {
-            "name": "epi_open"
+            "name": "sci_open"
+        },
+        {
+            "name": "generic"
+        },
+        {
+            "name": "generic_door"
+        },
+        {
+            "name": "generic_open"
+        },
+        {
+            "name": "generic_icon"
+        },
+        {
+            "name": "locked"
+        },
+        {
+            "name": "unlocked"
+        },
+        {
+            "name": "welded"
         }
     ]
 }

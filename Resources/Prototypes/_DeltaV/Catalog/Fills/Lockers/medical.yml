@@ -3,10 +3,12 @@
   table: !type:AllSelector
     children:
     - id: BoxFolderWhite
-    - id: PillCanisterBlissifylovene
-    - id: PillCanisterEquilibrazine
-    - id: PillCanisterNeurozenium
-    - id: PillCanisterSerenitol
+    # begin starcup: no pill canister prototypes
+    #- id: PillCanisterBlissifylovene
+    #- id: PillCanisterEquilibrazine
+    #- id: PillCanisterNeurozenium
+    #- id: PillCanisterSerenitol
+    # end starcup
     - id: ClothingUniformJumpsuitPsychologist
     - id: ClothingUniformJumpskirtPsychologist
     - id: DrinkWhiskeyBottleFull

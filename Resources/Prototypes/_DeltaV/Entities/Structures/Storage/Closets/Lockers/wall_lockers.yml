@@ -4,7 +4,7 @@
   components:
   - type: Appearance
   - type: Sprite
-    sprite: _DV/Structures/Storage/wall_locker.rsi
+    sprite: _DeltaV/Structures/Storage/wall_locker.rsi
 
 - type: entity
   parent: BaseWallLocker
@@ -12,7 +12,7 @@
   components:
   - type: Appearance
   - type: Sprite
-    sprite: _DV/Structures/Storage/wall_locker.rsi
+    sprite: _DeltaV/Structures/Storage/wall_locker.rsi
 
 - type: entity
   parent: BaseWallClosetDeltaV
@@ -171,7 +171,7 @@
   - type: AccessReader
     access: [["Janitor"]]
 
-# begin starcup
+# begin starcup: no epistemics
 #- type: entity
 #  parent: BaseWallLockerDeltaV
 #  id: WallLockerEpistemics
