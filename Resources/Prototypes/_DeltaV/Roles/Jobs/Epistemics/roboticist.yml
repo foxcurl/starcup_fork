@@ -8,6 +8,9 @@
   - !type:DepartmentTimeRequirement
     department: Science # starcup: science, was epistemics
     time: 7200 # starcup: 2 hours, was 4
+  - !type:DepartmentTimeRequirement # starcup: make roboticist hybrid role.
+    department: Engineering
+    time: 7200 # 2 hours
   # begin starcup
   #- !type:OverallPlaytimeRequirement
   #  time: 43200 # 12 hours
@@ -19,9 +22,11 @@
   - Research
   - Robotics
   - Maintenance
+  extendedAccess: # starcup: make roboticist hybrid role
+  - Engineering
 
 - type: startingGear
   id: RoboticistGear
   equipment:
     ears: ClothingHeadsetRobotics
-    id: RoboticistPDA # starcup
+    belt: ClothingBeltUtilityEngineering # starcup: make roboticist hybrid role

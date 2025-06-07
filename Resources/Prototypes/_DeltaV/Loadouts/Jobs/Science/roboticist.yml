@@ -31,3 +31,13 @@
   id: RoboticistPDA
   equipment:
     id: RoboticistPDA
+
+- type: loadout
+  id: NeuroroboticistPDA
+  equipment:
+    id: NeuroroboticistPDA
+
+- type: loadout
+  id: MechatronicsPDA
+  equipment:
+    id: MechatronicsPDA

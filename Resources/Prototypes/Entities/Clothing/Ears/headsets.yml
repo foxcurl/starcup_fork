@@ -205,6 +205,7 @@
   - type: ContainerFill
     containers:
       key_slots:
+      - EncryptionKeyEngineering # starcup: make roboticist a hybrid role
       - EncryptionKeyRobo
       - EncryptionKeyCommon
   - type: Sprite
