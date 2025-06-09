@@ -34,6 +34,12 @@
   equipment:
     head: ClothingOuterCardborg
 
+# Shoes
+- type: loadout
+  id: RoboticsWinterBoots
+  equipment:
+    shoes: ClothingShoesBootsWinterRobo
+
 # begin starcup
 - type: loadout
   id: NeuroroboticistSuit
