@@ -22,8 +22,7 @@
   - Research
   - Robotics
   - Maintenance
-  extendedAccess: # starcup: make roboticist hybrid role
-  - Engineering
+  - Engineering # starcup: make roboticist a hybrid role. can be changed to extendedAccess if needed
 
 - type: startingGear
   id: RoboticistGear

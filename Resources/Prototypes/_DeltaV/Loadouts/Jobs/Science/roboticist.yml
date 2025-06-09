@@ -17,6 +17,14 @@
   equipment:
     head: ClothingHeadHatCardborg
 
+- type: loadout # starcup
+  id: NeuroroboticistHelmet
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorRoboticist
+  equipment:
+    head: ClothingHeadSuitNeuroroboticist
+
 # OuterClothing
 - type: loadout
   id: CardborgCostume
@@ -25,6 +33,27 @@
     proto: SeniorRoboticist
   equipment:
     head: ClothingOuterCardborg
+
+# begin starcup
+- type: loadout
+  id: NeuroroboticistSuit
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: SeniorRoboticist
+  equipment:
+    head: ClothingOuterSuitNeuroroboticist
+
+# Jumpsuits
+- type: loadout
+  id: NeuroroboticistJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitRoboNeuroticist
+
+- type: loadout
+  id: NeuroroboticistJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtRoboNeuroticist
+# end starcup
 
 # PDA
 - type: loadout
