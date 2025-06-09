@@ -1,17 +1,17 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Sprite by zweihawke",
+    "copyright": "suit by zweihawke, tweaks by foxcurl (github) for starcup.",
     "size": {
-        "x": 32,
-        "y": 32
+      "x": 32,
+      "y": 32
     },
     "states": [
         {
             "name": "icon"
         },
         {
-            "name": "equipped-HELMET",
+            "name": "equipped-INNERCLOTHING",
             "directions": 4
         },
         {

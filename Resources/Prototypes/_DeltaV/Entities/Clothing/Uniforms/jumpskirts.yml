@@ -47,10 +47,10 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpskirtRoboNeuroticist
-  name: robo-neuroticist's jumpskirt
+  name: neuroroboticist jumpskirt # starcup: neuroroboticist, was robo-neuroticist's
   description: A jumpskirt fit with dozens of cybernetic gadgets.
   components:
   - type: Sprite
-    sprite: _DV/Clothing/Uniforms/Jumpskirt/roboneuroticistpurple.rsi
+    sprite: _DeltaV/Clothing/Uniforms/Jumpskirt/roboneuroticistpurple.rsi
   - type: Clothing
-    sprite: _DV/Clothing/Uniforms/Jumpskirt/roboneuroticistpurple.rsi
+    sprite: _DeltaV/Clothing/Uniforms/Jumpskirt/roboneuroticistpurple.rsi

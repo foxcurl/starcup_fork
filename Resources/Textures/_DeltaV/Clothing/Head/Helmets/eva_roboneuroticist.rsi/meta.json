@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "suit by zweihawke, modified to be a jumpskirt and inhand sprites made by HTMLSystem",
+    "copyright": "Sprite by zweihawke. Tweaks and vulpkanin/vox variants done by foxcurl (github) for starcup.",
     "size": {
         "x": 32,
         "y": 32
@@ -11,7 +11,7 @@
             "name": "icon"
         },
         {
-            "name": "equipped-INNERCLOTHING",
+            "name": "equipped-HELMET",
             "directions": 4
         },
         {
@@ -20,6 +20,14 @@
         },
         {
             "name": "inhand-right",
+            "directions": 4
+        },
+        {
+            "name": "equipped-head-vulpkanin",
+            "directions": 4
+        },
+        {
+            "name": "equipped-head-vox",
             "directions": 4
         }
     ]
