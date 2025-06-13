@@ -160,6 +160,13 @@
   components:
   - type: Pda
     id: ToymakerIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-toymaker
+  - type: PdaBorderColor
+    borderColor: "#d33725"
+    accentVColor: "#ffdf4d"
 
 - type: entity
   parent: RoboticistPDA
