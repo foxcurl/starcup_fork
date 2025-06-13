@@ -231,14 +231,6 @@
   - ScienceWinterBoots
   - RoboticsWinterBoots
 
-- type: loadoutGroup # starcup: make roboticist a hybrid role
-  id: RoboticistPDA
-  name: loadout-group-roboticist-id
-  loadouts:
-  - RoboticistPDA
-  - NeuroroboticistPDA
-  - MechatronicsPDA
-
 # Command
 ## Administrative Assistant
 - type: loadoutGroup
