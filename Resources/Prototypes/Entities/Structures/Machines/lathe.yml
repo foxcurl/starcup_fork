@@ -699,6 +699,7 @@
     runningState: building
     staticPacks:
     - FloorTilesStatic
+    - NFFloorTiles # Frontier
   - type: MaterialStorage
     whitelist:
       tags:
@@ -707,4 +708,5 @@
         - Wooden
         - RawMaterial
         - Plastic
+        - Ingot # Frontier
   - type: OreSiloClient
