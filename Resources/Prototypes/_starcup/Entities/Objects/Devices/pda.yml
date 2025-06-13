@@ -173,8 +173,6 @@
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
         pda-neuroroboticist
-  - type: Icon
-    state: pda-neuroroboticist
   - type: PdaBorderColor
     borderColor: "#262626"
     accentVColor: "#447987"
@@ -188,12 +186,10 @@
   components:
   - type: Pda
     id: MechatronicsIDCard
-  - type: Appearance # test if these are necessary later
+  - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType: !type:String
         pda-mechatronics
-  - type: Icon
-    state: pda-mechatronics
   - type: PdaBorderColor
     borderColor: "#c38f2b"
     accentVColor: "#a92323"
