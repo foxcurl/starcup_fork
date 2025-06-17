@@ -2,7 +2,7 @@
   parent: [ClothingHandsBase]
   id: ClothingHandsAngelGloves
   name: angelic gloves
-  description: Sily smooth! They seem more fit for a highschooler's magical alter ego than an angel, but...
+  description: Silky smooth! They seem more fit for a highschooler's magical alter ego than an angel, but... # starcup: Silky, was Sily
   components:
   - type: Sprite
     sprite: _Impstation/Clothing/Hands/Gloves/angelgloves.rsi
