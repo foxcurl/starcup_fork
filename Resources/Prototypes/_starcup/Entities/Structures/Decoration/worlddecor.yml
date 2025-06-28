@@ -1,0 +1,478 @@
+# Papers and Books
+
+- type: entity # TODO: make like 2/5ths appear on tables and the others appear below, or vice versa
+  parent: StarcupDecorFloorPaperBase
+  id: N14DecorFloorPaperScatterBase
+  name: scattered papers
+  description: A scattered mess of papers.
+  suffix: 4 states
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/scatters.rsi
+
+- type: entity
+  parent: N14DecorFloorPaperScatterBase
+  id: N14DecorFloorPaper1
+  components:
+  - type: Sprite
+    state: scattered_papers_1
+
+- type: entity
+  parent: N14DecorFloorPaperScatterBase
+  id: N14DecorFloorPaper2
+  components:
+  - type: Sprite
+    state: scattered_papers_2
+
+- type: entity
+  parent: N14DecorFloorPaperScatterBase
+  id: N14DecorFloorPaper3
+  components:
+  - type: Sprite
+    state: scattered_papers_3
+
+- type: entity
+  parent: N14DecorFloorPaperScatterBase
+  id: N14DecorFloorPaper4
+  components:
+  - type: Sprite
+    state: scattered_papers_4
+
+- type: entity
+  parent: N14DecorFloorPaperScatterBase
+  id: N14DecorFloorPaper5
+  components:
+  - type: Sprite
+    state: scattered_papers_5
+
+- type: entity
+  parent: StarcupDecorTablePaperBase
+  id: N14DecorTableBookStackBase
+  name: book stack
+  description: A neat stack of books, from a variety of subjects.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/scatters.rsi
+
+- type: entity
+  parent: N14DecorTableBookStackBase
+  id: N14DecorTableBookStack1
+  components:
+  - type: Sprite
+    state: bookstack_1
+
+- type: entity
+  parent: N14DecorTableBookStackBase
+  id: N14DecorTableBookStack2
+  components:
+  - type: Sprite
+    state: bookstack_2
+
+- type: entity
+  parent: N14DecorTableBookStackBase
+  id: N14DecorTableBookStack3
+  components:
+  - type: Sprite
+    state: bookstack_3
+
+- type: entity # TODO: more variety in book pile/stack sprites
+  parent: StarcupDecorTablePaperBase
+  id: N14DecorTableBookPileBase
+  name: book pile
+  description: A disorderly pile of books.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/scatters.rsi
+
+- type: entity
+  parent: N14DecorTableBookPileBase
+  id: N14DecorTableBookPile1
+  name: book pile
+  description: a pile of books
+  components:
+  - type: Sprite
+    state: bookpile_1
+
+- type: entity
+  parent: N14DecorTableBookPileBase
+  id: N14DecorTableBookPile2
+  components:
+  - type: Sprite
+    state: bookpile_2
+
+- type: entity
+  parent: N14DecorTableBookPileBase
+  id: N14DecorTableBookPile3
+  components:
+  - type: Sprite
+    state: bookpile_3
+
+- type: entity
+  parent: N14DecorTableBookPileBase
+  id: N14DecorTableBookPile4
+  components:
+  - type: Sprite
+    state: bookpile_4
+
+- type: entity
+  parent: N14DecorTableBookPileBase
+  id: N14DecorTableBookPile5
+  components:
+  - type: Sprite
+    state: bookpile_5
+
+- type: entity
+  parent: N14DecorTableBookPileBase
+  id: N14DecorTableBookPile6
+  components:
+  - type: Sprite
+    state: bookpile_6
+
+# Misc
+
+- type: entity
+  parent: StarcupDecorFloorStoneBase
+  id: N14DecorFloorBrickRubbleBase
+  name: brick rubble
+  description: An assortment of damaged, loose bricks.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/scatters.rsi
+
+- type: entity
+  parent: N14DecorFloorBrickRubbleBase
+  id: N14DecorFloorBrickRubble1
+  components:
+  - type: Sprite
+    state: brickrubble_1
+
+- type: entity
+  parent: N14DecorFloorBrickRubbleBase
+  id: N14DecorFloorBrickRubble2
+  components:
+  - type: Sprite
+    state: brickrubble_2
+
+- type: entity
+  parent: N14DecorFloorBrickRubbleBase
+  id: N14DecorFloorBrickRubble3
+  components:
+  - type: Sprite
+    state: brickrubble_3
+
+- type: entity
+  parent: N14DecorFloorBrickRubbleBase
+  id: N14DecorFloorBrickRubble4
+  components:
+  - type: Sprite
+    state: brickrubble_4
+
+- type: entity
+  parent: N14DecorFloorBrickRubbleBase
+  id: N14DecorFloorBrickRubble5
+  components:
+  - type: Sprite
+    state: brickrubble_5
+
+- type: entity
+  parent: N14DecorFloorBrickRubbleBase
+  id: N14DecorFloorBrickRubble6
+  components:
+  - type: Sprite
+    state: brickrubble_6
+
+- type: entity
+  parent: StarcupDecorTableCardboardBase
+  id: N14DecorTableCardboardBase
+  abstract: true
+  name: cardboard boxes
+  description: Various cardboard boxes.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/scatters.rsi
+
+- type: entity
+  parent: N14DecorTableCardboardBase
+  id: N14DecorTableCardboard1
+  components:
+  - type: Sprite
+    state: cardboard_1
+
+- type: entity
+  parent: N14DecorTableCardboardBase
+  id: N14DecorTableCardboard2
+  components:
+  - type: Sprite
+    state: cardboard_2
+
+- type: entity
+  parent: N14DecorTableCardboardBase
+  id: N14DecorTableCardboard3
+  components:
+  - type: Sprite
+    state: cardboard_3
+
+- type: entity
+  parent: N14DecorTableCardboardBase
+  id: N14DecorTableCardboard4
+  components:
+  - type: Sprite
+    state: cardboard_4
+
+- type: entity
+  parent: N14DecorTableCardboardBase
+  id: N14DecorTableCardboard5
+  components:
+  - type: Sprite
+    state: cardboard_5
+
+- type: entity
+  parent: N14DecorTableCardboardBase
+  id: N14DecorTableCardboard6
+  components:
+  - type: Sprite
+    state: cardboard_6
+
+# Wood, Floor
+
+- type: entity
+  parent: StarcupDecorFloorWoodBase
+  id: N14DecorFloorPallet1
+  name: pallet
+  description: A wooden pallet.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/scatters.rsi
+    state: pallet_1
+
+- type: entity
+  parent: StarcupDecorFloorWoodBase
+  id: N14DecorFloorPallet2
+  name: pallet
+  description: A wooden pallet.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/scatters.rsi
+    state: pallet_2
+
+- type: entity
+  parent: StarcupDecorFloorWoodBase
+  id: N14DecorFloorWoodScrapBase
+  name: wood scraps
+  description: Loose scraps of wood.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/scatters.rsi
+
+- type: entity
+  parent: N14DecorFloorWoodScrapBase
+  id: N14DecorFloorWoodScrap1
+  components:
+  - type: Sprite
+    state: woodscrap_1
+
+- type: entity
+  parent: N14DecorFloorWoodScrapBase
+  id: N14DecorFloorWoodScrap2
+  components:
+  - type: Sprite
+    state: woodscrap_2
+
+- type: entity
+  parent: N14DecorFloorWoodScrapBase
+  id: N14DecorFloorWoodScrap3
+  components:
+  - type: Sprite
+    state: woodscrap_3
+
+- type: entity
+  parent: N14DecorFloorWoodScrapBase
+  id: N14DecorFloorWoodScrap4
+  components:
+  - type: Sprite
+    state: woodscrap_4
+
+- type: entity
+  parent: N14DecorFloorWoodScrapBase
+  id: N14DecorFloorWoodScrap5
+  components:
+  - type: Sprite
+    state: woodscrap_5
+
+- type: entity
+  parent: N14DecorFloorWoodScrapBase
+  id: N14DecorFloorWoodScrap6
+  components:
+  - type: Sprite
+    state: woodscrap_6
+
+- type: entity
+  parent: StarcupDecorFloorBase
+  id: N14DecorFloorTrashbagsBase
+  name: trash bags
+  description: A few very full trash bags.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/scatters.rsi
+    state: trashbags_1
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 75 # TODO: check this doesnt delete the contents of the stash
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: SecretStash
+    tryInsertItemSound: /Audio/Effects/plant_rustle.ogg
+    tryRemoveItemSound: /Audio/Effects/plant_rustle.ogg
+    secretStashName: secret-stash-plant # TODO: change ftl and maybe sound. sound is maybe fine it's vague enough
+
+- type: entity
+  parent: N14DecorFloorTrashbagsBase
+  id: N14DecorFloorTrashbags1
+  components:
+  - type: Sprite
+    state: trashbags_1
+
+- type: entity
+  parent: N14DecorFloorTrashbagsBase
+  id: N14DecorFloorTrashbags2
+  components:
+  - type: Sprite
+    state: trashbags_2
+
+- type: entity
+  parent: N14DecorFloorTrashbagsBase
+  id: N14DecorFloorTrashbags3
+  components:
+  - type: Sprite
+    state: trashbags_3
+
+- type: entity
+  parent: N14DecorFloorTrashbagsBase
+  id: N14DecorFloorTrashbags4
+  components:
+  - type: Sprite
+    state: trashbags_4
+
+- type: entity
+  parent: N14DecorFloorTrashbagsBase
+  id: N14DecorFloorTrashbags5
+  components:
+  - type: Sprite
+    state: trashbags_5
+
+- type: entity
+  parent: N14DecorFloorTrashbagsBase
+  id: N14DecorFloorTrashbags6
+  components:
+  - type: Sprite
+    state: trashbags_6
+
+- type: entity
+  parent: StarcupDecorTableGlassBase
+  id: N14DecorTableGlassBase
+  name: glass bottles
+  description: A collection of empty bottles.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/scatters.rsi
+    state: glass_1
+
+- type: entity
+  parent: N14DecorTableGlassBase
+  id: N14DecorTableGlass1
+  components:
+  - type: Sprite
+    state: glass_1
+
+- type: entity
+  parent: N14DecorTableGlassBase
+  id: N14DecorTableGlass2
+  components:
+  - type: Sprite
+    state: glass_2
+
+- type: entity
+  parent: N14DecorTableGlassBase
+  id: N14DecorTableGlass3
+  components:
+  - type: Sprite
+    state: glass_3
+
+- type: entity
+  parent: N14DecorTableGlassBase
+  id: N14DecorTableGlass4
+  components:
+  - type: Sprite
+    state: glass_4
+
+- type: entity
+  parent: N14DecorTableGlassBase
+  id: N14DecorTableGlass5
+  components:
+  - type: Sprite
+    state: glass_5
+
+- type: entity
+  parent: N14DecorTableGlassBase
+  id: N14DecorTableGlass6
+  components:
+  - type: Sprite
+    state: glass_6
+
+- type: entity
+  parent: StarcupDecorFloorBase
+  id: N14DecorFloorSkeleton
+  name: skeleton
+  description: A body that's been sitting here a long time.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/scatters.rsi
+    state: skeleton
+
+# Structures
+- type: entity
+  parent: StarcupDecorStructureWoodBase
+  id: N14DecorStructurePalletStack1
+  name: pallet stack
+  description: A stack of wooden pallets. Fun to climb.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/structures.rsi
+    state: pallet_stack_1
+    offset: 0,0.5
+
+- type: entity
+  parent: StarcupDecorStructureWoodBase
+  id: N14DecorStructurePalletStack2
+  name: pallet stack
+  description: A stack of wooden pallets. Fun to climb.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/structures.rsi
+    state: pallet_stack_2
+    offset: 0,0.5
+
+- type: entity
+  parent: StarcupDecorStructureBase
+  id: N14DecorStructureBrickStack
+  name: brick stack
+  description: A tall stack of bricks. A rare sight in space.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/structures.rsi
+    state: brickpile
+    offset: 0,0.5
+
+- type: entity
+  parent: StarcupDecorStructureSteelBase
+  id: N14DecorMinecart
+  name: minecart
+  description: It seems to have fallen over...
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Decoration/structures.rsi
+    state: minecart_fallen
+    offset: 0,0.5

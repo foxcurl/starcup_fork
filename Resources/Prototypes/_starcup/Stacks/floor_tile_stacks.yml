@@ -1,0 +1,239 @@
+﻿# Bricks
+- type: stack
+  id: FloorTileBrickHorizontal
+  name: stack-dark-tile # TODO: aaaaaaaaaaaaaaaahhhhhh fuck
+  spawn: FloorTileItemBrickHorizontal
+  maxCount: 30
+
+- type: stack
+  id: FloorTileBrickVertical
+  name: stack-dark-tile
+  spawn: FloorTileItemBrickVertical
+  maxCount: 30
+
+# Carpets
+- type: stack
+  id: FloorTileCarpetBlue
+  name: stack-dark-tile
+  spawn: FloorTileItemCarpetBlue
+  maxCount: 30
+
+- type: stack
+  id: FloorTileCarpetFancyBlue
+  name: stack-dark-tile
+  spawn: FloorTileItemCarpetFancyBlue
+  maxCount: 30
+
+- type: stack
+  id: FloorTileCarpetGreen
+  name: stack-dark-tile
+  spawn: FloorTileItemCarpetGreen
+  maxCount: 30
+
+- type: stack
+  id: FloorTileCarpetFancyGreen
+  name: stack-dark-tile
+  spawn: FloorTileItemCarpetFancyGreen
+  maxCount: 30
+
+- type: stack
+  id: FloorTileCarpetRed
+  name: stack-dark-tile
+  spawn: FloorTileItemCarpetRed
+  maxCount: 30
+
+- type: stack
+  id: FloorTileCarpetFancyRed
+  name: stack-dark-tile
+  spawn: FloorTileItemCarpetFancyRed
+  maxCount: 30
+
+- type: stack
+  id: FloorTileCarpetViolet
+  name: stack-dark-tile
+  spawn: FloorTileItemCarpetViolet
+  maxCount: 30
+
+- type: stack
+  id: FloorTileCarpetFancyViolet
+  name: stack-dark-tile
+  spawn: FloorTileItemCarpetFancyViolet
+  maxCount: 30
+
+# Concrete
+- type: stack
+  id: FloorTileConcreteBay
+  name: stack-dark-tile
+  spawn: FloorTileItemConcreteBay
+  maxCount: 30
+
+- type: stack
+  id: FloorTileConcreteIndustrial
+  name: stack-dark-tile
+  spawn: FloorTileItemConcreteIndustrial
+  maxCount: 30
+
+- type: stack
+  id: FloorTileConcreteIndustrialSolid
+  name: stack-dark-tile
+  spawn: FloorTileItemConcreteIndustrialSolid
+  maxCount: 30
+
+- type: stack
+  id: FloorTileConcreteIndustrialSplit
+  name: stack-dark-tile
+  spawn: FloorTileItemConcreteIndustrialSplit
+  maxCount: 30
+
+# Metal Tiles
+- type: stack
+  id: FloorTileMetalBlue
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalBlue
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalBlueSolid
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalBlueSolid
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalGreen
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalGreen
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalGreenSolid
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalGreenSolid
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalGrey
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalGrey
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalGreySolid
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalGreySolid
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalLightBlue
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalLightBlue
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalLightBlueSolid
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalLightBlueSolid
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalPurple
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalPurple
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalPurpleSolid
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalPurpleSolid
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalRed
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalRed
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalRedSolid
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalRedSolid
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalTeal
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalTeal
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalTealSolid
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalTealSolid
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalWhite
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalWhite
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalWhiteSolid
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalWhiteSolid
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalYellow
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalYellow
+  maxCount: 30
+
+- type: stack
+  id: FloorTileMetalYellowSolid
+  name: stack-dark-tile
+  spawn: FloorTileItemMetalYellowSolid
+  maxCount: 30
+
+# Wood Tiles
+- type: stack
+  id: FloorTileWoodFancy
+  name: stack-dark-tile
+  spawn: FloorTileItemWoodFancy
+  maxCount: 30
+
+- type: stack
+  id: FloorTileWoodMosaic
+  name: stack-dark-tile
+  spawn: FloorTileItemWoodMosaic
+  maxCount: 30
+
+- type: stack
+  id: FloorTileWoodWide
+  name: stack-dark-tile
+  spawn: FloorTileItemWoodWide
+  maxCount: 30
+
+# Misc
+- type: stack
+  id: FloorTileFancy
+  name: stack-dark-tile
+  spawn: FloorTileItemFancy
+  maxCount: 30
+
+- type: stack
+  id: FloorTileOrnate
+  name: stack-dark-tile
+  spawn: FloorTileItemOrnate
+  maxCount: 30
+
+- type: stack
+  id: FloorTileSierra
+  name: stack-dark-tile
+  spawn: FloorTileItemSierra
+  maxCount: 30
+
+- type: stack
+  id: FloorTileSteelGrate
+  name: stack-dark-tile
+  spawn: FloorTileItemSteelGrate
+  maxCount: 30

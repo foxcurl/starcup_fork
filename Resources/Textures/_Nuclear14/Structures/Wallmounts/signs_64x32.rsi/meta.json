@@ -1,26 +1,23 @@
 {
   "version": 1,
   "license": "CC-BY-NC-SA-3.0",
-  "copyright": "Taken from MS13 at commit https://github.com/Mojave-Sun/mojave-sun-13/commit/6fde5cf64e584727ce66d92d81352801670e172f",
+  "copyright": "Taken from MS13 at commit https://github.com/Mojave-Sun/mojave-sun-13/commit/6fde5cf64e584727ce66d92d81352801670e172f. restricted.png and workers.png modified by foxcurl, we_open_off variant by foxcurl (github).",
   "size": {
     "x": 64,
     "y": 32
   },
   "states": [
     {
+      "name": "restricted"
+    },
+    {
+      "name": "we_open_off"
+    },
+    {
+      "name": "we_open_on"
+    },
+    {
       "name": "workers"
-    },
-    {
-      "name": "bazaar_on"
-    },
-    {
-      "name": "hotel"
-    },
-    {
-      "name": "private"
-    },
-    {
-      "name": "we_open_open"
     }
   ]
 }

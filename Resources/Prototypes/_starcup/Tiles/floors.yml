@@ -1,0 +1,556 @@
+# Metal Tiles
+- type: tile
+  id: FloorMetalBlue
+  name: metal blue
+  sprite: /Textures/_Nuclear14/Tiles/metalblue.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalHollow
+  itemDrop: FloorTileItemMetalBlue
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalBlueSolid
+  name: metal blue solid
+  sprite: /Textures/_Nuclear14/Tiles/metalbluesolid.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalSolid
+  itemDrop: FloorTileItemMetalBlueSolid
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalGreen
+  name: metal green
+  sprite: /Textures/_Nuclear14/Tiles/metalgreen.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalHollow
+  itemDrop: FloorTileItemMetalGreen
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalGreenSolid
+  name: metal green solid
+  sprite: /Textures/_Nuclear14/Tiles/metalgreensolid.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalSolid
+  itemDrop: FloorTileItemMetalGreenSolid
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalGrey
+  name: metal grey
+  sprite: /Textures/_Nuclear14/Tiles/metalgrey.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalHollow
+  itemDrop: FloorTileItemMetalGrey
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalGreySolid
+  name: metal grey solid
+  sprite: /Textures/_Nuclear14/Tiles/metalgreysolid.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalSolid
+  itemDrop: FloorTileItemMetalGreySolid
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalLightBlue
+  name: metal light blue
+  sprite: /Textures/_Nuclear14/Tiles/metallightblue.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalHollow
+  itemDrop: FloorTileItemMetalBlueLight
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalLightBlueSolid
+  name: metal light blue solid
+  sprite: /Textures/_Nuclear14/Tiles/metallightbluesolid.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalSolid
+  itemDrop: FloorTileItemMetalBlueLightSolid
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalPurple
+  name: metal purple
+  sprite: /Textures/_Nuclear14/Tiles/metalpurple.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalHollow
+  itemDrop: FloorTileItemMetalPurple
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalPurpleSolid
+  name: metal purple solid
+  sprite: /Textures/_Nuclear14/Tiles/metalpurplesolid.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalSolid
+  itemDrop: FloorTileItemMetalPurpleSolid
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalRed
+  name: metal red
+  sprite: /Textures/_Nuclear14/Tiles/metalred.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalHollow
+  itemDrop: FloorTileItemMetalRed
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalRedSolid
+  name: metal red solid
+  sprite: /Textures/_Nuclear14/Tiles/metalredsolid.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalSolid
+  itemDrop: FloorTileItemMetalRedSolid
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalTeal
+  name: metal teal
+  sprite: /Textures/_Nuclear14/Tiles/metalteal.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalHollow
+  itemDrop: FloorTileItemMetalTeal
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalTealSolid
+  name: metal teal solid
+  sprite: /Textures/_Nuclear14/Tiles/metaltealsolid.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalSolid
+  itemDrop: FloorTileItemMetalTealSolid
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalWhite
+  name: metal white
+  sprite: /Textures/_Nuclear14/Tiles/metalwhite.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalHollow
+  itemDrop: FloorTileItemMetalWhite
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalWhiteSolid
+  name: metal white solid
+  sprite: /Textures/_Nuclear14/Tiles/metalwhitesolid.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalSolid
+  itemDrop: FloorTileItemMetalWhiteSolid
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalYellow
+  name: metal yellow
+  sprite: /Textures/_Nuclear14/Tiles/metalyellow.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalHollow
+  itemDrop: FloorTileItemMetalYellow
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalYellowSolid
+  name: metal yellow solid
+  sprite: /Textures/_Nuclear14/Tiles/metalyellowsolid.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalSolid
+  itemDrop: FloorTileItemMetalYellowSolid
+  heatCapacity: 10000
+
+# MS13 Metal Tiles
+- type: tile
+  id: FloorSteelGrate
+  name: steel grate
+  sprite: /Textures/_Nuclear14/Tiles/steel_grate.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepMetalHollow
+  itemDrop: FloorTileItemSteelGrate
+  heatCapacity: 10000
+
+# MS13 wood
+- type: tile
+  id: FloorWoodFancy
+  name: wood floor fancy
+  sprite: /Textures/_Nuclear14/Tiles/wood_fancy.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepWood
+  itemDrop: FloorTileItemWoodFancy
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodMosaic
+  name: wood floor mosaic
+  sprite: /Textures/_Nuclear14/Tiles/wood_mosaic.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepWood
+  itemDrop: FloorTileItemWoodMosaic
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodMosaicDamaged
+  name: wood floor damaged mosaic
+  sprite: /Textures/_Nuclear14/Tiles/wood_mosaic_damaged.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepWood
+  itemDrop: FloorTileItemWoodMosaic
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodWide
+  name: wood floor wide
+  sprite: /Textures/_Nuclear14/Tiles/wood_wide.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepWood
+  itemDrop: FloorTileItemWoodWide
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorWoodWideDamaged
+  name: wood floor wide damaged
+  sprite: /Textures/_Nuclear14/Tiles/Wood_wide_damaged.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepWood
+  itemDrop: FloorTileItemWoodWide
+  heatCapacity: 10000
+
+# MS13 Carpet
+- type: tile
+  id: FloorCarpetBlue
+  name: carpet blue
+  sprite: /Textures/_Nuclear14/Tiles/carpet_blue.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepCarpet
+  itemDrop: FloorTileItemCarpetBlue
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorCarpetFancyBlue
+  name: carpet fancy blue
+  sprite: /Textures/_Nuclear14/Tiles/carpet_fancy_blue.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepCarpet
+  itemDrop: FloorTileItemCarpetFancyBlue
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorCarpetGreen
+  name: carpet green
+  sprite: /Textures/_Nuclear14/Tiles/carpet_green.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepCarpet
+  itemDrop: FloorTileItemCarpetGreen
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorCarpetFancyGreen
+  name: carpet fancy green
+  sprite: /Textures/_Nuclear14/Tiles/carpet_fancy_green.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepCarpet
+  itemDrop: FloorTileItemCarpetFancyGreen
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorCarpetRed
+  name: carpet red
+  sprite: /Textures/_Nuclear14/Tiles/carpet_red.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepCarpet
+  itemDrop: FloorTileItemCarpetRed
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorCarpetFancyRed
+  name: carpet fancy red
+  sprite: /Textures/_Nuclear14/Tiles/carpet_fancy_red.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepCarpet
+  itemDrop: FloorTileItemCarpetFancyRed
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorCarpetViolet
+  name: carpet violet
+  sprite: /Textures/_Nuclear14/Tiles/carpet_violet.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepCarpet
+  itemDrop: FloorTileItemCarpetViolet
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorCarpetFancyViolet
+  name: carpet fancy violet
+  sprite: /Textures/_Nuclear14/Tiles/carpet_violet.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepCarpet
+  itemDrop: FloorTileItemCarpetFancyViolet
+  heatCapacity: 10000
+
+# Concrete
+- type: tile
+  id: FloorConcreteBay
+  name: concrete bay
+  sprite: /Textures/_Nuclear14/Tiles/concrete-bay.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepConcrete
+  itemDrop: FloorTileItemConcreteBay
+  heatCapacity: 10000
+
+# MS13 Concrete & Brick
+- type: tile
+  id: FloorBrickHorizontal
+  name: astro-brick horizontal
+  sprite: /Textures/_Nuclear14/Tiles/brickhorizontal.png
+  variants: 9
+  placementVariants: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepConcreteBroken
+  itemDrop: FloorTileItemBrickHorizontal
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorBrickVertical
+  name: astro-brick vertical
+  sprite: /Textures/_Nuclear14/Tiles/brickvertical.png
+  variants: 9
+  placementVariants: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepConcreteBroken
+  itemDrop: FloorTileItemBrickVertical
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorConcreteIndustrial
+  name: concrete industrial
+  sprite: /Textures/_Nuclear14/Tiles/concrete_industrial.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepConcrete
+  itemDrop: FloorTileItemConcreteIndustrial
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorConcreteIndustrialSolid
+  name: concrete industrial solid
+  sprite: /Textures/_Nuclear14/Tiles/concrete_industrial_solid.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepConcrete
+  itemDrop: FloorTileItemConcreteIndustrialSolid
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorConcreteIndustrialSplit
+  name: concrete industrial split
+  sprite: /Textures/_Nuclear14/Tiles/concrete_industrial_split.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepConcrete
+  itemDrop: FloorTileItemConcreteIndustrialSplit
+  heatCapacity: 10000
+
+# MS13 Tiles
+- type: tile
+  id: FloorTileFancy
+  name: fancy tile
+  sprite: /Textures/_Nuclear14/Tiles/fancy.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepConcrete
+  itemDrop: FloorTileItemFancy
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTileSierra
+  name: sierra tile
+  sprite: /Textures/_Nuclear14/Tiles/sierra.png
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: N14FootstepConcrete
+  itemDrop: FloorTileItemSierra
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorTileOrnate
+  name: ornate tile
+  sprite: /Textures/_Nuclear14/Tiles/tileornate.png
+  variants: 4
+  placementVariants: [0, 1, 2, 3]
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepFloor
+  itemDrop: FloorTileItemOrnate
+  heatCapacity: 10000
+
+# TODO: figure out whatevar's below happening here lol
+
+- type: tile
+  id: FloorRubble
+  name: rubble
+  sprite: /Textures/_Nuclear14/Tiles/Rubble/rubble.png
+  edgeSpritePriority: 1
+  edgeSprites:
+    SouthEast: /Textures/_Nuclear14/Tiles/Rubble/single_edge_SE.png
+    NorthEast: /Textures/_Nuclear14/Tiles/Rubble/single_edge_NE.png
+    NorthWest: /Textures/_Nuclear14/Tiles/Rubble/single_edge_NW.png
+    SouthWest: /Textures/_Nuclear14/Tiles/Rubble/single_edge_SW.png
+    South: /Textures/_Nuclear14/Tiles/Rubble/double_edge_S.png
+    East: /Textures/_Nuclear14/Tiles/Rubble/double_edge_E.png
+    North: /Textures/_Nuclear14/Tiles/Rubble/double_edge_N.png
+    West: /Textures/_Nuclear14/Tiles/Rubble/double_edge_W.png
+  # baseTurf: FloorBase
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorRubbleIndoors
+  name: rubble indoors
+  sprite: /Textures/_Nuclear14/Tiles/Rubble/rubble.png
+  edgeSpritePriority: 1
+  edgeSprites:
+    SouthEast: /Textures/_Nuclear14/Tiles/Rubble/single_edge_SE.png
+    NorthEast: /Textures/_Nuclear14/Tiles/Rubble/single_edge_NE.png
+    NorthWest: /Textures/_Nuclear14/Tiles/Rubble/single_edge_NW.png
+    SouthWest: /Textures/_Nuclear14/Tiles/Rubble/single_edge_SW.png
+    South: /Textures/_Nuclear14/Tiles/Rubble/double_edge_S.png
+    East: /Textures/_Nuclear14/Tiles/Rubble/double_edge_E.png
+    North: /Textures/_Nuclear14/Tiles/Rubble/double_edge_N.png
+    West: /Textures/_Nuclear14/Tiles/Rubble/double_edge_W.png
+  # baseTurf: FloorBase
+  isSubfloor: false
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000

@@ -1,29 +1,20 @@
 {
   "version": 1,
   "license": "CC-BY-NC-SA-3.0",
-  "copyright": "Taken from mojave-sun-13 at https://github.com/Mojave-Sun/mojave-sun-13/blob/aa171b6d7dda4a58168013a60e44f10165f2678d/mojave/icons/structure/tank.dmi",
+  "copyright": "Taken from mojave-sun-13 at https://github.com/Mojave-Sun/mojave-sun-13/blob/aa171b6d7dda4a58168013a60e44f10165f2678d/mojave/icons/structure/tank.dmi. Modified by foxcurl (Github).",
   "size": {
     "x": 64,
     "y": 64
   },
   "states": [
     {
-      "name": "largetank"
+      "name": "chemical_tank_tall"
     },
     {
-      "name": "largetank_chemical"
+      "name": "chemical_tank"
     },
     {
-      "name": "largetank_pipe"
-    },
-    {
-      "name": "largetank_chemical_huge"
-    },
-    {
-      "name": "chemical_container"
-    },
-    {
-      "name": "chemical_container_broken"
+      "name": "chemical_tank_destroyed"
     }
   ]
 }

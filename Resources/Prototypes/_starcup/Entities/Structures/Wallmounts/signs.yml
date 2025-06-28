@@ -1,0 +1,132 @@
+- type: entity
+  id: N14SignRestrictedArea
+  parent: BaseSign
+  name: restricted area
+  description: If you're reading this, you should or shouldn't be here.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Wallmounts/signs_64x32.rsi
+    state: restricted
+
+- type: entity
+  id: N14SignWorkersArea
+  parent: BaseSign
+  name: workers area
+  description: If you're reading this, you should or shouldn't be here.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Wallmounts/signs_64x32.rsi
+    state: workers
+
+- type: entity
+  id: OpenSignPowered
+  parent: BaseSign
+  name: open sign small
+  description: We're open! Or maybe not.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Wallmounts/signs_32x32.rsi
+    drawdepth: WallMountedItems
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: open_off
+    - map: ["enum.PoweredLightLayers.Glow"]
+      state: open_on
+      shader: unshaded
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalGlassBreak
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        collection: GlassSmash
+  - type: ApcPowerReceiver
+  - type: ExtensionCableReceiver
+  - type: Appearance
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: SmartLight
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+      - On
+      - Off
+      - Toggle
+  - type: PoweredLight
+  - type: PointLight
+    radius: 3
+    energy: 1
+    softness: 0.9
+    color: '#ff0000'
+  - type: AmbientOnPowered
+  - type: AmbientSound
+    volume: -15
+    range: 2
+    sound:
+      path: /Audio/Ambience/Objects/light_hum.ogg
+
+- type: entity
+  id: OpenSignPoweredOld
+  parent: OpenSignPowered
+  name: open sign old
+  description: We're open! Or maybe not.
+  suffix: Flickers
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Wallmounts/signs_32x32.rsi
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: open_off
+    - map: ["enum.PoweredLightLayers.Glow"]
+      state: open_flicker
+
+- type: entity
+  id: OpenSignPoweredTilted
+  parent: OpenSignPowered
+  name: open sign tilted
+  description: We're open! Or maybe not.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Wallmounts/signs_32x32.rsi
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: open_tilted_off
+    - map: ["enum.PoweredLightLayers.Glow"]
+      state: open_tilted_on
+
+- type: entity
+  id: OpenSignPoweredTiltedOld
+  parent: OpenSignPowered
+  name: open sign tilted old
+  description: We're open! Or maybe not.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Wallmounts/signs_32x32.rsi
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: open_tilted_off
+    - map: ["enum.PoweredLightLayers.Glow"]
+      state: open_tilted_flicker
+
+- type: entity
+  id: OpenSignPoweredLarge
+  parent: OpenSignPowered
+  name: open sign large
+  description: We're open! Or maybe not.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Wallmounts/signs_64x32.rsi
+    layers:
+    - map: ["enum.PoweredLightLayers.Base"]
+      state: we_open_off
+    - map: ["enum.PoweredLightLayers.Glow"]
+      state: we_open_on

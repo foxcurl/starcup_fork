@@ -1,0 +1,641 @@
+- type: entity
+  parent: FloorTileItemBase
+  id: FloorTileItemBaseStarcup
+  description: These could work as a pretty decent throwing weapon.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Objects/Tiles/tile.rsi
+  - type: Item
+    sprite: _starcup/Objects/Tiles/tile.rsi
+    size: Normal
+
+# Bricks
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemBrickHorizontal
+  name: horizontal astro-brick
+  components:
+  - type: Sprite
+    state: brick-horizontal
+  - type: Item
+    heldPrefix: brick
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorBrickHorizontal
+  - type: Stack
+    stackType: FloorTileBrickHorizontal
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemBrickVertical
+  name: vertical astro-brick
+  components:
+  - type: Sprite
+    state: brick-vertical
+  - type: Item
+    heldPrefix: brick
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorBrickVertical
+  - type: Stack
+    stackType: FloorTileBrickVertical
+
+# Carpets
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemCarpetBlue
+  name: blue carpet floor
+  components:
+  - type: Sprite
+    state: carpet-blue
+  - type: Item
+    heldPrefix: carpet-blue
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorCarpetBlue
+  - type: Stack
+    stackType: FloorTileCarpetBlue
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemCarpetFancyBlue
+  name: fancy blue carpet floor
+  components:
+  - type: Sprite
+    state: carpet-fancy-blue
+  - type: Item
+    heldPrefix: carpet-blue
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorCarpetFancyBlue
+  - type: Stack
+    stackType: FloorTileCarpetFancyBlue
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemCarpetGreen
+  name: green carpet floor
+  components:
+  - type: Sprite
+    state: carpet-green
+  - type: Item
+    heldPrefix: carpet-green
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorCarpetGreen
+  - type: Stack
+    stackType: FloorTileCarpetGreen
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemCarpetFancyGreen
+  name: fancy green carpet floor
+  components:
+  - type: Sprite
+    state: carpet-fancy-green
+  - type: Item
+    heldPrefix: carpet-green
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorCarpetFancyGreen
+  - type: Stack
+    stackType: FloorTileCarpetFancyGreen
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemCarpetRed
+  name: red carpet floor
+  components:
+  - type: Sprite
+    state: carpet-red
+  - type: Item
+    heldPrefix: carpet-red
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorCarpetRed
+  - type: Stack
+    stackType: FloorTileCarpetRed
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemCarpetFancyRed
+  name: fancy red carpet floor
+  components:
+  - type: Sprite
+    state: carpet-fancy-red
+  - type: Item
+    heldPrefix: carpet-red
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorCarpetFancyRed
+  - type: Stack
+    stackType: FloorTileCarpetFancyRed
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemCarpetViolet
+  name: violet carpet floor
+  components:
+  - type: Sprite
+    state: carpet-violet
+  - type: Item
+    heldPrefix: carpet-violet
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorCarpetViolet
+  - type: Stack
+    stackType: FloorTileCarpetViolet
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemCarpetFancyViolet
+  name: fancy violet carpet floor
+  components:
+  - type: Sprite
+    state: carpet-fancy-violet
+  - type: Item
+    heldPrefix: carpet-violet
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorCarpetFancyViolet
+  - type: Stack
+    stackType: FloorTileCarpetFancyViolet
+
+# Concrete
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemConcreteBay
+  name: concrete bay tile
+  components:
+  - type: Sprite
+    state: concrete-bay
+  - type: Item
+    heldPrefix: concrete-bay
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorConcreteBay
+  - type: Stack
+    stackType: FloorTileConcreteBay
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemConcreteIndustrial
+  name: industrial concrete tile
+  components:
+  - type: Sprite
+    state: concrete
+  - type: Item
+    heldPrefix: concrete
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorConcreteIndustrial
+  - type: Stack
+    stackType: FloorTileConcreteIndustrial
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemConcreteIndustrialSolid
+  name: solid industrial concrete tile
+  components:
+  - type: Sprite
+    state: concrete # TODO: get different sprites for the variants
+  - type: Item
+    heldPrefix: concrete
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorConcreteIndustrialSolid
+  - type: Stack
+    stackType: FloorTileConcreteIndustrialSolid
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemConcreteIndustrialSplit
+  name: split industrial concrete tile
+  components:
+  - type: Sprite
+    state: concrete
+  - type: Item
+    heldPrefix: concrete
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorConcreteIndustrialSplit
+  - type: Stack
+    stackType: FloorTileConcreteIndustrialSplit
+
+# Metal Tiles
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalBlue
+  name: blue metal tile
+  components:
+  - type: Sprite
+    state: metalblue
+  - type: Item
+    heldPrefix: metalblue
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalBlue
+  - type: Stack
+    stackType: FloorTileMetalBlue
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalBlueSolid
+  name: solid blue metal tile
+  components:
+  - type: Sprite
+    state: metalbluesolid
+  - type: Item
+    heldPrefix: metalblue
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalBlueSolid
+  - type: Stack
+    stackType: FloorTileMetalBlueSolid
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalGreen
+  name: green metal tile
+  components:
+  - type: Sprite
+    state: metalgreen
+  - type: Item
+    heldPrefix: metalgreen
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalGreen
+  - type: Stack
+    stackType: FloorTileMetalGreen
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalGreenSolid
+  name: solid green metal tile
+  components:
+  - type: Sprite
+    state: metalgreensolid
+  - type: Item
+    heldPrefix: metalgreen
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalGreenSolid
+  - type: Stack
+    stackType: FloorTileMetalGreenSolid
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalGrey
+  name: grey metal tile
+  components:
+  - type: Sprite
+    state: metalgrey
+  - type: Item
+    heldPrefix: metalgrey
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalGrey
+  - type: Stack
+    stackType: FloorTileMetalGrey
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalGreySolid
+  name: solid grey metal tile
+  components:
+  - type: Sprite
+    state: metalgreysolid
+  - type: Item
+    heldPrefix: metalgrey
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalGreySolid
+  - type: Stack
+    stackType: FloorTileMetalGreySolid
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalLightBlue
+  name: light blue metal tile
+  components:
+  - type: Sprite
+    state: metallightblue
+  - type: Item
+    heldPrefix: metallightblue
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalLightBlue
+  - type: Stack
+    stackType: FloorTileMetalLightBlue
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalLightBlueSolid
+  name: solid light blue metal tile
+  components:
+  - type: Sprite
+    state: metallightbluesolid
+  - type: Item
+    heldPrefix: metallightblue
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalLightBlueSolid
+  - type: Stack
+    stackType: FloorTileMetalLightBlueSolid
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalPurple
+  name: purple metal tile
+  components:
+  - type: Sprite
+    state: metalpurple
+  - type: Item
+    heldPrefix: metalpurple
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalPurple
+  - type: Stack
+    stackType: FloorTileMetalPurple
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalPurpleSolid
+  name: solid purple metal tile
+  components:
+  - type: Sprite
+    state: metalpurplesolid
+  - type: Item
+    heldPrefix: metalpurple
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalPurpleSolid
+  - type: Stack
+    stackType: FloorTileMetalPurpleSolid
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalRed
+  name: red metal tile
+  components:
+  - type: Sprite
+    state: metalred
+  - type: Item
+    heldPrefix: metalred
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalRed
+  - type: Stack
+    stackType: FloorTileMetalRed
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalRedSolid
+  name: solid red metal tile
+  components:
+  - type: Sprite
+    state: metalredsolid
+  - type: Item
+    heldPrefix: metalred
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalRedSolid
+  - type: Stack
+    stackType: FloorTileMetalRedSolid
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalTeal
+  name: teal metal tile
+  components:
+  - type: Sprite
+    state: metalteal
+  - type: Item
+    heldPrefix: metalteal
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalTeal
+  - type: Stack
+    stackType: FloorTileMetalTeal
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalTealSolid
+  name: solid teal metal tile
+  components:
+  - type: Sprite
+    state: metaltealsolid
+  - type: Item
+    heldPrefix: metalteal
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalTealSolid
+  - type: Stack
+    stackType: FloorTileMetalTealSolid
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalWhite
+  name: white metal tile
+  components:
+  - type: Sprite
+    state: metalwhite
+  - type: Item
+    heldPrefix: metalwhite
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalWhite
+  - type: Stack
+    stackType: FloorTileMetalWhite
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalWhiteSolid
+  name: solid white metal tile
+  components:
+  - type: Sprite
+    state: metalwhitesolid
+  - type: Item
+    heldPrefix: metalwhite
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalWhiteSolid
+  - type: Stack
+    stackType: FloorTileMetalWhiteSolid
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalYellow
+  name: yellow metal tile
+  components:
+  - type: Sprite
+    state: metalyellow
+  - type: Item
+    heldPrefix: metalyellow
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalYellow
+  - type: Stack
+    stackType: FloorTileMetalYellow
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemMetalYellowSolid
+  name: solid yellow metal tile
+  components:
+  - type: Sprite
+    state: metalyellowsolid
+  - type: Item
+    heldPrefix: metalyellow
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorMetalYellowSolid
+  - type: Stack
+    stackType: FloorTileMetalYellowSolid
+
+# Wood tiles
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemWoodFancy
+  name: fancy wood tile
+  components:
+  - type: Sprite
+    state: wood-fancy
+  - type: Item
+    heldPrefix: wood-fancy
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorWoodFancy
+  - type: Stack
+    stackType: FloorTileWoodFancy
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemWoodMosaic
+  name: mosaic wood tile
+  components:
+  - type: Sprite
+    state: wood-mosaic
+  - type: Item
+    heldPrefix: wood-dark
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorWoodMosaic
+  - type: Stack
+    stackType: FloorTileWoodMosaic
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemWoodWide
+  name: wide wood tile
+  components:
+  - type: Sprite
+    state: wood-wide
+  - type: Item
+    heldPrefix: wood-dark
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorWoodWide
+  - type: Stack
+    stackType: FloorTileWoodWide
+
+# Misc
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemFancy
+  name: fancy tile
+  components:
+  - type: Sprite
+    state: fancy
+  - type: Item
+    heldPrefix: fancy
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorFancy
+  - type: Stack
+    stackType: FloorTileFancy
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemOrnate
+  name: ornate tile
+  components:
+  - type: Sprite
+    state: ornate
+  - type: Item
+    heldPrefix: ornate
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorOrnate
+  - type: Stack
+    stackType: FloorTileOrnate
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemSierra
+  name: sierra tile
+  components:
+  - type: Sprite
+    state: sierra
+  - type: Item
+    heldPrefix: sierra
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorSierra
+  - type: Stack
+    stackType: FloorTileSierra
+
+- type: entity
+  parent: FloorTileItemBaseStarcup
+  id: FloorTileItemSteelGrate
+  name: steel grate tile
+  components:
+  - type: Sprite
+    state: steel-grate
+  - type: Item
+    heldPrefix: steel-grate
+  - type: FloorTile
+    outputs:
+      - Plating
+      - FloorPolished
+  - type: Stack
+    stackType: FloorTileSteelGrate

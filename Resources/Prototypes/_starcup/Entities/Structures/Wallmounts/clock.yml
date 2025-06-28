@@ -1,0 +1,15 @@
+- type: entity
+  id: WallClockStarcup
+  name: wall-mounted clock # this probably should parent off of something?? why doesnt it?? weh. TODO: make deconstructable
+  description: An analog wall-mounted clock. # TODO: give sounds
+  components:
+  - type: WallMount
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Wallmounts/wallclock.rsi
+    layers:
+    - state: clock
+    - map: ["enum.ClockVisualLayers.MinuteHand"]
+    - map: ["enum.ClockVisualLayers.HourHand"]
+  - type: InteractionOutline
+  - type: Transform
+    anchored: true

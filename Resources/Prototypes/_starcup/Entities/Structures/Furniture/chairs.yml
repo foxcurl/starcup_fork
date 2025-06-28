@@ -1,0 +1,29 @@
+- type: entity
+  id: Armchair
+  parent: ChairBase
+  name: armchair
+  description: A big, comfy armchair.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: armchair
+
+- type: entity
+  id: ChairRetro
+  parent: StoolBase
+  name: retro chair
+  description: A retro-themed chair that swivels freely.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: retro_chair
+
+- type: entity
+  id: ChairDiner
+  parent: ChairBase
+  name: diner booth
+  description: A large diner booth seat.
+  components:
+  - type: Sprite
+    sprite: _Nuclear14/Structures/Furniture/chairs.rsi
+    state: diner_chair

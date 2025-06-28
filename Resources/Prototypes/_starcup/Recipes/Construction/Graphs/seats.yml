@@ -1,0 +1,74 @@
+- type: constructionGraph
+  id: Seat
+  start: start
+  graph:
+    - node: start
+      actions:
+        - !type:DestroyEntity {}
+      edges:
+        - to: armchair
+          steps:
+            - material: Steel
+              amount: 2
+            - material: Cloth
+              amount: 1
+              doAfter: 1
+        - to: chairRetro
+          steps:
+            - material: Steel
+              amount: 2
+            - material: Cloth
+              amount: 1
+              doAfter: 1
+        - to: chairDiner
+          steps:
+            - material: Steel
+              amount: 4
+            - material: Cloth
+              amount: 2
+              doAfter: 1
+
+    - node: armchair
+      entity: Armchair
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+            - !type:SpawnPrototype
+              prototype: MaterialCloth1
+              amount: 1
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: chairRetro
+      entity: ChairRetro
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 2
+            - !type:SpawnPrototype
+              prototype: MaterialCloth1
+              amount: 1
+          steps:
+            - tool: Screwing
+              doAfter: 1
+
+    - node: chairDiner
+      entity: ChairDiner
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype: SheetSteel1
+              amount: 4
+            - !type:SpawnPrototype
+              prototype: MaterialCloth1
+              amount: 2
+          steps:
+            - tool: Screwing
+              doAfter: 1

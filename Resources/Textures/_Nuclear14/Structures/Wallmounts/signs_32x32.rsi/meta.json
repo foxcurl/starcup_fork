@@ -8,41 +8,33 @@
   },
   "states": [
     {
-    "name": "open_on",
-	"delays": [
-		[
-			1,
-			1,
-			1,
-			1
-		]
-	]
-    },
-    {
-    "name": "rent"
-    },
-    {
     "name": "bar"
     },
     {
-    "name": "clinic"
+      "name": "open_flicker",
+	    "delays": [
+		    [
+			    1,
+			    1,
+			    1,
+			    1
+		    ]
+	    ]
     },
     {
-    "name": "open"
+    "name": "open_off"
     },
     {
-    "name": "open_bar"
+    "name": "open_on"
     },
     {
-    "name": "open_bar_on",
-	"delays": [
-		[
-			1,
-			1,
-			1,
-			1
-		]
-	]
+    "name": "open_tilted_flicker"
+    },
+    {
+    "name": "open_tilted_off"
+    },
+    {
+    "name": "open_tilted_on"
     }
   ]
 }

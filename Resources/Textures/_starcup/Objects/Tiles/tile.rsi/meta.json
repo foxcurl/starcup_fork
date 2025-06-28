@@ -1,0 +1,254 @@
+{
+  "version": 1,
+  "license": "CC-BY-NC-SA-3.0",
+  "copyright": "Made by foxcurl (github), based on tiles taken from Fortuna at commit/2a9408a47e2f83d945335e4feeeeafb552173e6f and concrete-bay taken from Baystation12 at commit https://github.com/Baystation12/Baystation12/commit/fe960417590b6a33b279464551b153b062a9d900. Additional attributions available in the Resources/Textures/_Nuclear14/Tiles/attributions.yml file.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "brick-horizontal"
+    },
+    {
+      "name": "brick-inhand-left"
+    },
+    {
+      "name": "brick-inhand-right"
+    },
+    {
+      "name": "brick-vertical"
+    },
+    {
+      "name": "carpet-blue-inhand-left"
+    },
+    {
+      "name": "carpet-blue-inhand-right"
+    },
+    {
+      "name": "carpet-blue"
+    },
+    {
+      "name": "carpet-fancy-blue"
+    },
+    {
+      "name": "carpet-fancy-green"
+    },
+    {
+      "name": "carpet-fancy-red"
+    },
+    {
+      "name": "carpet-fancy-violet"
+    },
+    {
+      "name": "carpet-green-inhand-left"
+    },
+    {
+      "name": "carpet-green-inhand-right"
+    },
+    {
+      "name": "carpet-green"
+    },
+    {
+      "name": "carpet-red-inhand-left"
+    },
+    {
+      "name": "carpet-red-inhand-right"
+    },
+    {
+      "name": "carpet-red"
+    },
+    {
+      "name": "carpet-violet-inhand-left"
+    },
+    {
+      "name": "carpet-violet-inhand-right"
+    },
+    {
+      "name": "carpet-violet"
+    },
+    {
+      "name": "concrete-bay-inhand-left"
+    },
+    {
+      "name": "concrete-bay-inhand-right"
+    },
+    {
+      "name": "concrete-bay"
+    },
+    {
+      "name": "concrete-inhand-left"
+    },
+    {
+      "name": "concrete-inhand-right"
+    },
+    {
+      "name": "concrete"
+    },
+    {
+      "name": "fancy-inhand-left"
+    },
+    {
+      "name": "fancy-inhand-right"
+    },
+    {
+      "name": "fancy"
+    },
+    {
+      "name": "metalblue-inhand-left"
+    },
+    {
+      "name": "metalblue-inhand-right"
+    },
+    {
+      "name": "metalblue"
+    },
+    {
+      "name": "metalbluesolid"
+    },
+    {
+      "name": "metalgreen-inhand-left"
+    },
+    {
+      "name": "metalgreen-inhand-right"
+    },
+    {
+      "name": "metalgreen"
+    },
+    {
+      "name": "metalgreensolid"
+    },
+    {
+      "name": "metalgrey-inhand-left"
+    },
+    {
+      "name": "metalgrey-inhand-right"
+    },
+    {
+      "name": "metalgrey"
+    },
+    {
+      "name": "metalgreysolid"
+    },
+    {
+      "name": "metallightblue-inhand-left"
+    },
+    {
+      "name": "metallightblue-inhand-right"
+    },
+    {
+      "name": "metallightblue"
+    },
+    {
+      "name": "metallightbluesolid"
+    },
+    {
+      "name": "metalpurple-inhand-left"
+    },
+    {
+      "name": "metalpurple-inhand-right"
+    },
+    {
+      "name": "metalpurple"
+    },
+    {
+      "name": "metalpurplesolid"
+    },
+    {
+      "name": "metalred-inhand-left"
+    },
+    {
+      "name": "metalred-inhand-right"
+    },
+    {
+      "name": "metalred"
+    },
+    {
+      "name": "metalredsolid"
+    },
+    {
+      "name": "metalteal-inhand-left"
+    },
+    {
+      "name": "metalteal-inhand-right"
+    },
+    {
+      "name": "metalteal"
+    },
+    {
+      "name": "metaltealsolid"
+    },
+    {
+      "name": "metalwhite-inhand-left"
+    },
+    {
+      "name": "metalwhite-inhand-right"
+    },
+    {
+      "name": "metalwhite"
+    },
+    {
+      "name": "metalwhitesolid"
+    },
+    {
+      "name": "metalyellow-inhand-left"
+    },
+    {
+      "name": "metalyellow-inhand-right"
+    },
+    {
+      "name": "metalyellow"
+    },
+    {
+      "name": "metalyellowsolid"
+    },
+    {
+      "name": "ornate-inhand-left"
+    },
+    {
+      "name": "ornate-inhand-right"
+    },
+    {
+      "name": "ornate"
+    },
+    {
+      "name": "sierra-inhand-left"
+    },
+    {
+      "name": "sierra-inhand-right"
+    },
+    {
+      "name": "sierra"
+    },
+    {
+      "name": "steel-grate-inhand-left"
+    },
+    {
+      "name": "steel-grate-inhand-right"
+    },
+    {
+      "name": "steel-grate"
+    },
+    {
+      "name": "wood-mosaic"
+    },
+    {
+      "name": "wood-dark-inhand-left"
+    },
+    {
+      "name": "wood-dark-inhand-right"
+    },
+    {
+      "name": "wood-fancy-inhand-left"
+    },
+    {
+      "name": "wood-fancy-inhand-right"
+    },
+    {
+      "name": "wood-fancy"
+    },
+    {
+      "name": "wood-wide"
+    }
+  ]
+}

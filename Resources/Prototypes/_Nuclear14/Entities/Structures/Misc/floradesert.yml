@@ -66,6 +66,7 @@
   - type: Sprite
     sprite: _Nuclear14/Structures/Misc/trees-ms.rsi
     state: bald
+    offset: 1,2
   - type: Fixtures
     fixtures:
       fix1:
@@ -86,6 +87,7 @@
     layers:
     - state: pine_1
       map: [ "tree" ]
+    offset: 1,2
   - type: RandomSprite
     available:
       - tree:
@@ -102,6 +104,7 @@
     layers:
     - state: dead_tree1
       map: [ "tree" ]
+    offset: 1,2 # starcup # TODO: finish comments lol
   - type: RandomSprite
     available:
       - tree:

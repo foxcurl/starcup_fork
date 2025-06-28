@@ -1,0 +1,514 @@
+# Table Decor: no collision, appears over tables.
+
+- type: entity # TODO: check list and determine what is actually needed for table and floor decors
+  id: StarcupDecorTableBase
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Decoration/scatters.rsi
+    netsync: false
+    noRot: true
+    drawdepth: SmallObjects
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Physics
+    bodyType: Static
+    canCollide: false
+  - type: Clickable
+  - type: InteractionOutline
+
+- type: entity
+  parent: StarcupDecorTableBase
+  id: StarcupDecorTableSteelBase # drops steel when destroyed, metal sounds
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Decoration/scatters.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy # TODO: change sound
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Paper:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: StarcupDecorTableBase
+  id: StarcupDecorTableGlassBase # drops glass shards when destroyed, glass sounds
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Decoration/scatters.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy # TODO: change sound
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Paper:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: StarcupDecorTableBase
+  id: StarcupDecorTablePaperBase # drops paper when destroyed, paper sounds
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Decoration/scatters.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy # TODO: change sound
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Paper:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: StarcupDecorTableBase
+  id: StarcupDecorTableCardboardBase # drops cardboard when destroyed, paper sounds
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Decoration/scatters.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy # TODO: change sound
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          cardboard:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: StarcupDecorTableBase
+  id: StarcupDecorTableStoneBase # drops nothing when destroyed, stone sounds
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Decoration/scatters.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy # TODO: change sound
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: StarcupDecorTableBase
+  id: StarcupDecorTableWoodBase
+  abstract: true
+  components:
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 125
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          WoodPlank:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+
+# Floor decor: meant for objects scattered about, appear under tables and most other things, no collision
+
+- type: entity
+  id: StarcupDecorFloorBase
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Decoration/scatters.rsi
+    netsync: false
+    noRot: true
+    drawdepth: FloorObjects
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+  - type: Physics
+    bodyType: Static
+    canCollide: false
+  - type: Clickable
+  - type: InteractionOutline
+
+- type: entity
+  parent: StarcupDecorFloorBase
+  id: StarcupDecorFloorSteelBase # drops steel when destroyed, metal sounds
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Decoration/scatters.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy # TODO: change sound
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Paper:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: StarcupDecorFloorBase
+  id: StarcupDecorFloorGlassBase # drops glass shards when destroyed, glass sounds
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Decoration/scatters.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy # TODO: change sound
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Paper:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: StarcupDecorFloorBase
+  id: StarcupDecorFloorPaperBase # drops paper when destroyed, paper sounds
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Decoration/scatters.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy # TODO: change sound
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Paper:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: StarcupDecorFloorBase
+  id: StarcupDecorFloorCardboardBase # drops cardboard when destroyed, paper sounds
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Decoration/scatters.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 25
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy # TODO: change sound
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          cardboard:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: StarcupDecorFloorBase
+  id: StarcupDecorFloorStoneBase # drops nothing when destroyed, stone sounds
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Structures/Decoration/scatters.rsi
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Rock
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy # TODO: change sound
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: StarcupDecorFloorBase
+  id: StarcupDecorFloorWoodBase
+  abstract: true
+  components:
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 125
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          WoodPlank:
+            min: 1
+            max: 2
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+
+# Structures: meant for large objects that can act as obstacles. has collision but can be climbed over
+
+- type: entity
+  id: StarcupDecorStructureBase
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Clickable
+  - type: Sprite
+    noRot: true
+    sprite: _starcup/Structures/Misc/Decoration/props.rsi
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.4
+        density: 80
+        layer:
+        - HalfWallLayer
+  - type: Climbable # TODO: make not climbable by default and just add this to structures we want to be climbabable
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 200
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+
+- type: entity
+  id: StarcupDecorStructureWoodBase
+  parent: StarcupDecorStructureBase
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          WoodPlank:
+            min: 4
+            max: 6
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  id: StarcupDecorStructureSteelBase
+  parent: StarcupDecorStructureBase
+  abstract: true
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Damageable
+    damageContainer: Inorganic
+    damageModifierSet: Wood # and this and for every other instance
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroy # TODO: change
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          Steel: # also fix this and every other instance
+            min: 4
+            max: 6
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
