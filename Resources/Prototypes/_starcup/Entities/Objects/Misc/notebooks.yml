@@ -235,7 +235,7 @@
   id: NotebookSpiralGray
   parent: NotebookSpiralBase
   name: gray spiral notebook
-  description: A gray spiral-bound notebook. Only for note-taking professionals.
+  description: A gray spiral-bound notebook with the greek letter Tau on the cover.
   components:
   - type: Sprite
     sprite: _starcup/Objects/Misc/notebooks.rsi
