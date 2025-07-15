@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "license": "CC0-1.0",
+  "copyright": "Original work by foxcurl (github).",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "composition-black-inhand-left"
+    },
+    {
+      "name": "composition-black-inhand-right"
+    },
+    {
+      "name": "composition-black"
+    },
+    {
+      "name": "composition-blue-inhand-left"
+    },
+    {
+      "name": "composition-blue-inhand-right"
+    },
+    {
+      "name": "composition-blue"
+    },
+    {
+      "name": "composition-green-inhand-left"
+    },
+    {
+      "name": "composition-green-inhand-right"
+    },
+    {
+      "name": "composition-green"
+    },
+    {
+      "name": "composition-pink-inhand-left"
+    },
+    {
+      "name": "composition-pink-inhand-right"
+    },
+    {
+      "name": "composition-pink"
+    },
+    {
+      "name": "composition-red-inhand-left"
+    },
+    {
+      "name": "composition-red-inhand-right"
+    },
+    {
+      "name": "composition-red"
+    },
+    {
+      "name": "composition-yellow-inhand-left"
+    },
+    {
+      "name": "composition-yellow-inhand-right"
+    },
+    {
+      "name": "composition-yellow"
+    },
+    {
+      "name": "notebook-random"
+    },
+    {
+      "name": "pocket-blue-inhand-left"
+    },
+    {
+      "name": "pocket-blue-inhand-right"
+    },
+    {
+      "name": "pocket-blue"
+    },
+    {
+      "name": "pocket-brown-inhand-left"
+    },
+    {
+      "name": "pocket-brown-inhand-right"
+    },
+    {
+      "name": "pocket-brown"
+    },
+    {
+      "name": "pocket-green-inhand-left"
+    },
+    {
+      "name": "pocket-green-inhand-right"
+    },
+    {
+      "name": "pocket-green"
+    },
+    {
+      "name": "spiral-beige-inhand-left"
+    },
+    {
+      "name": "spiral-beige-inhand-right"
+    },
+    {
+      "name": "spiral-beige"
+    },
+    {
+      "name": "spiral-cybersun-inhand-left"
+    },
+    {
+      "name": "spiral-cybersun-inhand-right"
+    },
+    {
+      "name": "spiral-cybersun"
+    },
+    {
+      "name": "spiral-gray-inhand-left"
+    },
+    {
+      "name": "spiral-gray-inhand-right"
+    },
+    {
+      "name": "spiral-gray"
+    },
+    {
+      "name": "spiral-interdyne-inhand-left"
+    },
+    {
+      "name": "spiral-interdyne-inhand-right"
+    },
+    {
+      "name": "spiral-interdyne"
+    },
+    {
+      "name": "spiral-nanotrasen-inhand-left"
+    },
+    {
+      "name": "spiral-nanotrasen-inhand-right"
+    },
+    {
+      "name": "spiral-nanotrasen"
+    },
+    {
+      "name": "spiral-purple-inhand-left"
+    },
+    {
+      "name": "spiral-purple-inhand-right"
+    },
+    {
+      "name": "spiral-purple"
+    },
+    {
+      "name": "spiral-teal-inhand-left"
+    },
+    {
+      "name": "spiral-teal-inhand-right"
+    },
+    {
+      "name": "spiral-teal"
+    }
+  ]
+}
