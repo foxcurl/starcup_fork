@@ -15,6 +15,9 @@
   - PlushieExperiment
   - PlushieSharkBlue
   - HandheldStationMap
+  # end starcup additions
+  - ThreeCandles
+  # begin starcup additions
   - BoxFolderClipboard
   - BoxFolderBlack
   - BoxFolderRed
@@ -31,7 +34,6 @@
   - NotebookSpiralTeal
   - NotebookCompositionBlack
   # end starcup additions
-  - ThreeCandles
   - Lighter
   - CigPackGreen
   - CigPackRed
