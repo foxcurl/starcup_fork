@@ -1,7 +1,7 @@
 ## mnk
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterWinterCoat # starcup: was ClothingOuterStorageBase
   id: ClothingOuterCoatMNKWhiteHoodie
   name: MNK white hoodie
   description: A classic MNK produced white hoodie.
@@ -10,11 +10,11 @@
     sprite: _DeltaV/Clothing/Misc/hoodie_white.rsi
   - type: Clothing
     sprite: _DeltaV/Clothing/Misc/hoodie_white.rsi
-  - type: TemperatureProtection
-    coefficient: 0.4
+  #- type: TemperatureProtection # starcup
+  #  coolingCoefficient: 0.4
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterWinterCoat # starcup: was ClothingOuterStorageBase
   id: ClothingOuterCoatMNKBlackTopCoat
   name: MNK black top coat
   description: A sturdy MNK black top coat.
@@ -23,11 +23,11 @@
     sprite: _DeltaV/Clothing/Misc/black_top_coat.rsi
   - type: Clothing
     sprite: _DeltaV/Clothing/Misc/black_top_coat.rsi
-  - type: TemperatureProtection
-    coefficient: 0.4
+  #- type: TemperatureProtection # starcup
+  #  coolingCoefficient: 0.4
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterWinterCoat # starcup: was ClothingOuterStorageBase
   id: ClothingOuterCoatMNKBlackJacket
   name: MNK black jacket
   description: A light MNK black jacket.
@@ -36,5 +36,5 @@
     sprite: _DeltaV/Clothing/Misc/black_jacket.rsi
   - type: Clothing
     sprite: _DeltaV/Clothing/Misc/black_jacket.rsi
-  - type: TemperatureProtection
-    coefficient: 0.2
+  #- type: TemperatureProtection # starcup
+  #  coolingCoefficient: 0.4
