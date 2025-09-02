@@ -1,0 +1,8 @@
+# pets
+
+- type: stealTargetGroup
+  id: PetSuppy
+  name: steal-target-groups-suppy
+  sprite:
+    sprite: Objects/Consumable/Food/Baked/cake.rsi
+    state: suppermatter

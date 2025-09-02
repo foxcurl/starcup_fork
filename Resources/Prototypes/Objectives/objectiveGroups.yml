@@ -112,6 +112,9 @@
     RenaultStealObjective: 1
     ShivaStealObjective: 1
     TropicoStealObjective: 1
+    # begin imp changes
+    PetSuppyStealObjective: 1
+    # end imp
 
 - type: weightedRandom
   id: ThiefObjectiveGroupEscape
