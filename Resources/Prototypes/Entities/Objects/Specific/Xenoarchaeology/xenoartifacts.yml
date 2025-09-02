@@ -49,6 +49,17 @@
       Flammable: [Touch]
       Extinguish: [Touch]
       Acidic: [Touch]
+  # imp edit start
+  - type: WarpPoint
+    blacklist:
+      tags:
+      - GhostOnlyWarp
+  - type: Tag
+    tags:
+    - GhostOnlyWarp
+  - type: NameIdentifier
+    group: Artifact
+  # imp edit end
 
 - type: entity
   parent: BaseAction
