@@ -5,7 +5,6 @@ using Content.Server.Chat.Systems;
 using Content.Server.Singularity.Components;
 using Content.Shared._EE.CCVar;
 using Content.Shared._EE.Supermatter.Components;
-using Content.Shared._Impstation.Thaven.Components;
 using Content.Shared.Atmos;
 using Content.Shared.Audio;
 using Content.Shared.Chat;
@@ -687,7 +686,7 @@ public sealed partial class SupermatterSystem
         mobLookup.RemoveWhere(x => HasComp<InsideEntityStorageComponent>(x));
 
         // Scramble the thaven shared mood
-        _moods.NewSharedMoods();
+        // _moods.NewSharedMoods(); // starcup: no thaven
 
         // Add post-delamination event scheduler
         var gamerule = _gameTicker.AddGameRule(sm.DelamGamerulePrototype);
@@ -710,8 +709,8 @@ public sealed partial class SupermatterSystem
             }
 
             // Scramble thaven moods
-            if (TryComp<ThavenMoodsComponent>(mob, out var moods))
-                _moods.RefreshMoods((mob, moods));
+            // if (TryComp<ThavenMoodsComponent>(mob, out var moods)) // starcup: no thaven
+            //    _moods.RefreshMoods((mob, moods));
 
             // Add effects to all mobs
             // TODO: change paracusia to actual hallucinations whenever those are real

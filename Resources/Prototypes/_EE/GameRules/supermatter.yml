@@ -17,8 +17,8 @@
     - id: PowerGridCheck
     - id: SolarFlare
     # teehee
-    - id: ChangelingAwakening
-    - id: GameRuleUristSwarm
+    - id: ChangelingAwakening # TODO: we dont have these lol but figure out other stuff thats nice
+    - id: GameRuleUristSwarm # no
     - id: GreytideVirus
     - id: ParadoxCloneSpawn
     # supermatter specials
