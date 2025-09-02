@@ -433,9 +433,9 @@
   - type: ExaminableClothing
     examineText: clothing-ce-hardsuit
   # end starcup
-  - type: ClothingGrantComponent
-    component:
-    - type: SupermatterImmune
+  #- type: ClothingGrantComponent # TODO: FIX CLOTHINGGRANTCOMPONENT ITS GOOB
+  #  component:
+  #  - type: SupermatterImmune
 
 #Chief Medical Officer's Hardsuit
 - type: entity
