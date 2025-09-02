@@ -265,6 +265,7 @@
     - MedicalBoardsStatic
     - EngineeringBoardsStatic
     - CircuitFloorsStatic
+    - SupermatterComputerCircuitboard # imp # TODO: add this to EngineeringBoardsStatic
     dynamicPacks:
     - EngineeringBoards
     - CargoBoards

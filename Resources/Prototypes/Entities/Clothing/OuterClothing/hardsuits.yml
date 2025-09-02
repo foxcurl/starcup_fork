@@ -424,6 +424,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitEngineeringWhite
+
   - type: Tag
     tags:
     - CorgiWearable
@@ -433,9 +434,12 @@
   - type: ExaminableClothing
     examineText: clothing-ce-hardsuit
   # end starcup
+  # begin imp edits
+  - type: SupermatterImmune
   #- type: ClothingGrantComponent # TODO: FIX CLOTHINGGRANTCOMPONENT ITS GOOB
   #  component:
   #  - type: SupermatterImmune
+  # end imp
 
 #Chief Medical Officer's Hardsuit
 - type: entity
