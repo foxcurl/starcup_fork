@@ -12,6 +12,10 @@
   - Psychologist # starcup: added unique access level
   extendedAccess:
   - Chemistry
+  special: # imp
+  - !type:AddComponentSpecial
+    components:
+    - type: SupermatterSoother
 
 - type: startingGear
   id: PsychologistGear
