@@ -1,1 +1,2 @@
-station-beacon-smengine = Supermatter Engine
+# Engineering
+station-beacon-smengine = Supermatter
