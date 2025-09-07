@@ -3,7 +3,6 @@ using Content.Server.Atmos.EntitySystems;
 using Content.Server.Atmos.Piping.Components;
 using Content.Server.Chat.Managers;
 using Content.Server.Chat.Systems;
-using Content.Server.DoAfter;
 using Content.Server.Examine;
 using Content.Server.Explosion.EntitySystems;
 using Content.Server.GameTicking;
@@ -49,7 +48,6 @@ public sealed partial class SupermatterSystem : EntitySystem
     [Dependency] private readonly AppearanceSystem _appearance = default!;
     [Dependency] private readonly AtmosphereSystem _atmosphere = default!;
     [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly DoAfterSystem _doAfter = default!;
     [Dependency] private readonly EntityLookupSystem _entityLookup = default!;
     [Dependency] private readonly ExamineSystem _examine = default!;
     [Dependency] private readonly ExplosionSystem _explosion = default!;
@@ -62,7 +60,6 @@ public sealed partial class SupermatterSystem : EntitySystem
     [Dependency] private readonly PointLightSystem _light = default!;
     [Dependency] private readonly PopupSystem _popup = default!;
     [Dependency] private readonly RadioSystem _radio = default!;
-    [Dependency] private readonly IRobustRandom _rand = default!;
     [Dependency] private readonly SharedAmbientSoundSystem _ambient = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedContainerSystem _container = default!;
@@ -83,7 +80,7 @@ public sealed partial class SupermatterSystem : EntitySystem
         SubscribeLocalEvent<SupermatterComponent, AtmosDeviceUpdateEvent>(OnSupermatterUpdated);
 
         SubscribeLocalEvent<SupermatterComponent, StartCollideEvent>(OnCollideEvent);
-        SubscribeLocalEvent<SupermatterComponent, EmbeddedEvent>(OnEmbedded);
+        // SubscribeLocalEvent<SupermatterComponent, EmbeddedEvent>(OnEmbedded); // starcup: test getting rid of this
         SubscribeLocalEvent<SupermatterComponent, InteractHandEvent>(OnHandInteract);
         SubscribeLocalEvent<SupermatterComponent, InteractUsingEvent>(OnItemInteract);
         SubscribeLocalEvent<SupermatterComponent, ExaminedEvent>(OnExamine);
@@ -144,10 +141,11 @@ public sealed partial class SupermatterSystem : EntitySystem
         TryCollision(uid, sm, args.OtherEntity, args.OtherBody);
     }
 
+    /*
     private void OnEmbedded(EntityUid uid, SupermatterComponent sm, ref EmbeddedEvent args)
     {
         TryCollision(uid, sm, args.Embedded, checkStatic: false);
-    }
+    } */ // starcup: test getting rid of this
 
     private void OnHandInteract(EntityUid uid, SupermatterComponent sm, ref InteractHandEvent args)
     {

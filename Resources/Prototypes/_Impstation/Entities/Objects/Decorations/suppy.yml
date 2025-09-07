@@ -2,7 +2,7 @@
   name: Suppy
   id: PetSuppy
   parent: StripableInventoryBase
-  suffix: steal target
+  suffix: Engineering's pet, steal target
   description: Engineering's pet suppermatter chunk. He dreams of causing station-wide destruction some day, but his bark is bigger than his bite.
   components:
   - type: Clickable
@@ -122,9 +122,6 @@
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
       collection: SupermatterAccentNormal
-  - type: MovementSpeedModifier
-    baseWalkSpeed: 0.1
-    baseSprintSpeed: 0.2
   - type: StealTarget
     stealGroup: PetSuppy
   - type: Tag
