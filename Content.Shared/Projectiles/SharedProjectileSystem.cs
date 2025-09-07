@@ -120,8 +120,13 @@ public abstract partial class SharedProjectileSystem : EntitySystem
 
         _audio.PlayPredicted(component.Sound, uid, null);
         component.EmbeddedIntoUid = target;
-        var ev = new EmbedEvent(user, target);
-        RaiseLocalEvent(uid, ref ev);
+        // Imp edits
+        var embedEv = new EmbedEvent(user, target);
+        RaiseLocalEvent(uid, ref embedEv);
+
+        var embeddedEv = new EmbeddedEvent(user, uid);
+        RaiseLocalEvent(target, ref embeddedEv);
+        // End imp edits
         Dirty(uid, component);
 
         EnsureComp<EmbeddedContainerComponent>(target, out var embeddedContainer);

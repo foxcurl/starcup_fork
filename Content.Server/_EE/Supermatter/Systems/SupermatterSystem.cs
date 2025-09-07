@@ -80,7 +80,7 @@ public sealed partial class SupermatterSystem : EntitySystem
         SubscribeLocalEvent<SupermatterComponent, AtmosDeviceUpdateEvent>(OnSupermatterUpdated);
 
         SubscribeLocalEvent<SupermatterComponent, StartCollideEvent>(OnCollideEvent);
-        // SubscribeLocalEvent<SupermatterComponent, EmbeddedEvent>(OnEmbedded); // starcup: test getting rid of this
+        SubscribeLocalEvent<SupermatterComponent, EmbeddedEvent>(OnEmbedded);
         SubscribeLocalEvent<SupermatterComponent, InteractHandEvent>(OnHandInteract);
         SubscribeLocalEvent<SupermatterComponent, InteractUsingEvent>(OnItemInteract);
         SubscribeLocalEvent<SupermatterComponent, ExaminedEvent>(OnExamine);
@@ -141,11 +141,10 @@ public sealed partial class SupermatterSystem : EntitySystem
         TryCollision(uid, sm, args.OtherEntity, args.OtherBody);
     }
 
-    /*
     private void OnEmbedded(EntityUid uid, SupermatterComponent sm, ref EmbeddedEvent args)
     {
         TryCollision(uid, sm, args.Embedded, checkStatic: false);
-    } */ // starcup: test getting rid of this
+    }
 
     private void OnHandInteract(EntityUid uid, SupermatterComponent sm, ref InteractHandEvent args)
     {

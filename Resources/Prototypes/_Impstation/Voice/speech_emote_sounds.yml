@@ -33,15 +33,17 @@
       path: /Audio/_EE/Supermatter/marauder.ogg
     Weh:
       collection: Weh
-    Wuhey:
-      collection: Wuhey
-    Ungh:
-      collection: Ungh
-    Blink:
-      collection: Blinks
-      params:
-        volume: -3
-        variation: 0
+    # begin starcup
+    #Wuhey:
+    #  collection: Wuhey
+    #Ungh:
+    #  collection: Ungh
+    #Blink:
+    #  collection: Blinks
+    #  params:
+    #    volume: -3
+    #    variation: 0
+    # end starcup
     Gasp:
       path: /Audio/_EE/Supermatter/charge.ogg
     DefaultDeathgasp:

@@ -88,8 +88,8 @@
     damage:
       types:
         Blunt: 25
-    soundHit:
-      collection: MetalThud
+  #  soundHit: # starcup
+  #    collection: MetalThud
   - type: StaminaDamageOnHit #if you launch suppy at someone, it'll bonk them bad and knock them on their ass
     damage: 100
   - type: Inventory
