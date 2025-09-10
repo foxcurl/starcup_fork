@@ -56,7 +56,7 @@
             # security
             SecurityCadet: [ 1, 1 ]
             SecurityOfficer: [ 1, 1 ]
-            CombatMedic: [ 1, 1 ]
+            Brigmedic: [ 1, 1 ]
             # cargo
             CargoTechnician: [ 1, 1 ]
             Courier: [ 1, 1 ]
