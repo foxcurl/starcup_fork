@@ -47,7 +47,7 @@
 - type: entity
   parent: FloorTileItemBaseStarcup
   id: FloorTileItemStarcupCarpetBlue
-  name: blue carpet
+  name: blue carpet floor
   components:
   - type: Sprite
     state: carpet-blue
@@ -63,7 +63,7 @@
 - type: entity
   parent: FloorTileItemBaseStarcup
   id: FloorTileItemStarcupCarpetFancyBlue
-  name: fancy blue carpet
+  name: fancy blue carpet floor
   components:
   - type: Sprite
     state: carpet-fancy-blue
@@ -79,7 +79,7 @@
 - type: entity
   parent: FloorTileItemBaseStarcup
   id: FloorTileItemStarcupCarpetDiamondBlue
-  name: diamond-pattern blue carpet
+  name: diamond-pattern blue carpet floor
   components:
   - type: Sprite
     state: carpet-diamond-blue
@@ -95,7 +95,7 @@
 - type: entity
   parent: FloorTileItemBaseStarcup
   id: FloorTileItemStarcupCarpetGreen
-  name: green carpet
+  name: green carpet floor
   components:
   - type: Sprite
     state: carpet-green
@@ -111,7 +111,7 @@
 - type: entity
   parent: FloorTileItemBaseStarcup
   id: FloorTileItemStarcupCarpetDiamondGreen
-  name: diamond-pattern green carpet
+  name: diamond-pattern green carpet floor
   components:
   - type: Sprite
     state: carpet-diamond-green
@@ -127,7 +127,7 @@
 - type: entity
   parent: FloorTileItemBaseStarcup
   id: FloorTileItemStarcupCarpetOrange
-  name: amber carpet
+  name: amber carpet floor
   components:
   - type: Sprite
     state: carpet-amber
@@ -143,7 +143,7 @@
 - type: entity
   parent: FloorTileItemBaseStarcup
   id: FloorTileItemStarcupCarpetDiamondOrange
-  name: diamond-pattern amber carpet
+  name: diamond-pattern amber carpet floor
   components:
   - type: Sprite
     state: carpet-diamond-amber
@@ -159,7 +159,7 @@
 - type: entity
   parent: FloorTileItemBaseStarcup
   id: FloorTileItemStarcupCarpetRed
-  name: red carpet
+  name: red carpet floor
   description: For the stars.
   components:
   - type: Sprite
@@ -176,7 +176,7 @@
 - type: entity
   parent: FloorTileItemBaseStarcup
   id: FloorTileItemStarcupCarpetFancyRed
-  name: fancy red carpet
+  name: fancy red carpet floor
   description: For the real stars.
   components:
   - type: Sprite
@@ -193,7 +193,7 @@
 - type: entity
   parent: FloorTileItemBaseStarcup
   id: FloorTileItemStarcupCarpetDiamondRed
-  name: diamond-pattern red carpet
+  name: diamond-pattern red carpet floor
   components:
   - type: Sprite
     state: carpet-diamond-red
@@ -209,7 +209,7 @@
 - type: entity
   parent: FloorTileItemBaseStarcup
   id: FloorTileItemStarcupCarpetViolet
-  name: violet carpet
+  name: violet carpet floor
   components:
   - type: Sprite
     state: carpet-violet
@@ -225,7 +225,7 @@
 - type: entity
   parent: FloorTileItemBaseStarcup
   id: FloorTileItemStarcupCarpetFancyViolet
-  name: fancy violet carpet
+  name: fancy violet carpet floor
   components:
   - type: Sprite
     state: carpet-fancy-violet
@@ -241,7 +241,7 @@
 - type: entity
   parent: FloorTileItemBaseStarcup
   id: FloorTileItemStarcupCarpetDiamondViolet
-  name: diamond-pattern violet carpet
+  name: diamond-pattern violet carpet floor
   components:
   - type: Sprite
     state: carpet-diamond-violet

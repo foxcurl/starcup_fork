@@ -3,22 +3,22 @@ stack-starcup-floor-brick-horizontal = horizontal astro-brick
 stack-starcup-floor-brick-vertical = vertical astro-brick
 
 # carpet
-stack-starcup-carpet-blue = blue carpet
-stack-starcup-carpet-blue-diamond = diamond-pattern blue carpet
-stack-starcup-carpet-blue-fancy = fancy blue carpet
-stack-starcup-carpet-gingham = gingham carpet
-stack-starcup-carpet-green = green carpet
-stack-starcup-carpet-green-diamond = diamond-pattern green carpet
-stack-starcup-carpet-memphis = memphis
-stack-starcup-carpet-orange = amber carpet
-stack-starcup-carpet-orange-diamond = diamond-pattern amber carpet
-stack-starcup-carpet-red = red carpet
-stack-starcup-carpet-red-diamond = diamond-pattern red carpet
-stack-starcup-carpet-red-fancy = fancy red carpet
-stack-starcup-carpet-violet = violet carpet
-stack-starcup-carpet-violet-diamond = diamond-pattern violet carpet
-stack-starcup-carpet-violet-fancy = fancy violet carpet
-stack-starcup-carpet-shag-white = white shag carpet
+stack-starcup-carpet-blue = blue carpet floor
+stack-starcup-carpet-blue-diamond = diamond-pattern blue carpet floor
+stack-starcup-carpet-blue-fancy = fancy blue carpet floor
+stack-starcup-carpet-gingham = gingham carpet floor
+stack-starcup-carpet-green = green carpet floor
+stack-starcup-carpet-green-diamond = diamond-pattern green carpet floor
+stack-starcup-carpet-memphis = memphis carpet floor
+stack-starcup-carpet-orange = amber carpet floor
+stack-starcup-carpet-orange-diamond = diamond-pattern amber carpet floor
+stack-starcup-carpet-red = red carpet floor
+stack-starcup-carpet-red-diamond = diamond-pattern red carpet floor
+stack-starcup-carpet-red-fancy = fancy red carpet floor
+stack-starcup-carpet-violet = violet carpet floor
+stack-starcup-carpet-violet-diamond = diamond-pattern violet carpet floor
+stack-starcup-carpet-violet-fancy = fancy violet carpet floor
+stack-starcup-carpet-shag-white = white shag carpet floor
 
 # wood
 stack-starcup-floor-wood-brick = brick-pattern wood floor
