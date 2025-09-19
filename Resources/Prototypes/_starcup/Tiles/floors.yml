@@ -1,3 +1,25 @@
+# Base Prototypes
+
+- type: tile
+  id: FloorStarcupCarpetBase
+  abstract: true
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepCarpet
+  heatCapacity: 10000
+
+- type: tile
+  id: FloorMetalBase
+  abstract: true
+  baseTurf: Plating
+  isSubfloor: false
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepPlating
+  heatCapacity: 10000
+
 # Bricks
 - type: tile
   id: FloorTileBrickHorizontal
@@ -29,363 +51,218 @@
 
 # Carpet
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetBlue
   name: blue carpet
   sprite: /Textures/_starcup/Tiles/carpet_blue.png
   variants: 4
   placementVariants: [0, 1, 2, 3]
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepCarpet
   itemDrop: FloorTileItemStarcupCarpetBlue
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetDiamondBlue
   name: diamond-pattern blue carpet
   sprite: /Textures/_starcup/Tiles/carpet_diamond_blue.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepCarpet
   itemDrop: FloorTileItemStarcupCarpetDiamondBlue
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetFancyBlue
   name: fancy blue carpet
   sprite: /Textures/_starcup/Tiles/carpet_fancy_blue.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepCarpet
   itemDrop: FloorTileItemStarcupCarpetFancyBlue
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetGreen
   name: green carpet
   sprite: /Textures/_starcup/Tiles/carpet_green.png
   variants: 4
   placementVariants: [0, 1, 2, 3]
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepCarpet
   itemDrop: FloorTileItemStarcupCarpetGreen
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetDiamondGreen
   name: diamond-pattern green carpet
   sprite: /Textures/_starcup/Tiles/carpet_diamond_green.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepCarpet
   itemDrop: FloorTileItemStarcupCarpetDiamondGreen
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetOrange
   name: amber carpet
   sprite: /Textures/_starcup/Tiles/carpet_amber.png
   variants: 4
   placementVariants: [0, 1, 2, 3]
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepCarpet
   itemDrop: FloorTileItemStarcupCarpetOrange
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetDiamondOrange
   name: diamond-pattern amber carpet
   sprite: /Textures/_starcup/Tiles/carpet_diamond_amber.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepCarpet
   itemDrop: FloorTileItemStarcupCarpetDiamondOrange
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetRed
   name: red carpet
   sprite: /Textures/_starcup/Tiles/carpet_red.png
   variants: 4
   placementVariants: [0, 1, 2, 3]
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepCarpet
   itemDrop: FloorTileItemStarcupCarpetRed
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetDiamondRed
   name: diamond-pattern red carpet
   sprite: /Textures/_starcup/Tiles/carpet_diamond_red.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepCarpet
   itemDrop: FloorTileItemStarcupCarpetDiamondRed
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetFancyRed
   name: fancy red carpet
   sprite: /Textures/_starcup/Tiles/carpet_fancy_red.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepCarpet
   itemDrop: FloorTileItemStarcupCarpetFancyRed
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetViolet
   name: violet carpet
   sprite: /Textures/_starcup/Tiles/carpet_violet.png
   variants: 4
   placementVariants: [0, 1, 2, 3]
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepCarpet
   itemDrop: FloorTileItemStarcupCarpetViolet
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetDiamondViolet
   name: diamond-pattern violet carpet
   sprite: /Textures/_starcup/Tiles/carpet_diamond_violet.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepCarpet
   itemDrop: FloorTileItemStarcupCarpetDiamondViolet
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorStarcupCarpetBase
   id: FloorStarcupCarpetFancyViolet
   name: fancy violet carpet
   sprite: /Textures/_starcup/Tiles/carpet_fancy_violet.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepCarpet
   itemDrop: FloorTileItemStarcupCarpetFancyViolet
-  heatCapacity: 10000
 
 # Metal Tiles
 - type: tile
   id: FloorMetalBlue
+  parent: FloorMetalBase
   name: blue metal tile
   sprite: /Textures/_starcup/Tiles/metalblue.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalBlue
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalBlueSolid
   name: solid blue metal tile
   sprite: /Textures/_starcup/Tiles/metalbluesolid.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalBlueSolid
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalGreen
   name: green metal tile
   sprite: /Textures/_starcup/Tiles/metalgreen.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalGreen
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalGreenSolid
   name: solid green metal tile
   sprite: /Textures/_starcup/Tiles/metalgreensolid.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalGreenSolid
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalGray
   name: gray metal tile
   sprite: /Textures/_starcup/Tiles/metalgray.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalGray
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalGraySolid
   name: solid gray metal tile
   sprite: /Textures/_starcup/Tiles/metalgraysolid.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalGraySolid
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalOrange
   name: amber metal tile
   sprite: /Textures/_starcup/Tiles/metalamber.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalOrange
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalOrangeSolid
   name: solid amber metal tile
   sprite: /Textures/_starcup/Tiles/metalambersolid.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalOrangeSolid
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalPurple
   name: purple metal tile
   sprite: /Textures/_starcup/Tiles/metalpurple.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalPurple
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalPurpleSolid
   name: solid purple metal tile
   sprite: /Textures/_starcup/Tiles/metalpurplesolid.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalPurpleSolid
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalRed
   name: red metal tile
   sprite: /Textures/_starcup/Tiles/metalred.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalRed
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalRedSolid
   name: solid red metal tile
   sprite: /Textures/_starcup/Tiles/metalredsolid.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalRedSolid
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalTeal
   name: teal metal tile
   sprite: /Textures/_starcup/Tiles/metalteal.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalTeal
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalTealSolid
   name: solid teal metal tile
   sprite: /Textures/_starcup/Tiles/metaltealsolid.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalTealSolid
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalWhite
   name: white metal tile
   sprite: /Textures/_starcup/Tiles/metalwhite.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalWhite
-  heatCapacity: 10000
 
 - type: tile
+  parent: FloorMetalBase
   id: FloorMetalWhiteSolid
   name: solid white metal tile
   sprite: /Textures/_starcup/Tiles/metalwhitesolid.png
-  baseTurf: Plating
-  isSubfloor: false
-  deconstructTools: [ Prying ]
-  footstepSounds:
-    collection: FootstepPlating
   itemDrop: FloorTileItemMetalWhiteSolid
-  heatCapacity: 10000
 
 # Misc
 - type: tile
