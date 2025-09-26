@@ -43,3 +43,5 @@
     entries: # starcup: use upstream vent critter spawn
     - id: MobMothroach
       prob: 0.05
+    - id: MobMoproach # starcup: add moproach chance
+      prob: 0.002
