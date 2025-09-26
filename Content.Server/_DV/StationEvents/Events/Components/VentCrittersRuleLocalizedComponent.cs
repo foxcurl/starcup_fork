@@ -5,8 +5,8 @@ using Robust.Shared.Map; // DeltaV
 
 namespace Content.Server.StationEvents.Components;
 
-[RegisterComponent, Access(typeof(VentCrittersRuleDangerous))] // starcup: VentCrittersRule -> VentCrittersRuleDangerous
-public sealed partial class VentCrittersRuleDangerousComponent : Component // starcup: VentCrittersRule -> VentCrittersRuleDangerous
+[RegisterComponent, Access(typeof(VentCrittersRuleLocalized))] // starcup: VentCrittersRule -> VentCrittersRuleLocalized
+public sealed partial class VentCrittersRuleLocalizedComponent : Component // starcup: VentCrittersRule -> VentCrittersRuleLocalized
 {
     // DeltaV: Replaced by Table
     //[DataField("entries")]

@@ -16,9 +16,9 @@ namespace Content.Server.StationEvents.Events;
 /// This gives players time to run away and let sec do their job.
 /// </summary>
 /// <remarks>
-/// starcup: DeltaV modified the upstream file but we want both event variants, so DeltaV's VentCrittersRule -> VentCrittersRuleDangerous and is moved here
+/// starcup: DeltaV modified the upstream file but we want both event variants, so DeltaV's VentCrittersRule -> VentCrittersRuleLocalized and is moved here
 /// </remarks>
-public sealed class VentCrittersRuleDangerous : StationEventSystem<VentCrittersRuleDangerousComponent> // starcup: VentCrittersRule -> VentCrittersRuleDangerous
+public sealed class VentCrittersRuleLocalized : StationEventSystem<VentCrittersRuleLocalizedComponent> // starcup: VentCrittersRule -> VentCrittersRuleLocalized
 {
     /*
      * DO NOT COPY PASTE THIS TO MAKE YOUR MOB EVENT.
@@ -33,7 +33,7 @@ public sealed class VentCrittersRuleDangerous : StationEventSystem<VentCrittersR
 
     private List<EntityCoordinates> _locations = new();
 
-    protected override void Added(EntityUid uid, VentCrittersRuleDangerousComponent comp, GameRuleComponent gameRule, GameRuleAddedEvent args) // starcup: VentCrittersRule -> VentCrittersRuleDangerous
+    protected override void Added(EntityUid uid, VentCrittersRuleLocalizedComponent comp, GameRuleComponent gameRule, GameRuleAddedEvent args) // starcup: VentCrittersRule -> VentCrittersRuleLocalized
     {
         PickLocation(comp);
         if (comp.Location is not {} coords)
@@ -52,7 +52,7 @@ public sealed class VentCrittersRuleDangerous : StationEventSystem<VentCrittersR
         base.Added(uid, comp, gameRule, args);
     }
 
-    protected override void Ended(EntityUid uid, VentCrittersRuleDangerousComponent comp, GameRuleComponent gameRule, GameRuleEndedEvent args) // starcup: VentCrittersRule -> VentCrittersRuleDangerous
+    protected override void Ended(EntityUid uid, VentCrittersRuleLocalizedComponent comp, GameRuleComponent gameRule, GameRuleEndedEvent args) // starcup: VentCrittersRule -> VentCrittersRuleLocalized
     {
         base.Ended(uid, comp, gameRule, args);
 
@@ -80,12 +80,12 @@ public sealed class VentCrittersRuleDangerous : StationEventSystem<VentCrittersR
         Spawn(specialEntry.PrototypeId, coords);
     }
 
-    private void PickLocation(VentCrittersRuleDangerousComponent comp) // starcup: VentCrittersRule -> VentCrittersRuleDangerous
+    private void PickLocation(VentCrittersRuleLocalizedComponent comp) // starcup: VentCrittersRule -> VentCrittersRuleLocalized
     {
         if (!TryGetRandomStation(out var station))
             return;
 
-        var locations = EntityQueryEnumerator<VentCritterSpawnLocationComponent, TransformComponent>(); // starcup: VentCrittersRule -> VentCrittersRuleDangerous
+        var locations = EntityQueryEnumerator<VentCritterSpawnLocationComponent, TransformComponent>(); // starcup: VentCrittersRule -> VentCrittersRuleLocalized
         _locations.Clear();
         while (locations.MoveNext(out var uid, out var spawnLocation, out var transform)) // Den: check if spawnlocation allows spawns
         {

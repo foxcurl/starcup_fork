@@ -1,5 +1,5 @@
 - type: entity
-  id: XenoVents
+  id: XenoVentsLocalized # starcup: split DeltaV and upstream vent critter events
   parent: BaseGameRule
   components:
   - type: StationEvent
@@ -7,10 +7,10 @@
     #startAudio: # starcup: use standard announcement
     #  path: /Audio/Announcements/aliens.ogg
     earliestStart: 45
-    minimumPlayers: 15 # starcup: 20 -> 15 to match most other hostile vent critters. hopefully being rare offsets the difficulty
+    minimumPlayers: 20
     weight: 1
     duration: 30
-  - type: VentCrittersRuleDangerous # starcup: split DeltaV and upstream vent critter events
+  - type: VentCrittersRuleLocalized # starcup: split DeltaV and upstream vent critter events
     table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
       children:
       - id: MobXeno
@@ -31,7 +31,7 @@
         weight: 0.01
 
 - type: entity
-  id: MothroachSpawn
+  id: MothroachSpawnLocalized # starcup: split DeltaV and upstream vent critter events
   parent: BaseGameRule
   components:
   - type: StationEvent
@@ -39,9 +39,6 @@
     minimumPlayers: 5 # starcup: 15 -> 5
     weight: 4
     duration: 30
-  - type: VentCrittersRule
-    entries: # starcup: use upstream vent critter spawn
-    - id: MobMothroach
-      prob: 0.05
-    - id: MobMoproach # starcup: add moproach chance
-      prob: 0.002
+  - type: VentCrittersRuleLocalized # starcup: split DeltaV and upstream vent critter events
+    table: # DeltaV: EntityTable instead of spawn entries
+      id: MobMothroach
