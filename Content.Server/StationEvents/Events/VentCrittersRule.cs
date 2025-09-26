@@ -87,9 +87,9 @@ public sealed class VentCrittersRule : StationEventSystem<VentCrittersRuleCompon
 
         var locations = EntityQueryEnumerator<VentCritterSpawnLocationComponent, TransformComponent>();
         _locations.Clear();
-        while (locations.MoveNext(out var uid, out _, out var transform))
+        while (locations.MoveNext(out var uid, out var spawnLocation, out var transform))
         {
-            if (CompOrNull<StationMemberComponent>(transform.GridUid)?.Station == station)
+            if (CompOrNull<StationMemberComponent>(transform.GridUid)?.Station == station && spawnLocation.CanSpawn)
             {
                 _locations.Add(transform.Coordinates);
             }
