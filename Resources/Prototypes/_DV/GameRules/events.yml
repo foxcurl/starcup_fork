@@ -3,9 +3,9 @@
   parent: BaseGameRule
   components:
   - type: StationEvent
-    startAnnouncement: station-event-xeno-vent-start-announcement
-    startAudio:
-      path: /Audio/Announcements/aliens.ogg
+    #startAnnouncement: station-event-xeno-vent-start-announcement # starcup: use standard announcement
+    #startAudio: # starcup: use standard announcement
+    #  path: /Audio/Announcements/aliens.ogg
     earliestStart: 45
     minimumPlayers: 15 # starcup: 20 -> 15 to match most other hostile vent critters. hopefully being rare offsets the difficulty
     weight: 1
