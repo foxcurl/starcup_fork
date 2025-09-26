@@ -428,13 +428,11 @@
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
   - type: VentCrittersRule
-    entries:
-    - id: MobAdultSlimesBlueAngry
-      prob: 0.01 # starcup: 0.02 -> 0.01 to reduce the number of hostile creatures spawned
-    - id: MobAdultSlimesGreenAngry
-      prob: 0.01 # starcup: 0.02 -> 0.01 to reduce the number of hostile creatures spawned
-    - id: MobAdultSlimesYellowAngry
-      prob: 0.01 # starcup: 0.02 -> 0.01 to reduce the number of hostile creatures spawned
+    table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
+      children:
+      - id: MobAdultSlimesBlueAngry
+      - id: MobAdultSlimesGreenAngry
+      - id: MobAdultSlimesYellowAngry
 
 - type: entity
   id: SnakeSpawn
@@ -449,13 +447,11 @@
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
   - type: VentCrittersRule
-    entries:
-    - id: MobPurpleSnake
-      prob: 0.01 # starcup: 0.02 -> 0.01 to reduce the number of hostile creatures spawned
-    - id: MobSmallPurpleSnake
-      prob: 0.01 # starcup: 0.02 -> 0.01 to reduce the number of hostile creatures spawned
-    - id: MobCobraSpace
-      prob: 0.01 # starcup: 0.02 -> 0.01 to reduce the number of hostile creatures spawned
+    table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
+      children:
+      - id: MobPurpleSnake
+      - id: MobSmallPurpleSnake
+      - id: MobCobraSpace
 
 - type: entity
   id: SpiderSpawn
@@ -470,9 +466,8 @@
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
   - type: VentCrittersRule
-    entries:
-    - id: MobGiantSpiderAngry
-      prob: 0.025 # starcup: 0.05 -> 0.025 to reduce the number of hostile creatures spawned
+    table: # DeltaV: EntityTable instead of spawn entries
+      id: MobGiantSpiderAngry
 
 - type: entity
   id: SpiderClownSpawn
@@ -488,9 +483,8 @@
     duration: 30 # DeltaV: was 60, used as a delay now
   - type: VentCrittersRule
     playerRatio: 35 # DeltaV: Clown spiders are very robust
-    entries:
-    - id: MobClownSpider
-      prob: 0.025 # starcup: 0.05 -> 0.025 to reduce the number of hostile creatures spawned
+    table: # DeltaV: EntityTable instead of spawn entries
+      id: MobClownSpider
 
 - type: entity
   id: ZombieOutbreak
