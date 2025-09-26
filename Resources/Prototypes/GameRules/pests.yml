@@ -92,10 +92,13 @@
     duration: 30 # DeltaV: was 50, used as a delay now
   - type: VentCrittersRule
     table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
-      children:
+      children: # starcup: add weights
       - id: MobSnail
+        weight: 0.92
       - id: MobSnailSpeed
+        weight: 0.04
       - id: MobSnailMoth
+        weight: 0.04
 
 - type: entity
   id: SnailMigration

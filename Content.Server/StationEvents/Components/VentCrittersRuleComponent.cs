@@ -46,5 +46,5 @@ public sealed partial class VentCrittersRuleComponent : Component
     /// DeltaV: Min and max get multiplied by the player count then divided by this.
     /// </summary>
     [DataField]
-    public int PlayerRatio = 25;
+    public int PlayerRatio = 15; // starcup: 25 -> 15 for our lower pop and slower rate of events
 }
