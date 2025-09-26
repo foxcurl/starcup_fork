@@ -427,7 +427,7 @@
     minimumPlayers: 15
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
-  - type: VentCrittersRule
+  - type: VentCrittersRuleDangerous # starcup: split DeltaV and upstream vent critter events
     table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
       children:
       - id: MobAdultSlimesBlueAngry
@@ -446,7 +446,7 @@
     minimumPlayers: 15
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
-  - type: VentCrittersRule
+  - type: VentCrittersRuleDangerous # starcup: split DeltaV and upstream vent critter events
     table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
       children:
       - id: MobPurpleSnake
@@ -465,7 +465,7 @@
     minimumPlayers: 15
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
-  - type: VentCrittersRule
+  - type: VentCrittersRuleDangerous # starcup: split DeltaV and upstream vent critter events
     table: # DeltaV: EntityTable instead of spawn entries
       id: MobGiantSpiderAngry
 
@@ -481,7 +481,7 @@
     minimumPlayers: 20
     weight: 1.5
     duration: 30 # DeltaV: was 60, used as a delay now
-  - type: VentCrittersRule
+  - type: VentCrittersRuleDangerous # starcup: split DeltaV and upstream vent critter events
     playerRatio: 35 # DeltaV: Clown spiders are very robust
     table: # DeltaV: EntityTable instead of spawn entries
       id: MobClownSpider

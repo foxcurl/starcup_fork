@@ -10,7 +10,7 @@
     minimumPlayers: 15 # starcup: 20 -> 15 to match most other hostile vent critters. hopefully being rare offsets the difficulty
     weight: 1
     duration: 30
-  - type: VentCrittersRule
+  - type: VentCrittersRuleDangerous # starcup: split DeltaV and upstream vent critter events
     table: !type:GroupSelector # DeltaV: EntityTable instead of spawn entries
       children:
       - id: MobXeno
@@ -40,5 +40,6 @@
     weight: 4
     duration: 30
   - type: VentCrittersRule
-    table: # DeltaV: EntityTable instead of spawn entries
-      id: MobMothroach
+    entries: # starcup: use upstream vent critter spawn
+    - id: MobMothroach
+      prob: 0.05
