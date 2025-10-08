@@ -1,17 +1,12 @@
 - type: construction
-  name: floor light
   id: PoweredFloorLightEmpty
   graph: FloorLightFixture
   startNode: start
-  targetNode: metamorphicLightHole
+  targetNode: floorLight
   category: construction-category-structures
-  description: A floor light fixture. Insert tube and watch the metamorphic hole take shape.
-  icon:
-    sprite: _Impstation/Structures/Lighting/floorlights.rsi
-    state: empty
   objectType: Structure
   placementMode: SnapgridCenter
-  canRotate: true
+  canRotate: false
   canBuildInImpassable: false
   conditions:
   - !type:TileNotBlocked
