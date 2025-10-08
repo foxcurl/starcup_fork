@@ -89,48 +89,47 @@
     sound:
       path: /Audio/Ambience/Objects/light_hum.ogg
 
-# UNCOMMENT AFTER THE OTHER PR IS MERGED
 # warm
-#- type: entity
-#  id: PoweredFloorLightWarm
-#  suffix: Warm
-#  parent: PoweredFloorLight
-#  components:
-#  - type: PoweredLight
-#    hasLampOnSpawn: LightTubeWarm
-#  - type: PointLight
-#    radius: 10
-#    energy: 2
-#    softness: 2
-#    color: "#FF8A0C"
+- type: entity
+  id: PoweredFloorLightWarm
+  suffix: Warm
+  parent: PoweredFloorLight
+  components:
+  - type: PoweredLight
+    hasLampOnSpawn: LightTubeWarm
+  - type: PointLight
+    radius: 10
+    energy: 2
+    softness: 2
+    color: "#FF8A0C"
 
 # cold
-#- type: entity
-#  id: PoweredFloorLightCold
-#  suffix: Cold
-#  parent: PoweredFloorLight
-#  components:
-#  - type: PoweredLight
-#    hasLampOnSpawn: LightTubeCold
-#  - type: PointLight
-#    radius: 10
-#   energy: 2
-#    softness: 2
-#    color: "#BFD3FF" # 12000K
+- type: entity
+  id: PoweredFloorLightCold
+  suffix: Cold
+  parent: PoweredFloorLight
+  components:
+  - type: PoweredLight
+    hasLampOnSpawn: LightTubeCold
+  - type: PointLight
+    radius: 10
+    energy: 2
+    softness: 2
+    color: "#BFD3FF" # 12000K
 
 # violet
-#- type: entity
-#  id: PoweredFloorLightViolet
-#  suffix: Violet
-#  parent: PoweredFloorLight
-#  components:
-#  - type: PoweredLight
-#    hasLampOnSpawn: LightTubeViolet
-#  - type: PointLight
-#    radius: 8
-#    energy: 2
-#    softness: 2
-#    color: "#5D0CED"
+- type: entity
+  id: PoweredFloorLightViolet
+  suffix: Violet
+  parent: PoweredFloorLight
+  components:
+  - type: PoweredLight
+    hasLampOnSpawn: LightTubeViolet
+  - type: PointLight
+    radius: 8
+    energy: 2
+    softness: 2
+    color: "#5D0CED"
 
 # LED
 - type: entity
