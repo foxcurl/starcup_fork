@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Created by Jellvisk.",
+  "copyright": "Created by Jellvisk, modified by foxcurl (Github)",
   "size": {
     "x": 32,
     "y": 32
@@ -21,87 +21,6 @@
     },
     {
       "name": "baseGlow"
-    },
-    {
-      "name": "blue"
-    },
-    {
-      "name": "blueGlow"
-    },
-    {
-      "name": "cyan"
-    },
-    {
-      "name": "cyanGlow"
-    },
-    {
-      "name": "green"
-    },
-    {
-      "name": "greenGlow"
-    },
-    {
-      "name": "pink"
-    },
-    {
-      "name": "pinkGlow"
-    },
-    {
-      "name": "red"
-    },
-    {
-      "name": "redGlow"
-    },
-    {
-      "name": "orange"
-    },
-    {
-      "name": "orangeGlow"
-    },
-    {
-      "name": "yellow"
-    },
-    {
-      "name": "yellowGlow"
-    },
-    {
-      "name": "black"
-    },
-    {
-      "name": "blackGlow"
-    },
-    {
-      "name": "led"
-    },
-    {
-      "name": "ledGlow"
-    },
-    {
-      "name": "exterior"
-    },
-    {
-      "name": "exteriorGlow"
-    },
-    {
-      "name": "sodium"
-    },
-    {
-      "name": "sodiumGlow"
-    },
-    {
-      "name": "old"
-    },
-    {
-      "name": "oldGlow"
-    },
-    {
-      "name": "uv"
-    },
-    {
-      "name": "uvGlow"
-    },
-    {
-      "name": "sun"
     }
   ]
 }
