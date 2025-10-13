@@ -35,8 +35,8 @@
         - MobMask
         layer:
         - MobLayer
-  - type: AshOnMeleeHit
-    popup: ash-on-melee-smspider
+  #- type: AshOnMeleeHit # starcup: no AshOnMeleeHit
+  #  popup: ash-on-melee-smspider
   - type: Damageable
     damageContainer: StructuralInorganic
   - type: Destructible
@@ -144,8 +144,19 @@
           collection: GlassBreak
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: AshOnMeleeHit
-    singleUse: false
+  # begin starcup: no AshOnMeleeHit, make dangerous in other ways
+  #- type: AshOnMeleeHit
+  #  singleUse: false
+  - type: MeleeWeapon
+    hidden: true
+    damage:
+      types:
+        Piercing: 6
+        Radiation: 15
+  - type: RadiationSource
+    intensity: 5
+    slope: 0.3
+  # end starcup
   - type: MobThresholds
     thresholds:
       0: Alive
