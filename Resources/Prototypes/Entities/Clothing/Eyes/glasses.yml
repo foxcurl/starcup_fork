@@ -71,9 +71,9 @@
     tags:
     - PetWearable
     - WhitelistChameleon
-  #- type: ClothingGrantComponent # imp # STARCUP: COTHINGGRANTCOMPONENT BROKEN (DNE)
-  #  component:
-  #  - type: SupermatterHallucinationImmune
+  - type: ClothingGrantComponent # imp
+    component:
+    - type: SupermatterHallucinationImmune
 
 - type: entity
   parent: ClothingEyesBase

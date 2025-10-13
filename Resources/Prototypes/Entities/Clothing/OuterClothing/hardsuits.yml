@@ -436,9 +436,9 @@
   # end starcup
   # begin imp edits
   - type: SupermatterImmune
-  #- type: ClothingGrantComponent # TODO: FIX CLOTHINGGRANTCOMPONENT ITS GOOB
-  #  component:
-  #  - type: SupermatterImmune
+  - type: ClothingGrantComponent
+    component:
+    - type: SupermatterImmune
   # end imp
 
 #Chief Medical Officer's Hardsuit
