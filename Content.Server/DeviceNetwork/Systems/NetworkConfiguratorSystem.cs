@@ -67,9 +67,10 @@ public sealed class NetworkConfiguratorSystem : SharedNetworkConfiguratorSystem
 
         SubscribeLocalEvent<DeviceListComponent, ComponentRemove>(OnComponentRemoved);
 
-        SubscribeLocalEvent<BeforeSerializationEvent>(OnBeforeSerialization);
+        SubscribeLocalEvent<BeforeSerializationEvent>(OnBeforeSerialization);  // starcup
     }
 
+    // begin starcup
     /// <summary>
     /// Listens for entity pre-serialization and removes device configurators from devices.
     /// </summary>
@@ -116,6 +117,7 @@ public sealed class NetworkConfiguratorSystem : SharedNetworkConfiguratorSystem
             }
         }
     }
+    // end starcup
 
     private void OnUiRangeCheck(Entity<NetworkConfiguratorComponent> ent, ref BoundUserInterfaceCheckRangeEvent args)
     {
@@ -370,14 +372,11 @@ public sealed class NetworkConfiguratorSystem : SharedNetworkConfiguratorSystem
         if (hasLinking && HasComp<DeviceListComponent>(target) || hasLinking == configurator.LinkModeActive)
             return;
 
-        if (hasLinking)
-        {
-            SetMode(configuratorUid, configurator, userUid, true);
-            return;
-        }
-
-        if (HasComp<DeviceNetworkComponent>(target))
+        var hasNetworking = HasComp<DeviceNetworkComponent>(target);
+        if (hasNetworking)
             SetMode(configuratorUid, configurator, userUid, false);
+        else if (hasLinking)
+            SetMode(configuratorUid, configurator, userUid, true);
     }
 
     #endregion

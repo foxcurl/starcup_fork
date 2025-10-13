@@ -45,6 +45,7 @@
   groups:
   - Scarfs # DeltaV
   - GroupTankHarness
+  - AssistantHead # DeltaV
   - PassengerJumpsuit
   - CommonBackpack
   - PassengerNeck
@@ -224,6 +225,7 @@
 
 - type: roleLoadout
   id: JobMusician
+  canCustomizeName: true
   groups:
   - GroupTankHarness
   - MusicianJumpsuit
@@ -263,6 +265,7 @@
   - CargoTechnicianOuterClothing
   - CargoPDADelta # DeltaV
   - CargoTechnicianShoes
+  - CargoTechnicianID
   - Glasses
   - Survival
   - Trinkets
@@ -329,6 +332,7 @@
   id: JobAtmosphericTechnician
   groups:
   - GroupTankHarness
+  - AtmosphericTechnicianHead # DeltaV
   - AtmosphericTechnicianNeck # DeltaV
   - AtmosphericTechnicianJumpsuit
   - AtmosphericTechnicianBackpack

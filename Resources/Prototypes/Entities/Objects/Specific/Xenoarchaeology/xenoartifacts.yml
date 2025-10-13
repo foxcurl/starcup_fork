@@ -74,3 +74,4 @@
     useDelay: 300
   - type: InstantAction
     event: !type:ArtifactSelfActivateEvent
+

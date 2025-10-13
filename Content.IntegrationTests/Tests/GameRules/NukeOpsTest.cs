@@ -9,7 +9,6 @@ using Content.Server.Mind;
 using Content.Server.Roles;
 using Content.Server.RoundEnd;
 using Content.Server.Shuttles.Components;
-using Content.Server.Station.Components;
 using Content.Shared.CCVar;
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
@@ -20,6 +19,7 @@ using Content.Shared.NPC.Prototypes;
 using Content.Shared.NPC.Systems;
 using Content.Shared.NukeOps;
 using Content.Shared.Pinpointer;
+using Content.Shared.Roles.Components;
 using Content.Shared.Station.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.GameObjects;
@@ -230,13 +230,13 @@ public sealed class NukeOpsTest
         var totalSeconds = 30;
         var totalTicks = (int) Math.Ceiling(totalSeconds / server.Timing.TickPeriod.TotalSeconds);
         var increment = 5;
+        var resp = entMan.GetComponent<RespiratorComponent>(player);
         var damage = entMan.GetComponent<DamageableComponent>(player);
         for (var tick = 0; tick < totalTicks; tick += increment)
         {
             await pair.RunTicksSync(increment);
             if (!entMan.HasComponent<SiliconComponent>(player)) // Goobstation - IPC
             {
-                var resp = entMan.GetComponent<RespiratorComponent>(player);
                 Assert.That(resp.SuffocationCycles, Is.LessThanOrEqualTo(resp.SuffocationCycleThreshold));
             }
             Assert.That(damage.TotalDamage, Is.EqualTo(FixedPoint2.Zero));
