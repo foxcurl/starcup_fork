@@ -8,7 +8,7 @@
     mode: SnapgridCenter
   components:
   - type: Sprite
-    sprite: _Impstation/Structures/Lighting/floorlights.rsi
+    sprite: _starcup/Structures/Lighting/floorlights.rsi
     drawdepth: HighFloorObjects
     layers:
     - map: ["enum.PoweredLightLayers.Base"]
