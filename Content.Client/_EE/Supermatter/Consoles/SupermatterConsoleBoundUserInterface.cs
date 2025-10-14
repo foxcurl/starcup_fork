@@ -2,6 +2,8 @@ using Content.Shared._EE.Supermatter.Components;
 
 namespace Content.Client._EE.Supermatter.Consoles;
 
+// starcup note: Impstation file
+
 public sealed class SupermatterConsoleBoundUserInterface(EntityUid owner, Enum uiKey) : BoundUserInterface(owner, uiKey)
 {
     [ViewVariables]

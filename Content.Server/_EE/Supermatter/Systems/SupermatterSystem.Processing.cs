@@ -34,6 +34,8 @@ using Robust.Shared.Spawners;
 
 namespace Content.Server._EE.Supermatter.Systems;
 
+// starcup note: file has been nearly completely redone by Impstation, ignore EE changes
+
 public sealed partial class SupermatterSystem
 {
     /// <summary>

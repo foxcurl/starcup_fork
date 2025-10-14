@@ -4,6 +4,8 @@ using Robust.Client.GameObjects;
 
 namespace Content.Client._EE.Supermatter.Systems;
 
+// starcup note: Impstation file
+
 public sealed class SupermatterVisualizerSystem : VisualizerSystem<SupermatterVisualsComponent>
 {
     protected override void OnAppearanceChange(EntityUid uid, SupermatterVisualsComponent component, ref AppearanceChangeEvent args)

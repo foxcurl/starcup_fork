@@ -10,6 +10,8 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared._EE.Supermatter.Components;
 
+// starcup note: file has been nearly completely redone by Impstation, ignore EE changes
+
 [RegisterComponent, NetworkedComponent]
 public sealed partial class SupermatterComponent : Component
 {

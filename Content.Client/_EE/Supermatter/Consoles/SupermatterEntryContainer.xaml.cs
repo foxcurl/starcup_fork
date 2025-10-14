@@ -13,6 +13,8 @@ using System.Numerics;
 
 namespace Content.Client._EE.Supermatter.Consoles;
 
+// starcup note: Impstation file
+
 [GenerateTypedNameReferences]
 public sealed partial class SupermatterEntryContainer : BoxContainer
 {

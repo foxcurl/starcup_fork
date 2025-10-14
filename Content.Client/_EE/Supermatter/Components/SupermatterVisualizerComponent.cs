@@ -3,6 +3,8 @@ using Content.Shared._EE.Supermatter.Components;
 
 namespace Content.Client._EE.Supermatter.Components;
 
+// starcup note: Impstation file
+
 [RegisterComponent]
 [Access(typeof(SupermatterVisualizerSystem))]
 public sealed partial class SupermatterVisualsComponent : Component

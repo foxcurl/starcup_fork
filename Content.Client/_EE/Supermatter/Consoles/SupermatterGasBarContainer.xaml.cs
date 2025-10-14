@@ -14,6 +14,8 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Client._EE.Supermatter.Consoles;
 
+// starcup note: Impstation file
+
 [GenerateTypedNameReferences]
 public sealed partial class SupermatterGasBarContainer : BoxContainer
 {

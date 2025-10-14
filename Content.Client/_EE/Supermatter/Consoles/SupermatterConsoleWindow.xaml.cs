@@ -11,6 +11,8 @@ using System.Linq;
 
 namespace Content.Client._EE.Supermatter.Consoles;
 
+// starcup note: Impstation file
+
 [GenerateTypedNameReferences]
 public sealed partial class SupermatterConsoleWindow : FancyWindow
 {

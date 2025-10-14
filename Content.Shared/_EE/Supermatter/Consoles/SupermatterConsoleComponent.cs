@@ -5,6 +5,8 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared._EE.Supermatter.Components;
 
+// starcup note: Impstation file
+
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 [Access(typeof(SharedSupermatterConsoleSystem))]
 public sealed partial class SupermatterConsoleComponent : Component
