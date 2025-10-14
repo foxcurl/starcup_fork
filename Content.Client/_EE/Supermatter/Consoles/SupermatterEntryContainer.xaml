@@ -152,7 +152,7 @@
                         <Label Name="WasteLabel" Text="{Loc 'supermatter-console-window-label-waste'}" HorizontalExpand="True" HorizontalAlignment="Left" />
                         <BoxContainer SetWidth="180" SetHeight="24" Orientation="Horizontal">
                             <PanelContainer Name="WasteBarBorder" HorizontalExpand="True" Margin="0 0 4 0">
-                                <ProgressBar Name="WasteBar" MinValue="0" MaxValue="10" Margin="1">
+                                <ProgressBar Name="WasteBar" MinValue="0.5" MaxValue="10" Margin="1"> <!-- starcup: MinValue 0.5, was 0 -->
                                     <Label Name="WasteBarLabel" HorizontalAlignment="Right" Margin="0 0 4 0" />
                                 </ProgressBar>
                             </PanelContainer>

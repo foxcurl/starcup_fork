@@ -56,7 +56,7 @@ supermatter-console-window-label-gas-transmit = Radiation Emission Bonus:
 supermatter-console-window-label-gas-transmit-bar = {$transmit} rads/GeV
 
 supermatter-console-window-label-gas-waste = Waste Multiplier:
-supermatter-console-window-label-gas-waste-bar = {$waste}%
+supermatter-console-window-label-gas-waste-bar = {$waste} x # starcup: use multiplicative heat data
 
 supermatter-console-window-label-gas-power = Power Transmission Bonus:
 supermatter-console-window-label-gas-power-bar = {$power} MeV/K/s

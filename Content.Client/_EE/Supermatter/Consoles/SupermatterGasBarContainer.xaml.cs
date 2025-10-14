@@ -102,8 +102,8 @@ public sealed partial class SupermatterGasBarContainer : BoxContainer
         TransmitInfoLabel.Text = Loc.GetString("supermatter-console-window-label-gas-transmit-bar", ("transmit", transmitModifier.ToString("+0.0;-0.0")));
         TransmitInfoLabel.FontColorOverride = GetDetailColor(transmitModifier);
 
-        var heatPenalty = (gasData.HeatPenalty - 1) * 100;
-        WasteInfoLabel.Text = Loc.GetString("supermatter-console-window-label-gas-waste-bar", ("waste", heatPenalty.ToString("+0;-0")));
+        var heatPenalty = gasData.HeatPenalty; // starcup: use multiplicative heat data
+        WasteInfoLabel.Text = Loc.GetString("supermatter-console-window-label-gas-waste-bar", ("waste", heatPenalty.ToString("+0.00;-0.00"))); // starcup: use multiplicative heat data
         WasteInfoLabel.FontColorOverride = GetDetailColor(heatPenalty, true);
 
         var powerMix = gasData.PowerMixRatio;
