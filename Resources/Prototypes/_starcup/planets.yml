@@ -1,0 +1,26 @@
+- type: planet
+  id: CharonEpsilon
+  biome: Charonic
+  mapName: shuttle-destination-lavaland
+  mapLight: "#3737A3"
+  addedComponents:
+  - type: FTLDestination
+    whitelist:
+      components:
+      - MiningShuttle
+  atmosphere:
+    volume: 2500
+    temperature: 273.15 # 0C
+    moles: # 90kPa, 36% O2
+    - 35.66759
+    - 63.40905
+  #biomeMarkerLayers:
+  #- OreIron
+  #- OreQuartz
+  #- OreCoal
+  #- OreGold
+  #- OreSilver
+  #- OrePlasma
+  #- OreUranium
+  #- OreDiamond
+  #- OreArtifactFragment
