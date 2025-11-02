@@ -12289,10 +12289,6 @@ entities:
       parent: 1
     - type: Paper
       content: savegrid 128104 /silent-moon-deadmoon-outpost
-    - type: UserInterface
-      actors:
-        enum.PaperUiKey.Key:
-        - invalid
     - type: ActiveUserInterface
   - uid: 1782
     components:
