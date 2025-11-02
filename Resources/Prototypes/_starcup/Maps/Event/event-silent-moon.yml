@@ -1,6 +1,6 @@
 - type: gameMap
   id: EventCharonEpsilon
-  mapName: 'Charon Epsilon Orbital Transit Station'
+  mapName: 'Charon-Epsilon Orbital Transit Station'
   mapPath: /Maps/_starcup/Events/silent_moon_orbital_station.yml
   maxRandomOffset: 0
   randomRotation: false
@@ -15,7 +15,7 @@
       - type: StationEmergencyShuttle
         emergencyShuttlePath: /Maps/_starcup/Shuttles/SYND_EvacShip.yml
       - type: StationPlanetSpawner
-        planet: CharonEpsilonSurface
+        planet: SilentMoon
         gridPath: /Maps/_starcup/Events/silent_moon_surface_station.yml
       - type: StationJobs
         availableJobs:
@@ -57,13 +57,13 @@
             ResearchAssistant: [ 2, 2 ]
             Chaplain: [ 1, 1 ]
 #          #Silicon
-            Borg: [ 3, 3 ] # TODO ADD BORG SPAWNER!!!!
+            Borg: [ 3, 3 ]
 #          #security
             Warden: [ 1, 1 ]
             Detective: [ 1, 1 ]
             SecurityOfficer: [ 4, 4 ]
             SecurityCadet: [ 2, 2 ]
-#            Brigmedic: [ 1, 1 ] # TODO ADD BRIGMEDIC SPAWNER!!! PROBABLY!!
+            Brigmedic: [ 1, 1 ]
 #            Prisoner: [ 2, 2 ]
 #            Lawyer: [ 1, 1 ]
 #          #supply

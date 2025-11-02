@@ -1,16 +1,16 @@
 meta:
   format: 7
-  category: Map
+  category: Grid
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 11/02/2025 04:04:48
-  entityCount: 146
-maps:
-- 3
+  time: 11/02/2025 07:00:18
+  entityCount: 145
+maps: []
 grids:
 - 1
-orphans: []
+orphans:
+- 1
 nullspace: []
 tilemap:
   0: Space
@@ -35,7 +35,7 @@ entities:
     - type: MetaData
       name: Surface Shuttle
     - type: Transform
-      parent: 3
+      parent: invalid
     - type: MapGrid
       chunks:
         0,0:
@@ -113,16 +113,6 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: ImplicitRoof
-  - uid: 3
-    components:
-    - type: MetaData
-      name: Map Entity
-    - type: Transform
-    - type: Map
-      mapPaused: True
-    - type: GridTree
-    - type: Broadphase
-    - type: OccluderTree
 - proto: AACTablet
   entities:
   - uid: 45

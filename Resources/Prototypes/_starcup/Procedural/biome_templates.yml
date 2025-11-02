@@ -6,14 +6,14 @@
       threshold: -1.00
       tile: FloorPlanetDirtTwilight
     - !type:BiomeTileLayer
-      threshold: -0.65
+      threshold: -0.40
       tile: FloorPlanetGrassyDirtTwilight
       noise:
         seed: 0
         frequency: 0.03
         fractalType: None
     - !type:BiomeTileLayer
-      threshold: -0.50
+      threshold: -0.00
       tile: FloorPlanetGrassBlue
       noise:
         seed: 0
@@ -34,24 +34,58 @@
         - Basalt1
         - Basalt2
         - Basalt3
-        - Basalt4
+        #- Basalt4 # pawprints
         - Basalt5
         - Basalt6
         - Basalt7
         - Basalt8
-        - Basalt9
+        #- Basalt9 # pawprints
+    # rock entities
+    - !type:BiomeEntityLayer
+      threshold: 0.95
+      noise:
+        noiseType: OpenSimplex2
+        frequency: 1
+      allowedTiles:
+        - FloorPlanetDirtTwilight
+      entities:
+        - FloraRockSolid
+    # mushrooms (entities)
+    - !type:BiomeEntityLayer
+      threshold: 0.95
+      noise:
+        noiseType: OpenSimplex2
+        frequency: 1
+      allowedTiles:
+        - FloorPlanetGrassBlue
+      entities:
+        - FloraMushroom
+    # crystals
+    - !type:BiomeEntityLayer
+      threshold: 0.95
+      noise:
+        seed: 1
+        noiseType: OpenSimplex2
+        frequency: 0.25
+      allowedTiles:
+        - FloorPlanetGrassBlue
+        - FloorPlanetGrassyDirtTwilight
+        - FloorPlanetDirtTwilight
+      entities:
+        - CrystalPink
+        - CrystalCyan
+        - CrystalBlack
     # mushrooms (grass)
     - !type:BiomeDecalLayer
       allowedTiles:
         - FloorPlanetGrassBlue
-      divisions: 2
-      threshold: 0.4
+      threshold: 0.55
       invert: true
       noise:
-        seed: 0
+        seed: 1
         noiseType: OpenSimplex2
         fractalType: FBm
-        frequency: 2
+        frequency: 1
       decals:
         - Shroomc1
         - Shroomc2
@@ -63,14 +97,13 @@
         - FloorPlanetGrassBlue
         - FloorPlanetGrassyDirtTwilight
         - FloorPlanetDirtTwilight
-      divisions: 2
-      threshold: 0.4
+      threshold: 0.65
       invert: true
       noise:
-        seed: 1
+        seed: 2
         noiseType: OpenSimplex2
         fractalType: FBm
-        frequency: 2
+        frequency: 1
       decals:
         - Shroomb1
         - Shroomb2
@@ -79,56 +112,46 @@
     - !type:BiomeDecalLayer
       allowedTiles:
         - FloorPlanetDirtTwilight
-      threshold: -0.1
+      threshold: 0.70
+      invert: true
       noise:
-        seed: 2
-        noiseType: Cellular
-        frequency: 0.4
+        seed: 3
+        noiseType: OpenSimplex2
         fractalType: FBm
-        cellularDistanceFunction: Euclidean
-        cellularReturnType: Distance2
+        frequency: 1
       decals:
         - Shrooma1
         - Shrooma2
         - Shrooma3
     # trees
     - !type:BiomeEntityLayer
-      threshold: 0.5
+      threshold: 0.45
       noise:
         seed: 0
         noiseType: OpenSimplex2
         fractalType: FBm
-        frequency: 1.5
+        frequency: 2
       allowedTiles:
         - FloorPlanetGrassBlue
         - FloorPlanetGrassyDirtTwilight
       entities:
         - FloraTreeDead
-        - FloraTreeTeal
         - ShadowTree
+        - FloraTreeLargeDark
+        - LightTree
     # resource trees
     - !type:BiomeEntityLayer
-      threshold: 0.95
+      threshold: 0.60
       noise:
-        seed: 0
         noiseType: OpenSimplex2
-        frequency: 1.25
+        fractalType: FBm
+        frequency: 2.25
       allowedTiles:
       #  - FloorPlanetGrassBlue
         - FloorPlanetGrassyDirtTwilight
         - FloorPlanetDirtTwilight
       entities:
         - FloraTreeHollowBase
-    # rock entities
-    - !type:BiomeEntityLayer
-      threshold: 0.95
-      noise:
-        noiseType: OpenSimplex2
-        frequency: 1
-      allowedTiles:
-        - FloorBasalt
-      entities:
-        - FloraRockSolid
     # rock formations
     - !type:BiomeEntityLayer
       allowedTiles:
@@ -153,11 +176,11 @@
         - FloorPlanetGrassBlue
         - FloorPlanetGrassyDirtTwilight
         - FloorPlanetDirtTwilight
-      threshold: 0.925
+      threshold: 0.915
       noise:
         seed: 3
         noiseType: OpenSimplex2
-        frequency: 0.004
+        frequency: 0.005
         lacunarity: 1.50
         fractalType: Ridged
         octaves: 1
@@ -169,7 +192,7 @@
         - FloorPlanetDirtTwilight
       threshold: 0.70
       noise:
-        frequency: 0.04
+        frequency: 0.05
         fractalType: None
       entities:
       - FloorMuteWaterEntity

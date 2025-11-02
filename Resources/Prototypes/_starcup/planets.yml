@@ -8,8 +8,17 @@
     whitelist:
       components:
       - MiningShuttle
-  - type: Weather
-    weather: CharonHush
+  - type: WeatherScheduler # occasional mute oil storms
+    stages:
+    - weather: CharonHush # 45-60 minutes of hushed
+      duration:
+        min: 2700
+        max: 3600
+#    - weather: CharonOilfall # 5-10 minutes of mute oil # commenting so curators have control 4 events
+#      message: mute-oil-alert
+#      duration:
+#        min: 60
+#        max: 120
   atmosphere:
     volume: 2500
     temperature: 273.15 # 0C
