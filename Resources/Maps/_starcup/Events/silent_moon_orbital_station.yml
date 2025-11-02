@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 11/02/2025 07:04:43
-  entityCount: 548
+  time: 11/02/2025 10:22:59
+  entityCount: 549
 maps:
 - 1
 grids:
@@ -2783,6 +2783,13 @@ entities:
     components:
     - type: Transform
       pos: 8.5,-0.5
+      parent: 2
+- proto: SpawnPointCargoAssistant
+  entities:
+  - uid: 549
+    components:
+    - type: Transform
+      pos: 8.5,-5.5
       parent: 2
 - proto: SpawnPointCargoTechnician
   entities:
