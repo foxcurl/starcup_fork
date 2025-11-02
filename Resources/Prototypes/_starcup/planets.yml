@@ -1,26 +1,18 @@
 - type: planet
-  id: CharonEpsilon
+  id: SilentMoon
   biome: Charonic
-  mapName: shuttle-destination-lavaland
-  mapLight: "#3737A3"
+  mapName: shuttle-destination-charon-epsilon
+  mapLight: "#2B3153"
   addedComponents:
   - type: FTLDestination
     whitelist:
       components:
       - MiningShuttle
+  - type: Weather
+    weather: CharonHush
   atmosphere:
     volume: 2500
     temperature: 273.15 # 0C
     moles: # 90kPa, 36% O2
     - 35.66759
     - 63.40905
-  #biomeMarkerLayers:
-  #- OreIron
-  #- OreQuartz
-  #- OreCoal
-  #- OreGold
-  #- OreSilver
-  #- OrePlasma
-  #- OreUranium
-  #- OreDiamond
-  #- OreArtifactFragment
