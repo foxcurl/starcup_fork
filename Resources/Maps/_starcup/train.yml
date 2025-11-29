@@ -113122,7 +113122,6 @@ entities:
       parent: 2
     - type: WarpPoint
       location: 'Car 05: Chapel, Library'
-    - type: BombingTarget
   - uid: 17542
     components:
     - type: Transform
@@ -113130,7 +113129,6 @@ entities:
       parent: 2
     - type: WarpPoint
       location: 'Car 01: Arrivals, Evacuation'
-    - type: BombingTarget
   - uid: 17543
     components:
     - type: Transform
@@ -113138,7 +113136,6 @@ entities:
       parent: 2
     - type: WarpPoint
       location: 'Car 02: Bar'
-    - type: BombingTarget
   - uid: 17544
     components:
     - type: Transform
@@ -113151,7 +113148,6 @@ entities:
       parent: 2
     - type: WarpPoint
       location: 'Car 04: HoP, Dormatories'
-    - type: BombingTarget
   - uid: 17546
     components:
     - type: Transform
@@ -113159,7 +113155,6 @@ entities:
       parent: 2
     - type: WarpPoint
       location: 'Car 06: Med'
-    - type: BombingTarget
   - uid: 17547
     components:
     - type: Transform
@@ -113167,7 +113162,6 @@ entities:
       parent: 2
     - type: WarpPoint
       location: 'Car 08: Solar panels'
-    - type: BombingTarget
   - uid: 17548
     components:
     - type: Transform
@@ -113175,7 +113169,6 @@ entities:
       parent: 2
     - type: WarpPoint
       location: 'Car 09: Engineering'
-    - type: BombingTarget
   - uid: 17549
     components:
     - type: Transform
@@ -113183,7 +113176,6 @@ entities:
       parent: 2
     - type: WarpPoint
       location: 'Car 10: Cargo'
-    - type: BombingTarget
   - uid: 17550
     components:
     - type: Transform
@@ -113191,7 +113183,6 @@ entities:
       parent: 2
     - type: WarpPoint
       location: 'Car 11: RnD'
-    - type: BombingTarget
   - uid: 17551
     components:
     - type: Transform
@@ -113199,7 +113190,6 @@ entities:
       parent: 2
     - type: WarpPoint
       location: 'Car 12: Security'
-    - type: BombingTarget
   - uid: 17552
     components:
     - type: Transform
@@ -113207,7 +113197,6 @@ entities:
       parent: 2
     - type: WarpPoint
       location: 'Car 13: Brig'
-    - type: BombingTarget
 - proto: WaterCooler
   entities:
   - uid: 17553
