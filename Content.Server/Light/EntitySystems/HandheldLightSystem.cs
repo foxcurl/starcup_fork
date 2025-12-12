@@ -240,11 +240,11 @@ namespace Content.Server.Light.EntitySystems
             var appearanceComponent = EntityManager.GetComponentOrNull<AppearanceComponent>(uid);
 
             var fraction = battery.CurrentCharge / battery.MaxCharge;
-            if (fraction >= 0.125) // starcup: 0.30 -> 0.125
+            if (fraction >= 0.10) // starcup: 0.30 -> 0.10
             {
                 _appearance.SetData(uid, HandheldLightVisuals.Power, HandheldLightPowerStates.FullPower, appearanceComponent);
             }
-            else if (fraction >= 0.05) // starcup: 0.10 -> 0.05
+            else if (fraction >= 0.04) // starcup: 0.10 -> 0.04
             {
                 _appearance.SetData(uid, HandheldLightVisuals.Power, HandheldLightPowerStates.LowPower, appearanceComponent);
             }
