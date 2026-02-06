@@ -129,7 +129,7 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatLaceHeadpiece
+  id: ClothingHeadHatMaidLaceHeadpiece
   name: lace headpiece
   description: An delicate and frilly lace headpiece. Maybe it would look nice with an equally lovely dress?
   components:
