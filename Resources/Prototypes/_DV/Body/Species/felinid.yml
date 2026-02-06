@@ -47,9 +47,9 @@
       Appendix: OrganHumanAppendix
       Ears: OrganHumanEars
       Lungs: OrganHumanLungs
-      Heart: OrganHumanHeart
+      Heart: OrganAnimalHeart # starcup
       Stomach: OrganAnimalStomach # starcup
-      Liver: OrganHumanLiver
+      Liver: OrganAnimalLiver # starcup
       Kidneys: OrganHumanKidneys
   - type: HumanoidProfile
     species: Felinid
