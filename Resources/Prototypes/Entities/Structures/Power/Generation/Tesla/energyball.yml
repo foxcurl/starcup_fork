@@ -85,10 +85,14 @@
     lightningPrototype: Lightning #To do: change to HyperchargedLightning, after fix beam system
   - type: ChasingWalk
     minSpeed: 0.33 # starcup: was 1
-    maxSpeed: 1 # starcup: was 3
+    maxSpeed: 1.00 # starcup: was 3
   - type: ChaoticJump
-    jumpMinInterval: 2 # starcup: was 8
-    jumpMaxInterval: 5 # starcup: was 15
+    # begin starcup: nerf tesla movement
+    jumpMinInterval: 15
+    jumpMaxInterval: 30
+    rangeMin: 3
+    rangeMax: 6
+    # end starcup
   - type: Tag
     tags:
     - GhostOnlyWarp
