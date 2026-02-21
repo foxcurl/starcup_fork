@@ -4,8 +4,8 @@
   abstract: true
   id: BaseDenTajaranEars
   bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Tajaran, Felinid]
+  # markingCategory: HeadTop # starcup: nubody
+  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
 
 - type: marking
   parent: BaseDenTajaranEars
@@ -24,8 +24,8 @@
   abstract: true
   id: BaseDenTajaranTail
   bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Tajaran, Felinid]
+  # markingCategory: Tail # starcup: nubody
+  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
 
 - type: marking
   parent: BaseDenTajaranTail
@@ -87,8 +87,8 @@
   abstract: true
   id: BaseDenTajaranLFoot
   bodyPart: LFoot
-  markingCategory: LeftFoot
-  speciesRestriction: [Tajaran]
+  # markingCategory: LeftFoot # starcup: nubody
+  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
 
 - type: marking
   parent: BaseDenTajaranLFoot
@@ -105,8 +105,8 @@
   abstract: true
   id: BaseDenTajaranRFoot
   bodyPart: RFoot
-  markingCategory: RightFoot
-  speciesRestriction: [Tajaran]
+  # markingCategory: RightFoot # starcup: nubody
+  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
 
 - type: marking
   parent: BaseDenTajaranRFoot
@@ -123,8 +123,8 @@
   abstract: true
   id: BaseDenTajaranLLeg
   bodyPart: LLeg
-  markingCategory: LeftLeg
-  speciesRestriction: [Tajaran]
+  # markingCategory: LeftLeg # starcup: nubody
+  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
 
 - type: marking
   parent: BaseDenTajaranLLeg
@@ -141,8 +141,8 @@
   abstract: true
   id: BaseDenTajaranRLeg
   bodyPart: RLeg
-  markingCategory: RightLeg
-  speciesRestriction: [Tajaran]
+  # markingCategory: RightLeg # starcup: nubody
+  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
 
 - type: marking
   parent: BaseDenTajaranRLeg
@@ -159,8 +159,8 @@
   abstract: true
   id: BaseDenTajaranLArm
   bodyPart: LArm
-  markingCategory: LeftArm
-  speciesRestriction: [Tajaran]
+  # markingCategory: LeftArm # starcup: nubody
+  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
 
 - type: marking
   parent: BaseDenTajaranLArm
@@ -177,8 +177,8 @@
   abstract: true
   id: BaseDenTajaranRArm
   bodyPart: RArm
-  markingCategory: RightArm
-  speciesRestriction: [Tajaran]
+  # markingCategory: RightArm # starcup: nubody
+  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
 
 - type: marking
   parent: BaseDenTajaranRArm
@@ -195,8 +195,8 @@
   abstract: true
   id: BaseDenTajaranLHand
   bodyPart: LHand
-  markingCategory: LeftHand
-  speciesRestriction: [Tajaran]
+  # markingCategory: LeftHand # starcup: nubody
+  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
 
 - type: marking
   parent: BaseDenTajaranLHand
@@ -213,8 +213,8 @@
   abstract: true
   id: BaseDenTajaranRHand
   bodyPart: RHand
-  markingCategory: RightHand
-  speciesRestriction: [Tajaran]
+  # markingCategory: RightHand # starcup: nubody
+  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
 
 - type: marking
   parent: BaseDenTajaranRHand
@@ -231,8 +231,8 @@
   abstract: true
   id: BaseDenTajaranFace
   bodyPart: Face
-  markingCategory: Face
-  speciesRestriction: [Tajaran]
+  # markingCategory: Face # starcup: nubody
+  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
 
 - type: marking
   parent: BaseDenTajaranFace
@@ -268,8 +268,8 @@
   abstract: true
   id: BaseDenTajaranChest
   bodyPart: Chest
-  markingCategory: Chest
-  speciesRestriction: [Tajaran]
+  # markingCategory: Chest # starcup: nubody
+  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
 
 - type: marking
   parent: BaseDenTajaranChest
