@@ -1,15 +1,9 @@
 # ears
 
 - type: marking
-  abstract: true
-  id: BaseDenTajaranEars
-  bodyPart: HeadTop
-  # markingCategory: HeadTop # starcup: nubody
-  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
-
-- type: marking
-  parent: BaseDenTajaranEars
   id: TajaranServalEars
+  bodyPart: HeadTop
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/ears.rsi
     state: serval_ears
@@ -21,15 +15,9 @@
 # tails
 
 - type: marking
-  abstract: true
-  id: BaseDenTajaranTail
-  bodyPart: Tail
-  # markingCategory: Tail # starcup: nubody
-  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
-
-- type: marking
-  parent: BaseDenTajaranTail
   id: TajaranTailSpottedAnimated
+  bodyPart: Tail
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _EE/Mobs/Customization/Tajaran/tails.rsi
     state: tail_anim
@@ -37,8 +25,9 @@
     state: tail_spots_anim
 
 - type: marking
-  parent: BaseDenTajaranTail
   id: TajaranTailSpottedSparseAnimated
+  bodyPart: Tail
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _EE/Mobs/Customization/Tajaran/tails.rsi
     state: tail_anim
@@ -46,8 +35,9 @@
     state: tail_spots_alt_anim
 
 - type: marking
-  parent: BaseDenTajaranTail
   id: TajaranTailSpottedDoubleAnimated
+  bodyPart: Tail
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _EE/Mobs/Customization/Tajaran/tails.rsi
     state: tail_anim
@@ -57,15 +47,17 @@
     state: tail_spots_alt_anim
 
 - type: marking
-  parent: BaseDenTajaranTail
   id: TajaranTailNubAnimated
+  bodyPart: Tail
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/tails.rsi
     state: tail_nub_anim
 
 - type: marking
-  parent: BaseDenTajaranTail
   id: TajaranTailNubUndersideAnimated
+  bodyPart: Tail
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/tails.rsi
     state: tail_nub_anim
@@ -73,8 +65,9 @@
     state: tail_nub_underside_anim
 
 - type: marking
-  parent: BaseDenTajaranTail
   id: TajaranTailNubTippedAnimated
+  bodyPart: Tail
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/tails.rsi
     state: tail_nub_anim
@@ -84,15 +77,9 @@
 # l foot
 
 - type: marking
-  abstract: true
-  id: BaseDenTajaranLFoot
-  bodyPart: LFoot
-  # markingCategory: LeftFoot # starcup: nubody
-  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
-
-- type: marking
-  parent: BaseDenTajaranLFoot
   id: TajaranLFootSpotted
+  bodyPart: LFoot
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/legs.rsi
     state: spotted_foot_left
@@ -102,15 +89,9 @@
 # r foot
 
 - type: marking
-  abstract: true
-  id: BaseDenTajaranRFoot
-  bodyPart: RFoot
-  # markingCategory: RightFoot # starcup: nubody
-  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
-
-- type: marking
-  parent: BaseDenTajaranRFoot
   id: TajaranRFootSpotted
+  bodyPart: RFoot
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/legs.rsi
     state: spotted_foot_right
@@ -120,15 +101,9 @@
 # l leg
 
 - type: marking
-  abstract: true
-  id: BaseDenTajaranLLeg
-  bodyPart: LLeg
-  # markingCategory: LeftLeg # starcup: nubody
-  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
-
-- type: marking
-  parent: BaseDenTajaranLLeg
   id: TajaranLLegSpotted
+  bodyPart: LLeg
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/legs.rsi
     state: spotted_leg_left
@@ -138,15 +113,9 @@
 # r leg
 
 - type: marking
-  abstract: true
-  id: BaseDenTajaranRLeg
-  bodyPart: RLeg
-  # markingCategory: RightLeg # starcup: nubody
-  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
-
-- type: marking
-  parent: BaseDenTajaranRLeg
   id: TajaranRLegSpotted
+  bodyPart: RLeg
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/legs.rsi
     state: spotted_leg_right
@@ -156,15 +125,9 @@
 # l arm
 
 - type: marking
-  abstract: true
-  id: BaseDenTajaranLArm
-  bodyPart: LArm
-  # markingCategory: LeftArm # starcup: nubody
-  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
-
-- type: marking
-  parent: BaseDenTajaranLArm
   id: TajaranLArmSpotted
+  bodyPart: LArm
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/arms.rsi
     state: spotted_arm_left
@@ -174,15 +137,9 @@
 # r arm
 
 - type: marking
-  abstract: true
-  id: BaseDenTajaranRArm
-  bodyPart: RArm
-  # markingCategory: RightArm # starcup: nubody
-  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
-
-- type: marking
-  parent: BaseDenTajaranRArm
   id: TajaranRArmSpotted
+  bodyPart: RArm
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/arms.rsi
     state: spotted_arm_right
@@ -192,15 +149,9 @@
 # l hand
 
 - type: marking
-  abstract: true
-  id: BaseDenTajaranLHand
-  bodyPart: LHand
-  # markingCategory: LeftHand # starcup: nubody
-  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
-
-- type: marking
-  parent: BaseDenTajaranLHand
   id: TajaranLHandSpotted
+  bodyPart: LHand
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/arms.rsi
     state: spotted_paw_left
@@ -210,15 +161,9 @@
 # r hand
 
 - type: marking
-  abstract: true
-  id: BaseDenTajaranRHand
-  bodyPart: RHand
-  # markingCategory: RightHand # starcup: nubody
-  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
-
-- type: marking
-  parent: BaseDenTajaranRHand
   id: TajaranRHandSpotted
+  bodyPart: RHand
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/arms.rsi
     state: spotted_paw_right
@@ -228,36 +173,33 @@
 # Face
 
 - type: marking
-  abstract: true
-  id: BaseDenTajaranFace
-  bodyPart: Face
-  # markingCategory: Face # starcup: nubody
-  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
-
-- type: marking
-  parent: BaseDenTajaranFace
   id: TajaranFaceServal
+  bodyPart: Face
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/head.rsi
     state: serval_face
 
 - type: marking
-  parent: BaseDenTajaranFace
   id: TajaranFaceSpots
+  bodyPart: Face
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/head.rsi
     state: face_spots
 
 - type: marking
-  parent: BaseDenTajaranFace
   id: TajaranFaceTearL
+  bodyPart: Face
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/head.rsi
     state: tear_left
 
 - type: marking
-  parent: BaseDenTajaranFace
   id: TajaranFaceTearR
+  bodyPart: Face
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/head.rsi
     state: tear_right
@@ -265,15 +207,9 @@
 # chest
 
 - type: marking
-  abstract: true
-  id: BaseDenTajaranChest
-  bodyPart: Chest
-  # markingCategory: Chest # starcup: nubody
-  speciesRestriction: [Felinid] # starcup: Tajaran -> Felinid
-
-- type: marking
-  parent: BaseDenTajaranChest
   id: TajaranSpotted
+  bodyPart: Chest
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/chest.rsi
     state: spotted
@@ -281,8 +217,9 @@
     state: spotted_extra
 
 - type: marking
-  parent: BaseDenTajaranChest
   id: TajaranSpottedAlt
+  bodyPart: Chest
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/chest.rsi
     state: spotted_alt
@@ -290,15 +227,17 @@
     state: spotted_extra
 
 - type: marking
-  parent: BaseDenTajaranChest
   id: TajaranHeart
+  bodyPart: Chest
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/chest.rsi
     state: heart_big
 
 - type: marking
-  parent: BaseDenTajaranChest
   id: TajaranHeartSmall
+  bodyPart: Chest
+  groupWhitelist: [Felinid]
   sprites:
   - sprite: _DEN/Mobs/Customization/Tajaran/chest.rsi
     state: heart_small
