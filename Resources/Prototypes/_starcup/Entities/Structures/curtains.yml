@@ -9,6 +9,10 @@
     arc: 90
   - type: Clickable
   - type: InteractionOutline
+  - type: Tag
+    tags:
+      - Structure
+      - ForceNoFixRotationsTag
 
 - type: entity
   id: HospitalCurtainsDirectional
