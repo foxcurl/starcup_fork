@@ -12,7 +12,7 @@
   - type: Tag
     tags:
       - Structure
-      - ForceNoFixRotationsTag
+      - ForceNoFixRotations
 
 - type: entity
   id: HospitalCurtainsDirectional
