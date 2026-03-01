@@ -45,6 +45,16 @@
   suffix: Fancy blue, Open, Directional
 
 - type: entity
+  id: CurtainsSkyBlueDirectional
+  parent: [ BaseCurtainsDirectional, CurtainsSkyBlue ]
+  suffix: Fancy sky blue, Directional
+
+- type: entity
+  id: CurtainsSkyBlueOpenDirectional
+  parent: [ BaseCurtainsDirectional, CurtainsSkyBlueOpen ]
+  suffix: Fancy sky blue, Open, Directional
+
+- type: entity
   id: CurtainsCyanDirectional
   parent: [ BaseCurtainsDirectional, CurtainsCyan ]
   suffix: Fancy cyan, Directional
