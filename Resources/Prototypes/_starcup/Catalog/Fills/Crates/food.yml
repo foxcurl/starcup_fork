@@ -17,3 +17,7 @@
         - id: LunchboxEngineeringFilledRandom
         - id: LunchboxEpistemicsFilledRandom
         - id: LunchboxServiceFilledRandom
+        - id: LunchboxSyndicateFilledRandom
+          prob: 0.02
+        - id: LunchboxJusticeFilledRandom
+          prob: 0.001

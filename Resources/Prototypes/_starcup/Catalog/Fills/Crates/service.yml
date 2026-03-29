@@ -49,3 +49,7 @@
           amount: 2
         - id: LunchboxService
           amount: 2
+        - id: LunchboxSyndicate
+          prob: 0.02
+        - id: LunchboxJustice
+          prob: 0.001
