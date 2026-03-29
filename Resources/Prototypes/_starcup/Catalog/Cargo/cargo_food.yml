@@ -1,0 +1,9 @@
+- type: cargoProduct
+  id: ServiceLunchboxDelivery
+  icon:
+    sprite: _starcup/Objects/Storage/lunchbox.rsi
+    state: command-syndie
+  product: CrateServiceLunchboxDelivery
+  cost: 3200 # food and drink for 10 people
+  category: cargoproduct-category-name-food
+  group: market
