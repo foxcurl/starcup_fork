@@ -4,3 +4,8 @@
   parent: BaseCircuitboardRecipe
   id: CameraHandheld
   result: CameraHandheld
+
+- type: latheRecipe
+  parent: BaseCircuitboardRecipe
+  id: ImpCoffeeMachineCircuitboard
+  result: ImpCoffeeMachineCircuitboard
