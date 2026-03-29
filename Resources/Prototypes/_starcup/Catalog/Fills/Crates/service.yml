@@ -22,3 +22,30 @@
       entity_storage: !type:AllSelector
         children:
         - id: BoxLightsViolet
+
+- type: entity
+  parent: CratePlastic
+  id: CrateServiceLunchboxDelivery
+  name: empty lunchbox deliver
+  description: Sixteen empty lunchboxes, two for each department, for the chef who wants to be sure the station is fed in style.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: LunchboxGeneric
+          amount: 2
+        - id: LunchboxCommandSyndie
+          amount: 2
+        - id: LunchboxSecurity
+          amount: 2
+        - id: LunchboxMedical
+          amount: 2
+        - id: LunchboxLogistics
+          amount: 2
+        - id: LunchboxEngineering
+          amount: 2
+        - id: LunchboxEpistemics
+          amount: 2
+        - id: LunchboxService
+          amount: 2
