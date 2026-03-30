@@ -4,6 +4,6 @@
     sprite: _starcup/Objects/Storage/lunchbox.rsi
     state: command-syndie
   product: CrateServiceLunchboxDelivery
-  cost: 3200 # food and drink for 10 people
+  cost: 6000 # can't fulfill 6000 speso soup bounty
   category: cargoproduct-category-name-food
   group: market
