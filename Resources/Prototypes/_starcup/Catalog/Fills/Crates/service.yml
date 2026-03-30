@@ -25,9 +25,9 @@
 
 - type: entity
   parent: CratePlastic
-  id: CrateServiceLunchboxDelivery
-  name: empty lunchbox deliver
-  description: Sixteen empty lunchboxes, two for each department, for the chef who wants to be sure the station is fed in style.
+  id: CrateServiceLunchboxEmpty
+  name: empty lunchbox delivery
+  description: Sixteen empty lunchboxes, two for each department, for the chef who wants to feed the station in style.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -50,6 +50,6 @@
         - id: LunchboxService
           amount: 2
         - id: LunchboxSyndicate
-          prob: 0.02
+          prob: 0.05
         - id: LunchboxJustice
-          prob: 0.001
+          prob: 0.005
