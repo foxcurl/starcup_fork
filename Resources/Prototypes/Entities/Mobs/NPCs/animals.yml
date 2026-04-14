@@ -3011,7 +3011,6 @@
   - type: GhostTakeoverAvailable
   - type: Puller # starcup
     needsHands: false # starcup - allows for creepy spider dragging away bodies stuff, which plays well with the poison
-  # - type: ForceAttack # starcup - don't force players to attack
 
 - type: entity
   name: tarantula

@@ -1625,6 +1625,7 @@
   minLimit: 0
   loadouts:
   - ReporterPressVest
+  - TrenchCoat # starcup
 
 #- type: loadoutGroup
 #  id: ReporterJobTrinkets

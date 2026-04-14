@@ -36,7 +36,7 @@ public sealed class BarSignSystem : EntitySystem
         else if (!_prototypeManager.Resolve(ent.Comp.Current, out newPrototype))
             return;
 
-        _pointLight.SetColor(ent.Owner, signPrototype.Color); // starcup: bar signs emit light
+        _pointLight.SetColor(ent.Owner, newPrototype.Color); // starcup: bar signs emit light
 
         SetBarSign(ent, newPrototype);
     }

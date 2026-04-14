@@ -43,7 +43,7 @@ public abstract class SharedWeatherSystem : EntitySystem
         // var tileDef = (ContentTileDefinition)_tileDefManager[tileRef.Tile.TypeId];
         //
         // if (!tileDef.Weather)
-        if (HasComp<ImplicitRoofComponent>(uid))
+        if (HasComp<ImplicitRoofComponent>(ent))
         // end upstream
             return false;
 

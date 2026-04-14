@@ -96,7 +96,7 @@ public sealed class PinpointerSystem : SharedPinpointerSystem
         // #IMP For anomalites to find their cores, use familiar component to get core EntityUid
         else if (args is not null && TryComp<FamiliarComponent>(args.User, out var familiarComp))
         {
-            SetTarget(uid, familiarComp.Source, component);
+            SetTarget(ent.AsNullable(), familiarComp.Source);
         }
     }
 
@@ -116,7 +116,7 @@ public sealed class PinpointerSystem : SharedPinpointerSystem
                 // Anomalite check
                 if (TryComp<FamiliarComponent>(_transform.GetParentUid(uid), out var familiar))
                 {
-                    SetTarget((uid, pinpointer) familiar.Source);
+                    SetTarget((uid, pinpointer), familiar.Source);
                 }
 
                 TogglePinpointer((uid, pinpointer));

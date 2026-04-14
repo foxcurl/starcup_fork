@@ -32,10 +32,19 @@
       sprite: /Textures/Effects/weather.rsi
       state: ashfall
     sound:
-      path: /Audio/Effects/Weather/snowstorm_weak.ogg
+      path: /Audio/_starcup/Effects/Weather/firestorm.ogg # starcup
       params:
         loop: true
-        volume: -6
+        volume: -1 # starcup
+  # begin DeltaV
+  - type: WeatherDamageStatusEffect
+    damage:
+      types:
+        Heat: 4
+    damageBlacklist:
+      components:
+        - AshStormImmune
+  # end DeltaV
 
 - type: entity
   parent: WeatherBase
@@ -46,10 +55,10 @@
       sprite: /Textures/Effects/weather.rsi
       state: ashfall_light
     sound:
-      path: /Audio/Effects/Weather/snowstorm_weak.ogg
+      path: /Audio/_starcup/Effects/Weather/firestorm.ogg # starcup
       params:
         loop: true
-        volume: -6
+        volume: -3 # starcup
 
 - type: entity
   parent: WeatherBase
@@ -60,10 +69,10 @@
       sprite: /Textures/Effects/weather.rsi
       state: ashfall_heavy
     sound:
-      path: /Audio/Effects/Weather/snowstorm.ogg
+      path: /Audio/_starcup/Effects/Weather/firestorm.ogg # starcup
       params:
         loop: true
-        volume: -6
+        # volume: -6 # starcup: the new sound is quiet enough
 
 - type: entity
   parent: WeatherBase
@@ -74,10 +83,10 @@
       sprite: /Textures/Effects/weather.rsi
       state: fallout
     sound:
-      path: /Audio/Effects/Weather/snowstorm_weak.ogg
+      path: /Audio/_starcup/Effects/Weather/fallout.ogg # starcup
       params:
         loop: true
-        volume: -6
+        volume: -3 # starcup
 
 - type: entity
   parent: WeatherBase
@@ -102,10 +111,10 @@
       sprite: /Textures/Effects/weather.rsi
       state: sandstorm
     sound:
-      path: /Audio/Effects/Weather/snowstorm_weak.ogg
+      path: /Audio/_starcup/Effects/Weather/sandstorm.ogg # starcup
       params:
         loop: true
-        volume: -6
+        volume: -3 # starcup
 
 - type: entity
   parent: WeatherBase
@@ -116,10 +125,10 @@
       sprite: /Textures/Effects/weather.rsi
       state: sandstorm_heavy
     sound:
-      path: /Audio/Effects/Weather/snowstorm.ogg
+      path: /Audio/_starcup/Effects/Weather/sandstorm.ogg # starcup
       params:
         loop: true
-        volume: -6
+        volume: -1 # starcup
 
 - type: entity
   parent: WeatherBase
@@ -130,10 +139,10 @@
       sprite: /Textures/Effects/weather.rsi
       state: snowfall_light
     sound:
-      path: /Audio/Effects/Weather/snowstorm_weak.ogg
+      path: /Audio/_starcup/Effects/Weather/polar_wind.ogg # starcup
       params:
         loop: true
-        volume: -6
+        volume: -3 # starcup
 
 - type: entity
   parent: WeatherBase
@@ -144,10 +153,10 @@
       sprite: /Textures/Effects/weather.rsi
       state: snowfall_med
     sound:
-      path: /Audio/Effects/Weather/snowstorm_weak.ogg
+      path: /Audio/_starcup/Effects/Weather/polar_wind.ogg # starcup
       params:
         loop: true
-        volume: -6
+        # volume: -6 # starcup: the new sound is quiet enough
 
 - type: entity
   parent: WeatherBase

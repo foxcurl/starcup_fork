@@ -197,8 +197,8 @@
         amount: -1.5
       - !type:EvenHealthChange
         conditions:
-        - !type:TotalDamageCondition
-          min: 70
+        - !type:MobStateCondition
+          mobstate: Critical
         - !type:MetabolizerTypeCondition
           type: [ MKC ]
         damage:

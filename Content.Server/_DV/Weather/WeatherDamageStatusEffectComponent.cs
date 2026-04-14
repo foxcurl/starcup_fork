@@ -1,29 +1,14 @@
 using Content.Shared.Damage;
-using Content.Shared.StatusEffect; // DeltaV
-using Content.Shared.Whitelist;  // DeltaV
-using Robust.Shared.Audio;
+using Content.Shared.Whitelist;
+using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Utility;
+using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
-namespace Content.Shared.Weather;
+namespace Content.Server._DV.Weather;
 
-[Prototype]
-public sealed partial class WeatherPrototype : IPrototype
+[RegisterComponent, NetworkedComponent]
+public sealed partial class WeatherDamageStatusEffectComponent : Component
 {
-    [IdDataField] public string ID { get; private set; } = default!;
-
-    [ViewVariables(VVAccess.ReadWrite), DataField("sprite", required: true)]
-    public SpriteSpecifier Sprite = default!;
-
-    [ViewVariables(VVAccess.ReadWrite), DataField("color")]
-    public Color? Color;
-
-    /// <summary>
-    /// Sound to play on the affected areas.
-    /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("sound")]
-    public SoundSpecifier? Sound;
-
     /// <summary>
     /// DeltaV: Damage you can take from being in this weather.
     /// Only applies when weather has fully set in.
@@ -48,4 +33,16 @@ public sealed partial class WeatherPrototype : IPrototype
     /// </summary>
     [DataField]
     public bool Refresh = true;
+
+    /// <summary>
+    /// DeltaV: How long to wait between updating weather effects.
+    /// </summary>
+    [DataField]
+    public TimeSpan UpdateDelay = TimeSpan.FromSeconds(1);
+
+    /// <summary>
+    /// DeltaV: When to next update weather effects (damage).
+    /// </summary>
+    [DataField(customTypeSerializer: typeof(TimeOffsetSerializer))]
+    public TimeSpan NextUpdate = TimeSpan.Zero;
 }
