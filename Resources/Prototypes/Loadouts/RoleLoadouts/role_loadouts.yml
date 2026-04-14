@@ -564,6 +564,8 @@
   groups:
   - Scarfs # starcup
   - ReporterJumpsuit
+  - ReporterHead
+  - ReporterOuterClothing
   - CommonBackpack
   - ReporterShoes # starcup
   - ReporterEyewear # starcup

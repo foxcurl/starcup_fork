@@ -19,10 +19,14 @@
   showRoundEnd: false
 
 - type: feedbackPopup
-  id: GibbingFeedback
+  id: ForceVentCrittersToAttackFeedback
   popupOrigin: wizden_master
-  title: "[bold]Feedback on Gibbing Removal[/bold]"
+  title: "[bold]Played an antagonist vent critter role?[/bold]"
   description: >-
-    We're testing out the removal of gibbing to see how it affects the game. Please leave feedback on how your experience was removed/worsened so we can account for it!
-  responseType: "Experimental Feedback"
-  responseLink: "https://forum.spacestation14.com/t/gibbing-removal-feedback/26320"
+    If you've played or interacted with a player-controlled antagonist vent critter (spiders, slimes, clown spiders), please leave your feedback on how the new auto-attack feature went.
+  responseType: "Feedback Thread"
+  responseLink: "https://forum.spacestation14.com/t/force-vent-critters-to-attack-feedback/26861"
+  showRoundEnd: true
+  ruleWhitelist:
+    components:
+      - VentHordeRule

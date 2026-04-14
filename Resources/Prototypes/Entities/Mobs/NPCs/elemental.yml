@@ -410,6 +410,7 @@
     solution: bloodstream
   - type: DrainableSolution
     solution: bloodstream
+  - type: ForceAttack
 
 - type: entity
   parent: MarkerBase
