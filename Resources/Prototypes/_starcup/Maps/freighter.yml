@@ -16,7 +16,7 @@
           mapNameTemplate: '{0} Trimaran-Class Freighter {1}'
           nameGenerator:
             !type:SyndicateNameGenerator
-            prefixCreator: '-FX-HWKM'
+            prefixCreator: '-SC-HWKM'
         - type: StationJobs
           availableJobs: # roundstart is # of beds, latejoin is at most one more
           # command
