@@ -157,5 +157,5 @@
     weight: 1
     reagents:
     - Lead
-    - Necrosol
+    # - Necrosol # removed upstream
     - Opporozidone

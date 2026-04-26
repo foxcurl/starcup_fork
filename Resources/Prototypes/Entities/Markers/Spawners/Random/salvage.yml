@@ -222,7 +222,7 @@
     - MobCobraSpaceSalvage
 
 - type: entity
-  parent: MarkerBase
+  parent: MarkerBaseStarcup # starcup
   name: Salvage Flesh Spawner
   id: SalvageFleshSpawner
   suffix: 100
