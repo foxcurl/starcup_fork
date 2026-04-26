@@ -890,6 +890,11 @@
     heldPrefix: produce
   - type: Produce
     seedId: potato
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: JuicePotato
+        Quantity: 10
   - type: Tag
     tags:
     - Potato
