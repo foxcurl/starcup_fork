@@ -36,7 +36,7 @@ public abstract class SharedWeatherSystem : EntitySystem
         if (!Resolve(ent, ref ent.Comp1))
             return false;
 
-        if (Resolve(ent, ref ent.Comp2, false) && _roof.IsRooved((ent, ent.Comp1, ent.Comp2), tileRef.GridIndices))
+        if (Resolve(ent, ref ent.Comp2, false) && _roof.IsWeatherOccluding((ent, ent.Comp1, ent.Comp2), tileRef.GridIndices)) // upstream: early merge #38638: use isWeatherOccluding
             return false;
 
         // begin upstream: early merge of #38638
