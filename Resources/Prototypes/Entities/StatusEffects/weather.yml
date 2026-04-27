@@ -3,6 +3,8 @@
   id: WeatherBase
   abstract: true
   components:
+  - type: Transform
+    gridTraversal: false
   - type: WeatherStatusEffect
   - type: StatusEffect
     whitelist:
