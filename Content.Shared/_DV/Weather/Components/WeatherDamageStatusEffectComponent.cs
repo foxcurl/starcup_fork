@@ -4,7 +4,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
-namespace Content.Server._DV.Weather;
+namespace Content.Shared._DV.Weather;
 
 [RegisterComponent, NetworkedComponent]
 public sealed partial class WeatherDamageStatusEffectComponent : Component
