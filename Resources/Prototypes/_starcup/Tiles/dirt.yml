@@ -49,7 +49,7 @@
   sprite: /Textures/_starcup/Tiles/Planet/dirt_pale_grassy_cold.rsi/dirt.png
 
 - type: tile
-  id: FloorPlanetDirtPaleeGrassyGolden
+  id: FloorPlanetDirtPaleGrassyGolden
   name: golden grassy pale dirt
   parent: FloorPlanetDirtPaleGrassy
   sprite: /Textures/_starcup/Tiles/Planet/dirt_pale_grassy_golden.rsi/dirt.png
