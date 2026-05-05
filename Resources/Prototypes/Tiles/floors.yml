@@ -31,6 +31,16 @@
   - FloorPlanetGrassBlue
   - FloorPlanetGrassDarkEdges
   - FloorPlanetGrassLightEdges
+  - FloorPlanetDirtPale
+  - FloorPlanetDirtPaleGrassy
+  - FloorPlanetDirtPaleGrassyCold
+  - FloorPlanetDirtPaleGrassyGolden
+  - FloorPlanetDirtPaleSnowy
+  - FloorPlanetDirtGrassy
+  - FloorPlanetDirtGrassyCold
+  - FloorPlanetDirtGrassyGolden
+  - FloorPlanetDirtTwilight
+  - FloorPlanetDirtSnowy
   # end starcup
 
 - type: tile
