@@ -24,6 +24,14 @@
   - FloorDirt
   - PlatingRCD
   - FloorHullReinforced
+  # begin starcup
+  - FloorPlanetGrassCold
+  - FloorPlanetGrassSnowy
+  - FloorPlanetGrassGolden
+  - FloorPlanetGrassBlue
+  - FloorPlanetGrassDarkEdges
+  - FloorPlanetGrassLightEdges
+  # end starcup
 
 - type: tile
   id: FloorSteel
