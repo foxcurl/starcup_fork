@@ -25,6 +25,8 @@
   - PlatingRCD
   - FloorHullReinforced
   # begin starcup
+  - FloorCave
+  - FloorCaveDrought
   - FloorPlanetGrassCold
   - FloorPlanetGrassSnowy
   - FloorPlanetGrassGolden
