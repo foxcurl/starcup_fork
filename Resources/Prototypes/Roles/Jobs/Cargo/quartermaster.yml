@@ -20,7 +20,6 @@
   startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
   supervisors: job-supervisors-captain
-  canBeAntag: false
   access:
   - Cargo
   - Salvage

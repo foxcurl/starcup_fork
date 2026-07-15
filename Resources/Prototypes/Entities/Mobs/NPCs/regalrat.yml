@@ -2,7 +2,7 @@
   name: rat king
   suffix: original # starcup: recolors below
   id: MobRatKing
-  parent: [ BaseMobRat, SimpleMobBase, MobCombat ]
+  parent: [ BaseMobRat, SimpleMobBase, MobCombat, BaseSlicingRefinable, MobNightVision ]
   description: The sheperd of the swarm, its mind and voice. It speaks their holy word. And that word is *more.* # starcup: changed for tone
   components:
   - type: CombatMode
@@ -121,9 +121,8 @@
     screamId: CreatureScream
     screamAction: ActionEmitSound
   # end starcup
-  - type: Butcherable
-    butcheringType: Spike # starcup
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: ClothingHeadHatFancyCrown #how did that get there?
       amount: 1
     - id: FoodMeatRat
@@ -141,7 +140,8 @@
   - type: Grammar
     attributes:
       gender: male
-  - type: Sharp
+  - type: Tool
+    qualities: Slicing
 
 - type: entity
   id: MobRatKingBuff
@@ -183,7 +183,7 @@
 - type: entity
   name: rat servant
   id: MobRatServant
-  parent: [ BaseMobRat, SimpleMobBase, MobCombat ]
+  parent: [ BaseMobRat, SimpleMobBase, MobCombat, BaseSlicingRefinable ]
   description: The tide is rising, and they flee from ship to ship, bringing each in turn to rust and ruin, starving, eating, mating, devouring. # starcup: changed for tone
   categories: [ HideSpawnMenu ] #Must be configured to a King or the AI breaks.
   components:
@@ -290,14 +290,13 @@
         Base: dead
       Dead:
         Base: splat
-  - type: Butcherable
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: FoodMeatRat
       amount: 1
   # begin starcup: give animals a voice
   - type: Vocal
-    sounds:
-      Unsexed: SqueakSpeechEmotes
+    emoteSounds: SqueakSpeechEmotes
     screamId: CreatureSqueak
     screamAction: ActionEmitSound
     wilhelmProbability: 0.001

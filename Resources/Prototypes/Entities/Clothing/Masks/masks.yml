@@ -210,6 +210,7 @@
   name: clown wig and mask
   description: An exaggerated, cartoonish set of facial attire for particularly garish acts of clownery. # starcup: rewritten for tone
   components:
+  - type: Appearance
   - type: Sprite
     sprite: Clothing/Mask/clown.rsi
   - type: Clothing
@@ -229,7 +230,6 @@
   id: ClothingMaskClown
   description: A clown mask featuring a foldable wig; a true prankster's attire.
   components:
-  - type: Appearance
   - type: Foldable
     canFoldInsideContainer: true
   - type: FoldableClothing

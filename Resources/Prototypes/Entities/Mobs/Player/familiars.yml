@@ -95,8 +95,7 @@
   - type: Familiar
   # begin starcup
   - type: Vocal
-    sounds:
-      Unsexed: LargeHellhoundSpeechEmotes
+    emoteSounds: LargeHellhoundSpeechEmotes # starcup
     screamId: CreatureBark
     screamAction: ActionEmitSound
   - type: Speech

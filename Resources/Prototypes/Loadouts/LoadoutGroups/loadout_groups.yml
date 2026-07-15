@@ -1631,6 +1631,7 @@
   - JensenCoat
   - TrenchCoat
   # end starcup
+  - SecurityOfficerWintercoat
 
 - type: loadoutGroup
   id: DetectiveJobTrinkets

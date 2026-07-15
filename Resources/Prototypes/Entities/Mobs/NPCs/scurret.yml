@@ -1,4 +1,4 @@
-﻿# Defines the scurret, a small, agile sapient species intended for players who want to play as something similar to an ewok.
+# Defines the scurret, a small, agile sapient species intended for players who want to play as something similar to an ewok.
 # Although based on MobBaseAncestor, this species does not have a "developed" playable species it is an ancestor to.
 
 - type: entity
@@ -44,17 +44,13 @@
   # Good eatin', you monster.
   # begin starcup: scurrets are not food
   # - type: Butcherable
-  #   butcheringType: Spike
   #   spawned:
   #   - id: FoodMeat
   #     amount: 4
   # end starcup
   # They wawa!
   - type: Vocal
-    sounds:
-      Male: Scurret
-      Female: Scurret
-      Unsexed: Scurret
+    emoteSounds: Scurret
     wilhelmProbability: 0.01 # the scug, it screams like a man
   - type: Speech
     speechVerb: Wawa

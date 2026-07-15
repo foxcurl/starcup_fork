@@ -22,18 +22,18 @@ using Robust.Shared.Random;
 
 namespace Content.Server.Bible
 {
-    public sealed class BibleSystem : EntitySystem
+    public sealed partial class BibleSystem : EntitySystem
     {
-        // [Dependency] private readonly IRobustRandom _random = default!; // starcup: unusud
-        [Dependency] private readonly ActionBlockerSystem _blocker = default!;
-        // [Dependency] private readonly DamageableSystem _damageableSystem = default!; // starcup: unused
-        // [Dependency] private readonly InventorySystem _invSystem = default!; // starcup: unused
-        // [Dependency] private readonly MobStateSystem _mobStateSystem = default!; // starcup: unused
-        [Dependency] private readonly PopupSystem _popupSystem = default!;
-        [Dependency] private readonly SharedActionsSystem _actionsSystem = default!;
-        [Dependency] private readonly SharedAudioSystem _audio = default!;
-        // [Dependency] private readonly UseDelaySystem _delay = default!; // starcup: unused
-        [Dependency] private readonly SharedTransformSystem _transform = default!;
+        // [Dependency] private IRobustRandom _random = default!; // starcup: unusud
+        [Dependency] private ActionBlockerSystem _blocker = default!;
+        // [Dependency] private DamageableSystem _damageableSystem = default!; // starcup: unused
+        // [Dependency] private InventorySystem _invSystem = default!; // starcup: unused
+        // [Dependency] private MobStateSystem _mobStateSystem = default!; // starcup: unused
+        [Dependency] private PopupSystem _popupSystem = default!;
+        [Dependency] private SharedActionsSystem _actionsSystem = default!;
+        [Dependency] private SharedAudioSystem _audio = default!;
+        // [Dependency] private UseDelaySystem _delay = default!; // starcup: unused
+        [Dependency] private SharedTransformSystem _transform = default!;
 
         public override void Initialize()
         {

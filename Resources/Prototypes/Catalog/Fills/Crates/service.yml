@@ -233,6 +233,7 @@
         - id: NotebookCompositionBlue
         - id: NotebookSpiralBeige
         # end starcup
+        - id: DeskBell
 
 - type: entity
   parent: CrateGenericSteel

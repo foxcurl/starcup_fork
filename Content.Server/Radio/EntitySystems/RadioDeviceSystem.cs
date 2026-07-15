@@ -24,16 +24,15 @@ namespace Content.Server.Radio.EntitySystems;
 /// <summary>
 ///     This system handles radio speakers and microphones (which together form a hand-held radio).
 /// </summary>
-public sealed class RadioDeviceSystem : SharedRadioDeviceSystem
+public sealed partial class RadioDeviceSystem : SharedRadioDeviceSystem
 {
-    [Dependency] private readonly IPrototypeManager _protoMan = default!;
-    [Dependency] private readonly PopupSystem _popup = default!;
-    [Dependency] private readonly ChatSystem _chat = default!;
-    [Dependency] private readonly RadioSystem _radio = default!;
-    [Dependency] private readonly InteractionSystem _interaction = default!;
-    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] private readonly UserInterfaceSystem _ui = default!;  // NF14
-    // [Dependency] private readonly INetManager _netMan = default!;  // NF14 // starcup: unused
+    [Dependency] private PopupSystem _popup = default!;
+    [Dependency] private ChatSystem _chat = default!;
+    [Dependency] private RadioSystem _radio = default!;
+    [Dependency] private InteractionSystem _interaction = default!;
+    [Dependency] private SharedAppearanceSystem _appearance = default!;
+    [Dependency] private UserInterfaceSystem _ui = default!;  // NF14
+    // [Dependency] private INetManager _netMan = default!;  // NF14 // starcup: unused
 
     // Used to prevent a shitter from using a bunch of radios to spam chat.
     private HashSet<(string, EntityUid, RadioChannelPrototype)> _recentlySent = new();
@@ -159,7 +158,7 @@ public sealed class RadioDeviceSystem : SharedRadioDeviceSystem
         if (!args.IsInDetailsRange)
             return;
 
-        var proto = _protoMan.Index<RadioChannelPrototype>(component.BroadcastChannel);
+        var proto = ProtoMan.Index<RadioChannelPrototype>(component.BroadcastChannel);
 
         using (args.PushGroup(nameof(RadioMicrophoneComponent)))
         {
@@ -181,7 +180,7 @@ public sealed class RadioDeviceSystem : SharedRadioDeviceSystem
         if (HasComp<RadioSpeakerComponent>(args.Source))
             return; // no feedback loops please.
 
-        var channel = _protoMan.Index<RadioChannelPrototype>(component.BroadcastChannel)!;
+        var channel = ProtoMan.Index<RadioChannelPrototype>(component.BroadcastChannel)!;
         if (_recentlySent.Add((args.Message, args.Source, channel)))
             _radio.SendRadioMessage(args.Source, args.Message, channel, uid, /*Nuclear-14-start*/ frequency: component.Frequency /*Nuclear-14-end*/);
     }
@@ -247,7 +246,7 @@ public sealed class RadioDeviceSystem : SharedRadioDeviceSystem
         if (ent.Comp.RequiresPower && !this.IsPowered(ent, EntityManager))
             return;
 
-        if (!_protoMan.HasIndex<RadioChannelPrototype>(args.Channel) || !ent.Comp.SupportedChannels.Contains(args.Channel))
+        if (!ProtoMan.HasIndex<RadioChannelPrototype>(args.Channel) || !ent.Comp.SupportedChannels.Contains(args.Channel))
             return;
 
         SetIntercomChannel(ent, args.Channel);
@@ -270,7 +269,7 @@ public sealed class RadioDeviceSystem : SharedRadioDeviceSystem
         if (TryComp<RadioMicrophoneComponent>(ent, out var mic))
         {
             mic.BroadcastChannel = channel.Value;
-            if(_protoMan.TryIndex<RadioChannelPrototype>(channel, out var channelProto)) // Frontier
+            if(ProtoMan.TryIndex<RadioChannelPrototype>(channel, out var channelProto)) // Frontier
                 mic.Frequency = _radio.GetFrequency(ent, channelProto); // Frontier
         }
         if (TryComp<RadioSpeakerComponent>(ent, out var speaker))
@@ -336,7 +335,7 @@ public sealed class RadioDeviceSystem : SharedRadioDeviceSystem
     {
         // Set initial frequency (must be done regardless of power/enabled)
         if (ent.CurrentChannel != null &&
-                _protoMan.TryIndex(ent.CurrentChannel, out var channel) &&
+                ProtoMan.TryIndex(ent.CurrentChannel, out var channel) &&
                 TryComp(uid, out RadioMicrophoneComponent? mic))
         {
             mic.Frequency = channel.Frequency;

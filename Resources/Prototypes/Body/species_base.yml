@@ -75,7 +75,6 @@
     - RatvarianLanguage
     - PressureImmunity
     - Muted
-    - TemporaryBlindness
     - Pacified
     - Flashed
     - Adrenaline
@@ -142,10 +141,7 @@
     speechSounds: Alto
   - type: DamageForceSay
   - type: Vocal
-    sounds:
-      Male: MaleHuman
-      Female: FemaleHuman
-      Unsexed: MaleHuman
+    emoteSounds: MaleHuman
   - type: Emoting
   - type: BodyEmotes
     soundsId: GeneralBodyEmotes
@@ -226,7 +222,6 @@
     rotAfter: 1200 # starcup: increase time to rot from 10 minutes to 20
   # begin starcup: people are not food
   # - type: Butcherable
-  #   butcheringType: Spike
   #   spawned:
   #     - id: FoodMeat
   #       amount: 5

@@ -19,6 +19,7 @@ using Content.Shared.Inventory.Events;
 using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Systems;
 using Content.Shared.NameModifier.EntitySystems;
+using Content.Shared.NightVision;
 using Content.Shared.Nutrition;
 using Content.Shared.Overlays;
 using Content.Shared.Projectiles;
@@ -60,6 +61,7 @@ public partial class InventorySystem
         SubscribeLocalEvent<InventoryComponent, IsUnequippingTargetAttemptEvent>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, ChameleonControllerOutfitSelectedEvent>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, VoiceMaskNameUpdatedEvent>(RelayInventoryEvent);
+        SubscribeLocalEvent<InventoryComponent, VoiceMaskToggledEvent>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, BeforeEmoteEvent>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, StoodEvent>(RelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, DownedEvent>(RelayInventoryEvent);
@@ -81,6 +83,7 @@ public partial class InventorySystem
         SubscribeLocalEvent<InventoryComponent, UnwieldAttemptEvent>(RefRelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, IngestionAttemptEvent>(RefRelayInventoryEvent);
         SubscribeLocalEvent<InventoryComponent, ExaminedEvent>(RefRelayInventoryEvent); // wizden: #39263 Add examinable clothing
+        SubscribeLocalEvent<InventoryComponent, RefreshNightVisionEvent>(RefRelayInventoryEvent);
 
         // Eye/vision events
         SubscribeLocalEvent<InventoryComponent, CanSeeAttemptEvent>(RelayInventoryEvent);
