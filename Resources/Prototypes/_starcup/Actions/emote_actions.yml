@@ -13,4 +13,5 @@
       state: emit_sound
     checkCanInteract: false
   - type: InstantAction
-    event: !type:ScreamActionEvent
+    event: !type:EmoteActionEvent
+      emote: Scream
