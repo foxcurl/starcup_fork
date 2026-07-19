@@ -3972,3 +3972,12 @@
   id: 8498
   time: '2026-07-18T05:53:35.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/946
+- author: KoboldCatgirl
+  changes:
+  - message: Syndicate Communications has been gifted by Electra Dynamics the beautiful
+      Ptarmigan Outpost, a lowpop terrestrial station set on the far side of Glacier's
+      frozen moon.
+    type: Add
+  id: 8499
+  time: '2026-07-19T15:53:26.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/910
