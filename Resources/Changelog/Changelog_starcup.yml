@@ -3981,3 +3981,24 @@
   id: 8499
   time: '2026-07-19T15:53:26.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/910
+- author: KoboldCatgirl
+  changes:
+  - message: Donk Co has helpfully installed new advanced butchering stations into
+      almost every station's freezer! Drag livestock inside for a quick, clean kill.
+    type: Add
+  - message: Cybersun has generously had new document printers installed on every
+      station in the sector, mostly under the librarians' jurisdiction.
+    type: Add
+  - message: All libraries now come stocked with a guidebookshelf, bearing all the
+      practical information you'd ever need to know.
+    type: Add
+  - message: Virtually all libraries now come stocked with a book cart! Let's get
+      this book on the road!
+    type: Add
+  - message: Fixed Byoin's errant Medical/Bartender airlocks, Omega's haunted Atmos
+      door, Crux's disconnected blast doors, and other miscellaneous non-door-related
+      mapping bugs.
+    type: Fix
+  id: 8500
+  time: '2026-07-19T15:59:38.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/950
