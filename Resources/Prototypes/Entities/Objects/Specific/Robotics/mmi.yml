@@ -45,8 +45,7 @@
     - SiliconEmotes
   - type: Emoting
   - type: Vocal
-    sounds:
-      Unsexed: UnisexSilicon
+    emoteSounds: UnisexSilicon
     # end starcup
   - type: ItemSlots
   - type: ContainerContainer
@@ -122,8 +121,7 @@
     # begin starcup - Allows use of borg emotes
     - type: Emoting
     - type: Vocal
-      sounds:
-        Unsexed: UnisexSilicon
+      emoteSounds: UnisexSilicon
     # end starcup
     - type: TypingIndicator
       proto: robot

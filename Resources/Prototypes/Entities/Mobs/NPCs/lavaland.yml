@@ -83,10 +83,9 @@
     speechSounds: WatcherSpeechSounds
     allowedEmotes: ['CreatureScream', 'CreatureClick']
   - type: Vocal
-    sounds:
-      Unsexed: WatcherSpeechEmotes
+    emoteSounds: WatcherSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: xeno
   - type: TypingIndicator

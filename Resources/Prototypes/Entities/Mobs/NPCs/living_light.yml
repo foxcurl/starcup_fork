@@ -90,10 +90,9 @@
     speechSounds: LuminousSpeechSounds
     allowedEmotes: ['CreatureLaugh', 'CreatureScream']
   - type: Vocal
-    sounds:
-      Unsexed: LuminousSpeechEmotes
+    emoteSounds: LuminousSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: AutoEmote
     emotes:
     - LaughAutoEmote

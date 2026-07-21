@@ -164,10 +164,6 @@
   - type: TypingIndicator
     proto: rodentia
   - type: Vocal
-    sounds:
-      Male: MaleRodentia
-      Female: FemaleRodentia
-      Unsexed: MaleRodentia
   - type: Rummager
   - type: AlwaysTriggerMousetrap
   - type: PseudoItem

@@ -1105,10 +1105,9 @@
     speechVerb: SmallMob
     allowedEmotes: ['CreatureTrill', 'CreaturePurr', 'CreatureMeow', 'CreatureScream', 'CreatureGrowl', 'CreatureWhimper', 'CreatureHiss', 'CreatureCough']
   - type: Vocal
-    sounds:
-      Unsexed: CatSpeechEmotes
+    emoteSounds: CatSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: cat
   # end starcup

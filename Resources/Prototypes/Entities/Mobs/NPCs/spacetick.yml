@@ -101,10 +101,9 @@
     footstepSoundCollection:
       collection: FootstepBug
   - type: Vocal
-    sounds:
-      Unsexed: CrabSpeechEmotes
+    emoteSounds: CrabSpeechEmotes
     screamId: CreatureClick
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
     # end starcup
 
 - type: entity

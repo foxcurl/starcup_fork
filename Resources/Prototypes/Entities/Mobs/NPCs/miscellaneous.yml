@@ -77,10 +77,9 @@
       speechSounds: RaptorSpeechSounds
       allowedEmotes: ['CreatureScream', 'CreatureChitter', 'CreatureHiss', 'TailWhip']
     - type: Vocal
-      sounds:
-        Unsexed: RaptorSpeechEmotes
+      emoteSounds: RaptorSpeechEmotes
       screamId: CreatureScream
-      screamAction: ActionEmitSound
+      emoteAction: ActionEmitSound
     - type: ReplacementAccent
       accent: RaptorAccent
     - type: TypingIndicator
@@ -258,8 +257,7 @@
   - type: TypingIndicator
     proto: slime
   - type: Vocal
-    sounds:
-      Unsexed: FleshSpeechEmotes
+    emoteSounds: FleshSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
     # end starcup

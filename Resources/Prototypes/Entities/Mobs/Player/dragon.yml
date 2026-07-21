@@ -42,10 +42,9 @@
     speechSounds: DragonSpeechSounds
     allowedEmotes: ['CreatureRoar', 'CreatureLaugh', 'CreatureGrowl', 'CreatureTrill', 'CreaturePurr']
   - type: Vocal
-    sounds:
-      Unsexed: DragonSpeechEmotes
+    emoteSounds: DragonSpeechEmotes
     screamId: CreatureRoar
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: TypingIndicator
     proto: alien
     # end starcup

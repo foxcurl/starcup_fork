@@ -434,10 +434,9 @@
     speechVerb: Reptilian
     allowedEmotes: ['CreatureHiss']
   - type: Vocal
-    sounds:
-      Unsexed: SpaceSnakeSpeechEmotes
+    emoteSounds: SpaceSnakeSpeechEmotes
     screamId: CreatureHiss
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: TypingIndicator
     proto: alien
   - type: ReplacementAccent

@@ -97,7 +97,7 @@
   - type: Vocal
     emoteSounds: LargeHellhoundSpeechEmotes # starcup
     screamId: CreatureBark
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: Speech
     speechVerb: Canine
     speechSounds: HellhoundSpeechSounds

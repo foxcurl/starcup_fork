@@ -86,10 +86,9 @@
     - CreatureEmotes # starcup
   # begin starcup: give animals a voice
   - type: Vocal
-    sounds:
-      Unsexed: BatSpeechEmotes
+    emoteSounds: BatSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: TypingIndicator
     proto: rodentia
   - type: AutoEmote
@@ -277,7 +276,6 @@
     refineResult:
     - id: FoodMeatChicken
       amount: 1
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: InteractionPopup
     successChance: 0.8
     interactSuccessString: petting-success-bird
@@ -303,10 +301,9 @@
     - Passive
   # begin starcup: give animals a voice
   - type: Vocal
-    sounds:
-      Unsexed: CluckSpeechEmotes
+    emoteSounds: CluckSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: AutoEmote
     emotes:
     - CluckAutoEmote
@@ -508,10 +505,9 @@
     speechSounds: BeetleSpeechSounds
     allowedEmotes: ['BuzzNonSilicon']
   - type: Vocal
-    sounds:
-      Unsexed: BeetleSpeechEmotes
+    emoteSounds: BeetleSpeechEmotes
     screamId: BuzzNonSilicon
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: crab
   - type: FootstepModifier
@@ -664,7 +660,7 @@
     # begin starcup
     emoteSounds: MothroachSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
     wilhelmProbability: 0.001
   - type: AutoEmote
     emotes:
@@ -791,7 +787,6 @@
     refineResult:
     - id: FoodMeatDuck
       amount: 1
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: InteractionPopup
     successChance: 0.9
     interactSuccessString: petting-success-bird
@@ -821,10 +816,9 @@
     speechSounds: DuckSpeechSounds
     allowedEmotes: ['Flutter', 'CreatureQuack', 'CreatureLaugh', 'CreatureScream']
   - type: Vocal
-    sounds:
-      Unsexed: DuckSpeechEmotes
+    emoteSounds: DuckSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: AutoEmote
     emotes:
     - QuackAutoEmote
@@ -1017,7 +1011,6 @@
     refineResult:
     - id: FoodMeat
       amount: 5
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: Grammar
     attributes:
       gender: female # Here because of UdderComponent
@@ -1056,10 +1049,9 @@
     speechSounds: CowSpeechSounds
     allowedEmotes: ['CreatureScream', 'CreatureCough', 'CreatureMoo', 'CreatureSneeze']
   - type: Vocal
-    sounds:
-      Unsexed: CowSpeechEmotes
+    emoteSounds: CowSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: AutoEmote
     emotes:
     - MooAutoEmote
@@ -1166,10 +1158,9 @@
     footstepSoundCollection:
       collection: FootstepBug
   - type: Vocal
-    sounds:
-      Unsexed: CrabSpeechEmotes
+    emoteSounds: CrabSpeechEmotes
     screamId: ClawSnap
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   # end starcup
 
 - type: entity
@@ -1243,7 +1234,6 @@
     refineResult:
     - id: FoodMeat
       amount: 4
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: Grammar
     attributes:
       gender: female # Here because of UdderComponent
@@ -1255,7 +1245,7 @@
   - type: Vocal
     emoteSounds: GoatSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: AutoEmote
     emotes:
     - BleatAutoEmote
@@ -1539,7 +1529,6 @@
     refineResult:
     - id: FoodMeatChicken
       amount: 2
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: InteractionPopup # TODO: Make it so there's a separate chance to make certain animals outright hostile towards you.
     successChance: 0.1 # Yeah, good luck with that.
     interactSuccessString: petting-success-goose
@@ -1573,10 +1562,9 @@
     speechSounds: GooseSpeechSounds
     allowedEmotes: ['CreatureScream', 'CreatureHonk', 'Flutter']
   - type: Vocal
-    sounds:
-      Unsexed: GooseSpeechEmotes
+    emoteSounds: GooseSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: AutoEmote
     emotes:
     - HonkAutoEmote
@@ -1619,7 +1607,6 @@
     refineResult:
     - id: FoodMeat
       amount: 4
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
@@ -1674,10 +1661,9 @@
     speechSounds: GorillaSpeechSounds
     allowedEmotes: ['CreatureScream', 'CreatureOok', 'CreatureGrowl', 'ChestBeating', 'CreatureCough', 'ThumpFistLoud']
   - type: Vocal
-    sounds:
-      Unsexed: GorillaSpeechEmotes
+    emoteSounds: GorillaSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: AutoEmote
     emotes:
     - OokAutoEmote
@@ -1723,7 +1709,6 @@
   - type: ToolRefinable
     refineResult:
     - id: FoodMeat
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: DamageStateVisuals
     states:
       Alive:
@@ -1748,7 +1733,7 @@
     emoteSounds: KangarooSpeechEmotes # starcup
   # begin starcup
     screamId: CreatureGrowl
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: Speech
     speechVerb: LargeMob
     speechSounds: KangarooSpeechSounds
@@ -1920,10 +1905,9 @@
     group: Monkey
   # begin starcup
   - type: Vocal
-    sounds:
-      Unsexed: MonkeySpeechEmotes
+    emoteSounds: MonkeySpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: Speech
     speechSounds: MonkeySpeechSounds
     speechVerb: Monkey
@@ -2103,7 +2087,6 @@
 #          horns_double: Inherit
 #          horns_kobold_ears: Inherit
 #  - type: Butcherable
-#    butcheringType: Spike
 #    spawned:
 #    - id: FoodMeat
 #      amount: 2
@@ -2318,7 +2301,7 @@
   - type: Vocal
     emoteSounds: SqueakSpeechEmotes # starcup
     screamId: CreatureSqueak
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
     wilhelmProbability: 0.001
   - type: TypingIndicator
     proto: rodentia
@@ -2501,10 +2484,9 @@
     speechVerb: Reptilian
     allowedEmotes: ['CreatureScream', 'CreatureGrowl', 'CreatureHiss', 'CreatureWhimper', 'ThumpTailSoft', 'ThumpTailMany', 'ThumpTailLoud', 'TailWhip'] # Can't thump tail because no body component  # starcup: Hiss -> LizardHiss -> CreatureHiss
   - type: Vocal # Imp edit # no it's starcup again babyyy
-    sounds:
-      Unsexed: LizardSpeechEmotes
+    emoteSounds: LizardSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: LizardAccent
   # end starcup
@@ -2541,7 +2523,6 @@
     refineResult:
     - id: FoodMeatLizard
       amount: 1
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: InteractionPopup
     successChance: 0.3
     interactSuccessString: petting-success-reptile
@@ -2622,10 +2603,9 @@
     speechVerb: Reptilian
     allowedEmotes: ['CreatureScream', 'CreatureWhimper', 'CreatureSqueak', 'ThumpTailSoft']
   - type: Vocal
-    sounds:
-      Unsexed: LizardTinySpeechEmotes
+    emoteSounds: LizardTinySpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: GeckoAccent
   # end starcup
@@ -2707,10 +2687,9 @@
     speechVerb: Reptilian
     allowedEmotes: ['CreatureWhimper', 'CreatureCroak']
   - type: Vocal
-    sounds:
-      Unsexed: FrogSpeechEmotes
+    emoteSounds: FrogSpeechEmotes
     screamId: CreatureWhimper
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: FrogAccent
   - type: AutoEmote
@@ -2758,7 +2737,6 @@
     refineResult:
     - id: FoodMeat
       amount: 1
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   # begin starcup
   - type: Speech
     speechSounds: ParrotSpeechSounds
@@ -2767,7 +2745,7 @@
   - type: Vocal
     emoteSounds: ParrotSpeechEmotes # starcup
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: Tag
     tags:
     - CreatureEmotes
@@ -2854,7 +2832,6 @@
     refineResult:
     - id: FoodMeatPenguin
       amount: 3
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: InteractionPopup
     successChance: 0.5
     interactSuccessString: petting-success-bird
@@ -2886,10 +2863,9 @@
     speechSounds: PenguinSpeechSounds
     allowedEmotes: ['CreatureScream', 'CreatureChitter']
   - type: Vocal
-    sounds:
-      Unsexed: PenguinSpeechEmotes
+    emoteSounds: PenguinSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: PenguinAccent
   - type: AutoEmote
@@ -3010,7 +2986,6 @@
     refineResult:
     - id: FoodMeatSnake
       amount: 1
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: InteractionPopup
     successChance: 0.6
     interactSuccessString: petting-success-reptile
@@ -3031,10 +3006,9 @@
     speechVerb: Reptilian
     allowedEmotes: ['CreatureHiss']
   - type: Vocal
-    sounds:
-      Unsexed: SnakeSpeechEmotes
+    emoteSounds: SnakeSpeechEmotes
     screamId: CreatureHiss
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: xeno
   - type: Tag
@@ -3075,7 +3049,6 @@
     refineResult:
     - id: FoodMeatSpider
       amount: 2
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: CombatMode
   - type: MobThresholds
     thresholds:
@@ -3111,10 +3084,10 @@
     speechSounds: Arachnid
     allowedEmotes: ['CreatureScream', 'CreatureLaugh', 'CreatureClick', 'CreatureChitter'] # starcup
   - type: Vocal
-    emotesounds: SpiderSpeechEmotes # starcup
+    emoteSounds: SpiderSpeechEmotes # starcup
     # begin starcup
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: AutoEmote
     emotes:
     - ChitterAutoEmote
@@ -3342,7 +3315,6 @@
     refineResult:
     - id: FoodMeat
       amount: 3
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: InteractionPopup
     successChance: 0.2 # Low when undomesticated.
     interactSuccessString: petting-success-possum # Possums don't really make much noise when they're happy. They make clicking noises as a mating call, but that is NOT the same thing!
@@ -3361,10 +3333,9 @@
     speechSounds: PossumSpeechSounds
     allowedEmotes: ['CreatureHiss', 'CreatureYawn', 'CreatureCough','CreatureChitter', 'CreatureGrowl', 'CreatureLaugh', 'CreatureSneeze']
   - type: Vocal
-    sounds:
-      Unsexed: PossumSpeechEmotes
+    emoteSounds: PossumSpeechEmotes
     screamId: CreatureHiss
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: xeno
   - type: AutoEmote
@@ -3432,7 +3403,6 @@
     refineResult:
     - id: FoodMeat
       amount: 3
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: InteractionPopup
     successChance: 0.2 # Low when undomesticated.
     interactSuccessString: petting-success-soft-floofy
@@ -3454,10 +3424,9 @@
     speechSounds: RaccoonSpeechSounds
     allowedEmotes: ['CreatureScream', 'CreatureChitter', 'CreatureBark', 'CreatureWhimper', 'CreatureYawn', 'CreatureCough', 'CreatureSneeze']
   - type: Vocal
-    sounds:
-      Unsexed: RaccoonSpeechEmotes
+    emoteSounds: RaccoonSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: RaccoonAccent
   - type: AutoEmote
@@ -3511,7 +3480,6 @@
     refineResult:
     - id: FoodMeat
       amount: 3
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: InteractionPopup
     successChance: 0.5
     interactSuccessString: petting-success-soft-floofy
@@ -3555,10 +3523,9 @@
     speechSounds: FoxSpeechSounds
     allowedEmotes: ['CreatureScream', 'CreatureBark', 'CreatureWhimper', 'CreatureCough', 'Shake', 'CreatureSneeze']
   - type: Vocal
-    sounds:
-      Unsexed: FoxSpeechEmotes
+    emoteSounds: FoxSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: FoxAccent
   - type: AutoEmote
@@ -3586,10 +3553,9 @@
     speechSounds: DogSpeechSounds
     allowedEmotes: ['CreatureBark', 'CreatureSnarl', 'CreatureGrowl', 'CreatureWhimper', 'CreatureHowl', 'CreatureCough', 'CreatureSneeze', 'Snuffle', 'Pant', 'Shake']
   - type: Vocal
-    sounds:
-      Unsexed: SmallDogSpeechEmotes
+    emoteSounds: SmallDogSpeechEmotes
     screamId: CreatureBark
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: DogAccent
   - type: Tag
@@ -3649,7 +3615,6 @@
     refineResult:
     - id: FoodMeat
       amount: 2
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   # begin starcup: all this made irrelevant by modifying MobCorgiBase
   #- type: ReplacementAccent
     #accent: dog
@@ -3729,8 +3694,7 @@
     speechSounds: HellhoundSpeechSounds
     allowedEmotes: ['CreatureBark', 'CreatureSnarl', 'CreatureGrowl', 'CreatureWhimper', 'CreatureHowl', 'Snuffle', 'Pant', 'Shake']
   - type: Vocal
-    sounds:
-      Unsexed: SmallHellhoundSpeechEmotes
+    emoteSounds: SmallHellhoundSpeechEmotes
   # end starcup
 
 - type: entity
@@ -3765,10 +3729,9 @@
     speechSounds: PuppySpeechSounds
     allowedEmotes: ['CreatureBark', 'CreatureWhimper', 'CreatureYawn', 'CreatureCough', 'CreatureSneeze', 'Snuffle', 'Pant', 'Shake']
   - type: Vocal
-    sounds:
-      Unsexed: PuppySpeechEmotes
+    emoteSounds: PuppySpeechEmotes
     screamId: CreatureBark
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   # end starcup
 
 - type: entity
@@ -3814,7 +3777,7 @@
   - type: Vocal
     emoteSounds: CatSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: AutoEmote
     emotes:
     - MeowAutoEmote
@@ -3823,7 +3786,6 @@
     refineResult:
     - id: FoodMeat
       amount: 3
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: ReplacementAccent
     accent: cat
   - type: InteractionPopup
@@ -4032,10 +3994,9 @@
     speechVerb: SmallMob
     allowedEmotes: ['CreatureTrill', 'CreaturePurr', 'CreatureMeow', 'CreatureScream', 'CreatureGrowl', 'CreatureWhimper', 'CreatureHiss', 'CreatureCough', 'CreatureSneeze']
   - type: Vocal
-    sounds:
-      Unsexed: CaracalSpeechEmotes
+    emoteSounds: CaracalSpeechEmotes
     screamId: CreatureHiss
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   # end starcup
 
 - type: entity
@@ -4060,7 +4021,6 @@
     refineResult:
     - id: FoodMeat
       amount: 1
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: MobPrice
     price: 100
   - type: MeleeWeapon
@@ -4084,10 +4044,9 @@
     speechVerb: SmallMob
     allowedEmotes: ['CreatureTrill', 'CreaturePurr', 'CreatureMeow', 'CreatureGrowl', 'CreatureWhimper', 'CreatureHiss', 'CreatureSneeze']
   - type: Vocal
-    sounds:
-      Unsexed: KittenSpeechEmotes
+    emoteSounds: KittenSpeechEmotes
     screamId: CreatureWhimper
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   # end starcup
 
 - type: entity
@@ -4132,7 +4091,6 @@
     refineResult:
     - id: FoodMeat
       amount: 3
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: InteractionPopup
     successChance: 0.9
     interactSuccessString: petting-success-sloth
@@ -4156,10 +4114,9 @@
     speechVerb: SilentVerb
     allowedEmotes: ['CreatureBark', 'CreatureScream', 'CreatureSqueak', 'CreatureYawn', 'CreatureCough', 'CreatureSneeze']
   - type: Vocal
-    sounds:
-      Unsexed: SlothSpeechEmotes
+    emoteSounds: SlothSpeechEmotes
     screamId: CreatureSqueak
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: AutoEmote
     emotes:
     - SqueakAutoEmote
@@ -4205,7 +4162,6 @@
     refineResult:
     - id: FoodMeat
       amount: 3
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: InteractionPopup
     successChance: 0.8
     interactDelay: 1.5 # Avoids overlapping SFX due to spam - these SFX are a little longer than the typical 1 second.
@@ -4231,9 +4187,8 @@
     allowedEmotes: ['CreatureSqueak', 'CreatureWhimper', 'CreatureLaugh', 'CreatureYawn', 'CreatureCough', 'CreatureSneeze']
   - type: Vocal
     screamId: CreatureWhimper
-    screamAction: ActionEmitSound
-    sounds:
-      Unsexed: FerretSpeechEmotes
+    emoteAction: ActionEmitSound
+    emoteSounds: FerretSpeechEmotes
   # end starcup
 
 - type: entity
@@ -4256,10 +4211,9 @@
     speechVerb: SmallMob
     allowedEmotes: ['CreatureSqueak', 'CreaturePurr', 'CreatureTrill', 'CreatureYawn', 'CreatureCough', 'CreatureSneeze']
   - type: Vocal
-    sounds:
-      Unsexed: HamsterSpeechEmotes
+    emoteSounds: HamsterSpeechEmotes
     screamId: CreatureTrill
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: TypingIndicator
     proto: rodentia
   # end starcup
@@ -4341,7 +4295,6 @@
     refineResult:
     - id: FoodMeat
       amount: 1
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: ReplacementAccent
     accent: HamsterAccent # starcup
   - type: Tag
@@ -4453,7 +4406,6 @@
     refineResult:
     - id: FoodMeatBacon
       amount: 6
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: Grammar
     attributes:
       gender: epicene
@@ -4479,10 +4431,9 @@
     speechSounds: PigSpeechSounds
     allowedEmotes: ['CreatureScream', 'CreatureCough', 'CreatureOink', 'CreatureSneeze']
   - type: Vocal
-    sounds:
-      Unsexed: PigSpeechEmotes
+    emoteSounds: PigSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: AutoEmote
     emotes:
     - OinkAutoEmote
@@ -4557,7 +4508,7 @@
   - type: Vocal
     emoteSounds: NymphSpeechEmotes # starcup
     screamId: CreatureChirp
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepBug
@@ -4629,7 +4580,6 @@
     refineResult:
     - id: FoodMeat
       amount: 4
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
@@ -4660,10 +4610,9 @@
     speechSounds: DeerSpeechSounds
     allowedEmotes: ['CreatureScream', 'CreatureBark', 'CreatureCough']
   - type: Vocal
-    sounds:
-      Unsexed: DeerSpeechEmotes
+    emoteSounds: DeerSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: DeerAccent
   - type: FootstepModifier

@@ -103,10 +103,9 @@
     speechSounds: GoliathSpeechSounds
     allowedEmotes: ['CreatureRoar', 'CreatureGrowl']
   - type: Vocal
-    sounds:
-      Unsexed: GoliathSpeechEmotes
+    emoteSounds: GoliathSpeechEmotes
     screamId: CreatureRoar
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: genericAggressive
   - type: TypingIndicator
@@ -279,10 +278,9 @@
     speechSounds: HivelordSpeechSounds
     allowedEmotes: ['CreatureScream', 'CreatureClick']
   - type: Vocal
-    sounds:
-      Unsexed: HivelordSpeechEmotes
+    emoteSounds: HivelordSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: xeno
   - type: TypingIndicator
@@ -483,10 +481,9 @@
     speechSounds: BasiliskSpeechSounds
     allowedEmotes: ['CreatureScream', 'CreatureLaugh', 'CreatureChitter', 'CreatureClick']
   - type: Vocal
-    sounds:
-      Unsexed: SpaceSpiderSpeechEmotes
+    emoteSounds: SpaceSpiderSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: xeno
   - type: TypingIndicator

@@ -102,7 +102,7 @@
   - type: ToolRefinable
     refineResult:
     - id: FoodSnackChocolateBarLarjChunk
-    amount: 3
+      amount: 3
 
 - type: entity
   parent: [ FoodSnackBase, BaseSlicingRefinableFood ] # starcup - SlicableFood breaking change
@@ -232,7 +232,7 @@
     state: green
   - type: FlavorProfile
     flavors:
-    - lime # starcup: remove "artificial" flavors
+    - sour # starcup: remove "artificial" flavors
 
 - type: entity
   parent: FoodSnackWrappedCandyBase

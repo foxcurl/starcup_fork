@@ -1,4 +1,4 @@
-# This action is pointed to in the "screamAction:" field of the Vocal component to replace the default scream.
+# This action is pointed to in the "emoteAction:" field of the Vocal component to replace the default scream.
 
 - type: entity
   parent: BaseAction

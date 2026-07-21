@@ -4,7 +4,7 @@
   id: CassetteTapeFilledPtarmigan
   components:
   - type: Label
-    currentLabel: Ptarmigan Introductory Recording
+    localizedLabel: Ptarmigan Introductory Recording
   - type: TapeCassette
     recordedData:
     - timestamp: 1

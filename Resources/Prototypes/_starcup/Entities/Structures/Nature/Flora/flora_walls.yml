@@ -6,8 +6,9 @@
   description: These tough vines have grown tightly intertwined, blocking all sight of what's beyond.
   components:
   - type: Damageable
-    damageContainer: StructuralInorganic
     damageModifierSet: WoodenStructure
+  - type: Injurable
+    damageContainer: StructuralInorganic
   - type: Sprite
     sprite: _starcup/Structures/Walls/flora_bramble_wall_green_thick.rsi
   - type: Icon

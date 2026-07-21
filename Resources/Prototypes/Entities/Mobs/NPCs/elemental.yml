@@ -75,10 +75,9 @@
     speechSounds: OreCrabSpeechSounds
     allowedEmotes: ['CreatureChitter', 'ClawSnap']
   - type: Vocal
-    sounds:
-      Unsexed: OreCrabSpeechEmotes
+    emoteSounds: OreCrabSpeechEmotes
     screamId: ClawSnap
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: FootstepModifier
     footstepSoundCollection:
       collection: FootstepBug

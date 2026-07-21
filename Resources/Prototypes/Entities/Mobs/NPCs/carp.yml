@@ -86,10 +86,9 @@
       speechSounds: CarpSpeechSounds
       allowedEmotes: ['CreatureGrowl']
     - type: Vocal
-      sounds:
-        Unsexed: CarpSpeechEmotes
+      emoteSounds: CarpSpeechEmotes
       screamId: CreatureGrowl
-      screamAction: ActionEmitSound
+      emoteAction: ActionEmitSound
   # end starcup
     - type: InteractionPopup
       interactSuccessString: petting-success-carp
@@ -272,10 +271,9 @@
     speechSounds: SharkminnowSpeechSounds
     allowedEmotes: ['CreatureGrowl']
   - type: Vocal
-    sounds:
-      Unsexed: SharkminnowSpeechEmotes
+    emoteSounds: SharkminnowSpeechEmotes
     screamId: CreatureGrowl
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: AutoEmote
     emotes:
     - GrowlAutoEmote

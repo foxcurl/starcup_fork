@@ -116,10 +116,9 @@
     speechVerb: LargeMob
     allowedEmotes: ['CreatureSqueak', 'CreatureScream', 'CreatureLaugh', 'CreatureYawn', 'CreatureCough']
   - type: Vocal
-    sounds:
-      Unsexed: RatKingSpeechEmotes
+    emoteSounds: RatKingSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   # end starcup
   - type: ToolRefinable
     refineResult:
@@ -298,7 +297,7 @@
   - type: Vocal
     emoteSounds: SqueakSpeechEmotes
     screamId: CreatureSqueak
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
     wilhelmProbability: 0.001
   - type: TypingIndicator
     proto: rodentia

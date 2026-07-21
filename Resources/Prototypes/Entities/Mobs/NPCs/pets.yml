@@ -44,7 +44,6 @@
     - id: FoodMeatCorgi
       amount: 2
     - id: MaterialHideCorgi
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: Tag
     tags:
     - CannotSuicide
@@ -77,7 +76,6 @@
       amount: 2
     - id: SheetSteel1
     - id: MaterialHideCorgi
-    dropOrgansOnButcher: true # starcup: butchering gives organs
 
 - type: entity
   name: Lisa
@@ -155,7 +153,6 @@
     - id: FoodMeatCorgi
       amount: 2
     - id: MaterialHideCorgi
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: StealTarget
     stealGroup: AnimalIan
 
@@ -287,7 +284,6 @@
     refineResult:
     - id: FoodMeat
       amount: 2
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: InteractionPopup
     successChance: 0.9
     interactSuccessString: petting-success-bingus
@@ -314,10 +310,9 @@
     speechVerb: SmallMob
     allowedEmotes: ['CreatureTrill', 'CreaturePurr', 'CreatureMeow', 'CreatureScream', 'CreatureGrowl', 'CreatureWhimper', 'CreatureHiss', 'CreatureCough']
   - type: Vocal
-    sounds:
-      Unsexed: CatSpeechEmotes
+    emoteSounds: CatSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: ReplacementAccent
     accent: cat
   # end starcup
@@ -374,7 +369,6 @@
     refineResult:
     - id: FoodMeat
       amount: 2
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: ReplacementAccent
     accent: DogAccent # starcup
   - type: InteractionPopup
@@ -394,10 +388,9 @@
     speechSounds: DogSpeechSounds
     allowedEmotes: ['CreatureBark', 'CreatureSnarl', 'CreatureGrowl', 'CreatureWhimper', 'CreatureHowl', 'CreatureCough', 'Snuffle', 'Pant', 'Shake']
   - type: Vocal
-    sounds:
-      Unsexed: SmallDogSpeechEmotes
+    emoteSounds: SmallDogSpeechEmotes
     screamId: CreatureBark
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: Tag
     tags:
     - CannotSuicide
@@ -434,7 +427,6 @@
     refineResult:
     - id: FoodMeat
       amount: 3
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: InteractionPopup
     successChance: 1
     interactSuccessString: petting-success-sloth
@@ -486,7 +478,6 @@
     refineResult:
     - id: FoodMeat
       amount: 3
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: ReplacementAccent
     accent: DogAccent # starcup
   - type: InteractionPopup
@@ -513,10 +504,9 @@
     speechSounds: DogSpeechSounds
     allowedEmotes: ['CreatureBark', 'CreatureSnarl', 'CreatureGrowl', 'CreatureWhimper', 'CreatureHowl', 'CreatureCough', 'Snuffle', 'Pant', 'Shake']
   - type: Vocal
-    sounds:
-      Unsexed: SmallDogSpeechEmotes
+    emoteSounds: SmallDogSpeechEmotes
     screamId: CreatureBark
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   # end starcup
   - type: MessyDrinker
   - type: Puller # starcup - go fetch!
@@ -656,7 +646,6 @@
     # - id: Telecrystal5
     #   amount: 1
     # end starcup
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: Grammar
     attributes:
       proper: true
@@ -711,7 +700,6 @@
     refineResult:
     - id: FoodMeat
       amount: 1
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: Grammar
     attributes:
       proper: true
@@ -894,7 +882,6 @@
       amount: 1
     - id: MaterialSmileExtract
       amount: 1
-    dropOrgansOnButcher: true # starcup: butchering gives organs
   - type: Damageable
     damageModifierSet: SlimePet
   - type: Bloodstream

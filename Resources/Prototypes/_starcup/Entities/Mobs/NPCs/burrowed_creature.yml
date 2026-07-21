@@ -112,8 +112,9 @@
     baseSprintSpeed : 0
   - type: Insulated
   - type: Damageable
-    damageContainer: Biological
     damageModifierSet: burrowed
+  - type: Injurable
+    damageContainer: Biological
   - type: MobState
   - type: MobThresholds
     thresholds:

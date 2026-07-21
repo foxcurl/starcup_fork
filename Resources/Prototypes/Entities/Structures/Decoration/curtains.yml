@@ -64,7 +64,8 @@
   suffix: Hospital
   description: Contains less than 1% mercury.
   components:
-  - type: Sprite # DeltaV - Removed cardinal snapping
+  - type: Sprite
+    snapCardinals: false # DeltaV - Removed cardinal snapping
     sprite: _DV/Structures/Decoration/Curtains/hospital.rsi # DeltaV - Changed sprite path
     layers:
     - state: closed

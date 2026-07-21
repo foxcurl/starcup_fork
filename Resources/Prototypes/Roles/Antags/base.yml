@@ -1,4 +1,4 @@
-﻿- type: antagSpecifier
+- type: antagSpecifier
   abstract: true
   id: BaseAntagSpecifier
   jobBlacklist:
@@ -11,6 +11,13 @@
   - ERTMedical
   - ERTJanitor
   - CBURN
+  # begin starcup: SyndComm
+  - SyndCommOperator
+  - SyndCommAgent
+  - SyndCommOfficer
+  - SyndCommOfficial
+  # end starcup
+
   blacklist:
     components:
     - AntagImmune
@@ -28,6 +35,7 @@
   - ResearchDirector
   - ChiefEngineer
   - Quartermaster
+  - AdministrativeAssistant # starcup
 
 # Borgs
 - type: antagSpecifier
@@ -61,6 +69,7 @@
   - Detective
   - SecurityOfficer
   - SecurityCadet
+  - Brigmedic # starcup
 
 - type: antagSpecifier
   abstract: true

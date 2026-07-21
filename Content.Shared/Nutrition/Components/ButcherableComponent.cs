@@ -25,11 +25,4 @@ public sealed partial class ButcherableComponent : Component
     [DataField, AutoNetworkedField]
     public float ButcherDelay = 8.0f;
 
-    // starcup: make butchering certain mobs yield organs
-    /// <summary>
-    /// Will the mob drop its organs upon being butchered with a knife?
-    /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField]
-    public bool DropOrgansOnButcher;
-    // end starcup
 }

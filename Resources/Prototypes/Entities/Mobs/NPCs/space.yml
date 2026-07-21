@@ -107,7 +107,7 @@
   - type: Vocal
     emoteSounds: SpaceBearSpeechEmotes # starcup
     screamId: CreatureRoar
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: InteractionPopup
     successChance: 0.25
     interactSuccessString: petting-success-bear
@@ -183,7 +183,7 @@
     emoteSounds: SpaceKangarooSpeechEmotes # starcup
   # begin starcup
     screamId: CreatureGrowl
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: Speech
     speechVerb: LargeMob
     speechSounds: SpaceKangarooSpeechSounds
@@ -301,7 +301,7 @@
   - type: Vocal
     emoteSounds: SpaceSpiderSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: TypingIndicator
     proto: alien # starcup: more space than spider. changed for consistency's sake
   - type: FootstepModifier
@@ -425,10 +425,9 @@
       speechVerb: Reptilian
       allowedEmotes: ['CreatureHiss']
     - type: Vocal
-      sounds:
-        Unsexed: SpaceSnakeSpeechEmotes
+      emoteSounds: SpaceSnakeSpeechEmotes
       screamId: CreatureHiss
-      screamAction: ActionEmitSound
+      emoteAction: ActionEmitSound
     - type: Tag
       tags:
       - VimPilot

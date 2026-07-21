@@ -48,10 +48,9 @@
       speechSounds: BehonkerSpeechSounds
       allowedEmotes: ['CreatureLaugh', 'BuzzNonSilicon']
     - type: Vocal
-      sounds:
-        Unsexed: BehonkerSpeechEmotes
+      emoteSounds: BehonkerSpeechEmotes
       screamId: CreatureLaugh
-      screamAction: ActionEmitSound
+      emoteAction: ActionEmitSound
     - type: Tag
       tags:
       - DoorBumpOpener

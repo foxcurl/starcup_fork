@@ -50656,13 +50656,11 @@ entities:
   - uid: 8373
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: 12.5,11.5
       parent: 2
   - uid: 8374
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
       pos: 43.5,-1.5
       parent: 2
 - proto: Gyroscope

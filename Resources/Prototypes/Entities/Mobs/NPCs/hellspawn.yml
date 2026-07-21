@@ -111,8 +111,7 @@
     speechSounds: DemonBigSpeechSounds
     allowedEmotes: ['CreatureScream', 'CreatureLaugh', 'CreatureRoar', 'CreatureGrowl']
   - type: Vocal
-    sounds:
-      Unsexed: DemonBigSpeechEmotes
+    emoteSounds: DemonBigSpeechEmotes
     screamId: CreatureRoar
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   # end starcup
