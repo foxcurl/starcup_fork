@@ -3921,3 +3921,105 @@
   id: 8494
   time: '2026-07-12T23:03:00.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/931
+- author: KoboldCatgirl
+  changes:
+  - message: Cybersun has introduced constructable document printers to your sector.
+      The wonders of bureaucracy never cease!
+    type: Add
+  - message: You can now use paper to label bookshelves, including colored paper!
+    type: Add
+  - message: Added the Bookshelf Label Folder, for a sampling of paper colors!
+    type: Add
+  - message: Reduced book bag/bookshelf inventory sizes.
+    type: Tweak
+  id: 8495
+  time: '2026-07-17T21:40:03.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/940
+- author: KoboldCatgirl
+  changes:
+  - message: Added the dressup crate, a Cargo-ordered chest filled with pretty dresses
+      and cosmetics as well as a pair of barber scissors!
+    type: Add
+  - message: Added a ton of jumpsuits and jumpsuits to loadouts, primarily to civilian
+      jobs (especially Passenger) and the more snappy-dressing roles.
+    type: Add
+  - message: Added evening gloves, old-fashioned coats, and masquerade masks to a
+      few jobs' loadouts.
+    type: Add
+  - message: Added new alt-jobtitle PDAs for Botanist, Cargo Tech, Lawyer, and Reporter!
+    type: Add
+  - message: Added hairbows, ribbons, necklaces, and hairpins to Cosmetics, as well
+      as some jobs' head and neck slot options!
+    type: Add
+  - message: Fixed a spelling for the Chaplain's Derelictian PDA. Hear the Deus sing.
+    type: Fix
+  - message: Fixed Senior PDAs not providing custom job titles.
+    type: Fix
+  id: 8496
+  time: '2026-07-17T21:43:55.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/944
+- author: KoboldCatgirl
+  changes:
+  - message: Fixed SyndieTask header and printout
+    type: Fix
+  id: 8497
+  time: '2026-07-17T21:51:21.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/943
+- author: Vizier243
+  changes:
+  - message: Fixed the Syndcomm Drobe using a Nanotrasen access level.
+    type: Fix
+  id: 8498
+  time: '2026-07-18T05:53:35.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/946
+- author: KoboldCatgirl
+  changes:
+  - message: Syndicate Communications has been gifted by Electra Dynamics the beautiful
+      Ptarmigan Outpost, a lowpop terrestrial station set on the far side of Glacier's
+      frozen moon.
+    type: Add
+  id: 8499
+  time: '2026-07-19T15:53:26.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/910
+- author: KoboldCatgirl
+  changes:
+  - message: Donk Co has helpfully installed new advanced butchering stations into
+      almost every station's freezer! Drag livestock inside for a quick, clean kill.
+    type: Add
+  - message: Cybersun has generously had new document printers installed on every
+      station in the sector, mostly under the librarians' jurisdiction.
+    type: Add
+  - message: All libraries now come stocked with a guidebookshelf, bearing all the
+      practical information you'd ever need to know.
+    type: Add
+  - message: Virtually all libraries now come stocked with a book cart! Let's get
+      this book on the road!
+    type: Add
+  - message: Fixed Byoin's errant Medical/Bartender airlocks, Omega's haunted Atmos
+      door, Crux's disconnected blast doors, and other miscellaneous non-door-related
+      mapping bugs.
+    type: Fix
+  id: 8500
+  time: '2026-07-19T15:59:38.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/950
+- author: Vizier243
+  changes:
+  - message: SyndComm flippo lighters now use the correct access level.
+    type: Fix
+  id: 8501
+  time: '2026-07-19T17:36:38.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/948
+- author: little-meow-meow
+  changes:
+  - message: Roller skates have a unique footprint style.
+    type: Add
+  id: 8502
+  time: '2026-07-19T17:43:45.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/947
+- author: Vizier243
+  changes:
+  - message: The warden's winter boots can now hold a sidearm.
+    type: Fix
+  id: 8503
+  time: '2026-07-20T17:08:20.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/949
