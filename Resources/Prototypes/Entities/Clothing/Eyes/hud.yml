@@ -68,7 +68,7 @@
     tags:
     - PetWearable
     - WhitelistChameleon
-    - HudMedical
+    - HudMedical # starcup
 
 - type: entity
   parent: [ClothingEyesHudBase, ShowSecurityIcons, BaseSecurityContraband]
