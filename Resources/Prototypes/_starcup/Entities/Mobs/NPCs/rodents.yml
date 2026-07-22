@@ -232,10 +232,9 @@
       types:
         Blunt: 0.1
   - type: Vocal
-    sounds:
-      Unsexed: SqueakSpeechEmotes
+    emoteSounds: SqueakSpeechEmotes
     screamId: CreatureSqueak
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
     wilhelmProbability: 0.001
   - type: TypingIndicator
     proto: rodentia
@@ -404,10 +403,9 @@
       types:
         Blunt: 0.1
   - type: Vocal
-    sounds:
-      Unsexed: SqueakSpeechEmotes
+    emoteSounds: SqueakSpeechEmotes
     screamId: CreatureSqueak
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
     wilhelmProbability: 0.001
   - type: TypingIndicator
     proto: rodentia
@@ -555,7 +553,6 @@
         - ReagentId: UncookedAnimalProteins
           Quantity: 3
   - type: Butcherable
-    butcheringType: Spike
     spawned:
     - id: FoodMeatRat
       amount: 3
@@ -579,10 +576,9 @@
       types:
         Blunt: 0.1
   - type: Vocal
-    sounds:
-      Unsexed: PossumSpeechEmotes
+    emoteSounds: PossumSpeechEmotes
     screamId: CreatureHiss
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
     wilhelmProbability: 0.001
   - type: TypingIndicator
     proto: rodentia
@@ -733,10 +729,9 @@
       types:
         Blunt: 0.1
   - type: Vocal
-    sounds:
-      Unsexed: SqueakSpeechEmotes
+    emoteSounds: SqueakSpeechEmotes
     screamId: CreatureSqueak
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
     wilhelmProbability: 0.001
   - type: TypingIndicator
     proto: rodentia
@@ -895,7 +890,6 @@
       Dead:
         Base: dead
   - type: Butcherable
-    butcheringType: Spike
     spawned:
     - id: FoodMeatCapybara
       amount: 3
@@ -909,10 +903,9 @@
     speechVerb: SmallMob
     allowedEmotes: ['CreatureSqueak', 'CreaturePurr', 'CreatureTrill', 'CreatureYawn', 'CreatureCough']
   - type: Vocal
-    sounds:
-      Unsexed: HamsterSpeechEmotes
+    emoteSounds: HamsterSpeechEmotes
     screamId: CreatureTrill
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: TypingIndicator
     proto: rodentia
 
