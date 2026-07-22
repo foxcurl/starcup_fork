@@ -2166,6 +2166,7 @@
   parent: [SimpleMobBase, BaseMobAnimal, SolutionVermin, BaseSlicingRefinable, MobNightVision]
   id: MobMouse
   description: Squeak!
+  suffix: white # starcup
   components:
   - type: GhostRole
     makeSentient: true
@@ -2305,6 +2306,7 @@
     wilhelmProbability: 0.001
   - type: TypingIndicator
     proto: rodentia
+  # end starcup
   # TODO: Remove CombatMode when Prototype Composition is added
   - type: CombatMode
   - type: MeleeWeapon
@@ -2376,6 +2378,7 @@
 - type: entity
   parent: MobMouse
   id: MobMouse1
+  suffix: brown # starcup
   components:
   - type: Sprite
     layers:
@@ -2404,6 +2407,7 @@
 - type: entity
   parent: MobMouse
   id: MobMouse2
+  suffix: gray # starcup
   components:
   - type: Sprite
     layers:
@@ -2430,7 +2434,7 @@
     heldPrefix: 2
 
 - type: entity
-  name: cancer mouse
+  name: radioactive mouse # starcup: changed for tone
   description: Toxic. Squeak!
   parent: MobMouse
   id: MobMouseCancer
