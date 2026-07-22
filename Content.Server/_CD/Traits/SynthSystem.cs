@@ -14,7 +14,7 @@ public sealed class SynthSystem : EntitySystem
     private static readonly ProtoId<ReagentPrototype> SynthBloodReagent = "SynthBlood";
     // End DeltaV
 
-    [Dependency] private readonly BloodstreamSystem _bloodstream = default!;
+    [Dependency] private BloodstreamSystem _bloodstream = default!;
 
     public override void Initialize()
     {

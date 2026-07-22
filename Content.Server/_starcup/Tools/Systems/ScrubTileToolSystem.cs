@@ -9,8 +9,8 @@ namespace Content.Server._starcup.Tools.Systems;
 
 public sealed class ScrubTileToolSystem : SharedScrubTileToolSystem
 {
-    [Dependency] private readonly DecalSystem _decalSystem = default!;
-    [Dependency] private readonly EntityLookupSystem _lookupSystem = default!;
+    [Dependency] private DecalSystem _decalSystem = default!;
+    [Dependency] private EntityLookupSystem _lookupSystem = default!;
 
     public override bool TryDoScrub(TileRef tileRef, MapGridComponent grid, DecalGridComponent decalGrid)
     {

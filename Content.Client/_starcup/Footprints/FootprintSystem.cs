@@ -5,7 +5,7 @@ namespace Content.Client._starcup.Footprints;
 
 public sealed class FootprintSystem : EntitySystem
 {
-    [Dependency] private readonly SpriteSystem _sprite = default!;
+    [Dependency] private SpriteSystem _sprite = default!;
 
     public override void Initialize()
     {

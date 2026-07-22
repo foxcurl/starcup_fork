@@ -14,8 +14,8 @@ namespace Content.Server.Shuttles.Systems;
 public sealed partial class ShuttleConsoleSystem
 {
     // begin starcup
-    [Dependency] private readonly PopupSystem _popupSystem = default!;
-    [Dependency] private readonly AudioSystem _audio = default!;
+    [Dependency] private PopupSystem _popupSystem = default!;
+    [Dependency] private AudioSystem _audio = default!;
     // end starcup
 
     private void InitializeFTL()

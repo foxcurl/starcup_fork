@@ -11,9 +11,9 @@ namespace Content.Server._CD.Silicons.StationAi;
 
 public sealed class StationAiShellBrainSystem : EntitySystem
 {
-    [Dependency] private readonly StationAiShellUserSystem _shelluser = default!;
-    [Dependency] private readonly MetaDataSystem _metaData = default!;
-    [Dependency] private readonly IPrototypeManager _prototype = default!;
+    [Dependency] private StationAiShellUserSystem _shelluser = default!;
+    [Dependency] private MetaDataSystem _metaData = default!;
+    [Dependency] private IPrototypeManager _prototype = default!;
 
     public override void Initialize()
     {

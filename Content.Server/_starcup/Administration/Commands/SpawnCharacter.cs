@@ -17,12 +17,12 @@ namespace Content.Server._starcup.Administration.Commands;
 [AdminCommand(AdminFlags.Admin)]
 public sealed class SpawnCharacter : LocalizedEntityCommands
 {
-    [Dependency] private readonly IEntityManager _entityManager = default!;
-    [Dependency] private readonly IServerPreferencesManager _prefs = default!;
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    [Dependency] private IEntityManager _entityManager = default!;
+    [Dependency] private IServerPreferencesManager _prefs = default!;
+    [Dependency] private IPrototypeManager _prototypeManager = default!;
 
-    [Dependency] private readonly SharedMindSystem _mindSystem = default!;
-    [Dependency] private readonly StationSpawningSystem _spawningSystem = default!;
+    [Dependency] private SharedMindSystem _mindSystem = default!;
+    [Dependency] private StationSpawningSystem _spawningSystem = default!;
 
     public override string Command => "spawncharacter";
     public override string Description => Loc.GetString("cmd-spawncharacter-desc");

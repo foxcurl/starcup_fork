@@ -19,11 +19,11 @@ namespace Content.Shared._starcup.Hands;
 /// </summary>
 public sealed class OfferItemSystem : EntitySystem
 {
-    [Dependency] private readonly AlertsSystem _alertsSystem = default!;
-    [Dependency] private readonly SharedPopupSystem _popupSystem = default!;
-    [Dependency] private readonly INetManager _net = default!;
-    [Dependency] private readonly SharedHandsSystem _sharedHands = default!;
-    [Dependency] private readonly SharedTransformSystem _sharedTransform = default!;
+    [Dependency] private AlertsSystem _alertsSystem = default!;
+    [Dependency] private SharedPopupSystem _popupSystem = default!;
+    [Dependency] private INetManager _net = default!;
+    [Dependency] private SharedHandsSystem _sharedHands = default!;
+    [Dependency] private SharedTransformSystem _sharedTransform = default!;
 
     private readonly ProtoId<AlertPrototype> _offerAlert = "Offer";
 

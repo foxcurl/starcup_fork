@@ -8,7 +8,7 @@ namespace Content.Client._starcup.Resting;
 
 public sealed class RestingSystem : SharedRestingSystem
 {
-    [Dependency] private readonly SpriteSystem _sprite = default!;
+    [Dependency] private SpriteSystem _sprite = default!;
 
     public override void Initialize()
     {

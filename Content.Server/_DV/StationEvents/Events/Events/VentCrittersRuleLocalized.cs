@@ -25,11 +25,11 @@ public sealed class VentCrittersRuleLocalized : StationEventSystem<VentCrittersR
      * USE THE PROTOTYPE.
      */
 
-    [Dependency] private readonly AntagSelectionSystem _antag = default!;
-    [Dependency] private readonly EntityTableSystem _entityTable = default!;
-    [Dependency] private readonly ISharedPlayerManager _player = default!;
-    [Dependency] private readonly NavMapSystem _navMap = default!;
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
+    [Dependency] private AntagSelectionSystem _antag = default!;
+    [Dependency] private EntityTableSystem _entityTable = default!;
+    [Dependency] private ISharedPlayerManager _player = default!;
+    [Dependency] private NavMapSystem _navMap = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
 
     private List<EntityCoordinates> _locations = new();
 

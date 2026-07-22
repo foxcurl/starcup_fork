@@ -22,14 +22,14 @@ namespace Content.Server._starcup.GameRules;
 /// </summary>
 public sealed class SpawnOnShiftChangeShuttleRuleSystem : GameRuleSystem<SpawnOnShiftChangeShuttleRuleComponent>
 {
-    [Dependency] private readonly ShiftChangeShuttleSystem _shiftChangeShuttle = default!;
-    [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly StationSystem _station = default!;
-    [Dependency] private readonly IConfigurationManager _configurationManager = default!;
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly StationSpawningSystem _stationSpawning = default!;
-    [Dependency] private readonly EntityLookupSystem _entityLookup = default!;
-    [Dependency] private readonly BuckleSystem _buckle = default!;
+    [Dependency] private ShiftChangeShuttleSystem _shiftChangeShuttle = default!;
+    [Dependency] private SharedTransformSystem _transform = default!;
+    [Dependency] private StationSystem _station = default!;
+    [Dependency] private IConfigurationManager _configurationManager = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private StationSpawningSystem _stationSpawning = default!;
+    [Dependency] private EntityLookupSystem _entityLookup = default!;
+    [Dependency] private BuckleSystem _buckle = default!;
 
     private EntityQuery<StrapComponent> _strapQuery;
 

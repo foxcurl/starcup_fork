@@ -9,9 +9,9 @@ namespace Content.Server._starcup.Resting;
 
 public sealed class HealOnSleepSystem : EntitySystem
 {
-    [Dependency] private readonly IGameTiming _timing = default!;
-    [Dependency] private readonly DamageableSystem _damageableSystem = default!;
-    [Dependency] private readonly MobStateSystem _mobStateSystem = default!;
+    [Dependency] private IGameTiming _timing = default!;
+    [Dependency] private DamageableSystem _damageableSystem = default!;
+    [Dependency] private MobStateSystem _mobStateSystem = default!;
 
     public override void Initialize()
     {

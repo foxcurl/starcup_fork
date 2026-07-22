@@ -7,8 +7,8 @@ namespace Content.Client._starcup.UserInterface.RichText;
 
 public sealed class SizeTag : IMarkupTagHandler
 {
-    [Dependency] private readonly IResourceCache _resourceCache = default!;
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    [Dependency] private IResourceCache _resourceCache = default!;
+    [Dependency] private IPrototypeManager _prototypeManager = default!;
 
     public string Name => "size";
 

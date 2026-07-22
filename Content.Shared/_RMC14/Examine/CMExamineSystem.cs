@@ -1,4 +1,4 @@
-﻿using Content.Shared.Access.Components;
+using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
 using Content.Shared.Damage.Components;
 using Content.Shared.Examine;
@@ -9,8 +9,8 @@ namespace Content.Shared._RMC14.Examine;
 
 public sealed class CMExamineSystem : EntitySystem
 {
-    [Dependency] private readonly HealthExaminableSystem _healthExaminable = default!;
-    [Dependency] private readonly IdExaminableSystem _idExaminable = default!;
+    [Dependency] private HealthExaminableSystem _healthExaminable = default!;
+    [Dependency] private IdExaminableSystem _idExaminable = default!;
 
     public override void Initialize()
     {

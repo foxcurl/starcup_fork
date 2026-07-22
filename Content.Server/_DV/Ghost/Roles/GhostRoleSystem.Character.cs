@@ -1,4 +1,4 @@
-﻿// begin starcup - SetOutfit is in outfitSystem instead of SetOutfitCommand
+// begin starcup - SetOutfit is in outfitSystem instead of SetOutfitCommand
 // using Content.Server.Administration.Commands;
 using Content.Server.Clothing.Systems;
 // end starcup
@@ -13,8 +13,8 @@ namespace Content.Server.Ghost.Roles
 {
     public sealed partial class GhostRoleSystem
     {
-        [Dependency] private readonly IServerPreferencesManager _prefs = default!;
-        [Dependency] private readonly OutfitSystem _outfitSystem = default!; // starcup - SetOutfit is in outfitSystem instead of SetOutfitCommand
+        [Dependency] private IServerPreferencesManager _prefs = default!;
+        [Dependency] private OutfitSystem _outfitSystem = default!; // starcup - SetOutfit is in outfitSystem instead of SetOutfitCommand
 
         private void OnSpawnerTakeCharacter(Entity<GhostRoleCharacterSpawnerComponent> ent,
             ref TakeGhostRoleEvent args)

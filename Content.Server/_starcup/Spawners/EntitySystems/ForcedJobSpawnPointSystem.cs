@@ -13,10 +13,10 @@ namespace Content.Server._starcup.Spawners.EntitySystems;
 /// </summary>
 public sealed class ForcedJobSpawnPointSystem : EntitySystem
 {
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly StationSystem _stationSystem = default!;
-    [Dependency] private readonly StationSpawningSystem _stationSpawning = default!;
-    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
+    [Dependency] private IRobustRandom _random = default!;
+    [Dependency] private StationSystem _stationSystem = default!;
+    [Dependency] private StationSpawningSystem _stationSpawning = default!;
+    [Dependency] private IPrototypeManager _prototypeManager = default!;
 
     public override void Initialize()
     {

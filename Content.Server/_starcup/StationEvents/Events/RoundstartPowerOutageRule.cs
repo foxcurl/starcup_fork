@@ -13,8 +13,8 @@ namespace Content.Server._starcup.StationEvents.Events;
 /// </summary>
 public sealed class RoundstartPowerOutageRule : VariationPassSystem<RoundstartPowerOutageComponent>
 {
-    [Dependency] private readonly StationSystem _station = default!;
-    [Dependency] private readonly BatterySystem _battery = default!;
+    [Dependency] private StationSystem _station = default!;
+    [Dependency] private BatterySystem _battery = default!;
 
     protected override void ApplyVariation(Entity<RoundstartPowerOutageComponent> ent, ref StationVariationPassEvent args)
     {

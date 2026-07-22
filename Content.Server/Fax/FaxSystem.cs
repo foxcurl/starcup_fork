@@ -62,9 +62,9 @@ public sealed partial class FaxSystem : EntitySystem
     [Dependency] private EmagSystem _emag = default!;
 
     // begin starcup: admin fax webhook
-    [Dependency] private readonly IBaseServer _baseServer = default!;
-    [Dependency] private readonly DiscordWebhook _discord = default!;
-    [Dependency] private readonly IConfigurationManager _cfg = default!;
+    [Dependency] private IBaseServer _baseServer = default!;
+    [Dependency] private DiscordWebhook _discord = default!;
+    [Dependency] private IConfigurationManager _cfg = default!;
 
     // Discord webhook limits; Passing these will cause a bad request.
     // There is a total text limit of 6000 characters, combined across text fields

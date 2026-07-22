@@ -9,7 +9,7 @@ namespace Content.Server._starcup.Implants;
 /// </summary>
 public sealed class GenericImplantSystem : EntitySystem
 {
-    [Dependency] private readonly IComponentFactory _componentFactory = default!;
+    [Dependency] private IComponentFactory _componentFactory = default!;
 
     public override void Initialize()
     {
