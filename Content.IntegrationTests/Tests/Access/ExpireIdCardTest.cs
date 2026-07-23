@@ -42,7 +42,7 @@ namespace Content.IntegrationTests.Tests.Access
             ExpireIdCardComponent expireComp = default!;
             AccessComponent accessComp = default!;
             var expirationTimeInSeconds = 2.0f;
-            var expireTime = TimeSpan.FromSeconds(expirationTimeInSeconds);
+            var expireTime = TimeSpan.FromSeconds(expirationTimeInSeconds).Add(Pair.Server.Timing.CurTime); // starcup: Add CurTime to the expireTime
 
             await Pair.Server.WaitPost(() =>
             {
