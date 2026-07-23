@@ -8,12 +8,6 @@
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 1h
-# begin starcup: mkc
-  - !type:SpeciesRequirement
-    inverted: true
-    species:
-    - MKC
-# end starcup
 
 - type: antagSpecifier
   parent: RestrictedAntag
@@ -45,11 +39,4 @@
   antagonist: true
   setPreference: false
   objective: roles-antag-zombie-objective
-# begin starcup: mkc
-  requirements:
-  - !type:SpeciesRequirement
-    inverted: true
-    species:
-    - MKC
-# end starcup
   guides: [ Zombies ]
