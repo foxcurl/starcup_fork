@@ -1,4 +1,4 @@
-﻿# Handheld Instruments
+# Handheld Instruments
 
 - type: cargoProduct
   id: FunInstrumentsVariety
@@ -26,7 +26,7 @@
     sprite: Objects/Fun/Instruments/bassguitar.rsi
     state: icon
   product: CrateFunInstrumentsString
-  cost: 2000
+  cost: 2100 # starcup : slightly increase price for arbitrage
   category: cargoproduct-category-name-instruments
   group: market
 
