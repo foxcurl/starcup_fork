@@ -20,7 +20,7 @@ namespace Content.Shared._starcup.MKC;
 /// that they need to keep charged to avoid hunger-like effects. They are able to replenish charge by draining anything
 /// with BatteryComponent.
 /// </summary>
-public abstract class SharedPowerCoreSystem : EntitySystem
+public abstract partial class SharedPowerCoreSystem : EntitySystem
 {
     [Dependency] protected SharedBatterySystem _battery = default!;
     [Dependency] private SharedDoAfterSystem _doAfter = default!;

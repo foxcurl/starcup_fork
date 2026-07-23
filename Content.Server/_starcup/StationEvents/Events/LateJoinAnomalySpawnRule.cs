@@ -14,7 +14,7 @@ namespace Content.Server._starcup.StationEvents.Events;
 ///
 /// Spawns several anomalies around the station, pulses them a few times, and sometimes makes them go critical.
 /// </summary>
-public sealed class LateJoinAnomalySpawnRule : VariationPassSystem<LateJoinAnomalySpawnComponent>
+public sealed partial class LateJoinAnomalySpawnRule : VariationPassSystem<LateJoinAnomalySpawnComponent>
 {
     [Dependency] private AnomalySystem _anomaly = default!;
     [Dependency] private StationSystem _station = default!;

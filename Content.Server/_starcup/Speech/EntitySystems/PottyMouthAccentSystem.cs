@@ -4,7 +4,7 @@ using Content.Shared.Speech;
 
 namespace Content.Server._starcup.Speech.EntitySystems;
 
-public sealed class PottyMouthAccentSystem : EntitySystem
+public sealed partial class PottyMouthAccentSystem : EntitySystem
 {
     [Dependency] private ReplacementAccentSystem _replacement = default!;
 

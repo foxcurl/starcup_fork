@@ -21,7 +21,7 @@ using Robust.Shared.Player;
 
 namespace Content.Shared._DV.Rodentia;
 
-public abstract class SharedMouthStorageSystem : EntitySystem
+public abstract partial class SharedMouthStorageSystem : EntitySystem
 {
     // [Dependency] private DumpableSystem _dumpableSystem = default!;  // starcup: removed for refactor
     [Dependency] private SharedContainerSystem _containerSystem = default!;

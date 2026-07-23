@@ -10,7 +10,7 @@ using Content.Client.UserInterface.ControlExtensions;
 namespace Content.Client.Guidebook.RichText;
 
 [UsedImplicitly]
-public sealed class TextLinkTag : IMarkupTagHandler
+public sealed partial class TextLinkTag : IMarkupTagHandler // starcup: partial
 {
     [Dependency] private IUriOpener _uriOpener = null!;  // starcup: IUriOpener dependency for web hyperlinks
 

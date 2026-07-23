@@ -14,7 +14,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared._DV.VendingMachines;
 
-public abstract class SharedShopVendorSystem : EntitySystem
+public abstract partial class SharedShopVendorSystem : EntitySystem
 {
     [Dependency] private AccessReaderSystem _access = default!;
     [Dependency] private MiningPointsSystem _points = default!;

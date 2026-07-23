@@ -9,7 +9,7 @@ using Robust.Shared.Audio;
 
 namespace Content.Server._CD.Silicons.StationAi;
 
-public sealed class StationAiShellUserSystem : SharedStationAiShellUserSystem
+public sealed partial class StationAiShellUserSystem : SharedStationAiShellUserSystem
 {
     [Dependency] private SiliconLawSystem _laws = default!;
     [Dependency] private StationAiShellBrainSystem _shellBrain = default!;

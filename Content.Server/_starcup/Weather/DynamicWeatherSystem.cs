@@ -8,7 +8,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server._starcup.Weather;
 
-public sealed class DynamicWeatherSystem : EntitySystem
+public sealed partial class DynamicWeatherSystem : EntitySystem
 {
     [Dependency] private IGameTiming _gameTiming = default!;
     [Dependency] private IRobustRandom _robustRandom = default!;

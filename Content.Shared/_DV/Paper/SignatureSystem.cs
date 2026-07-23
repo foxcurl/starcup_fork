@@ -9,7 +9,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared._DV.Paper;
 
-public sealed class SignatureSystem : EntitySystem
+public sealed partial class SignatureSystem : EntitySystem
 {
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedIdCardSystem _idCard = default!;

@@ -5,7 +5,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Client._starcup.UserInterface.RichText;
 
-public sealed class EmojiTag : IMarkupTagHandler
+public sealed partial class EmojiTag : IMarkupTagHandler
 {
     private const string EmojiFont = "Emoji";
 

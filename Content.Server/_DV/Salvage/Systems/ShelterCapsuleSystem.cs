@@ -16,7 +16,7 @@ using Robust.Shared.Random; // starcup
 
 namespace Content.Server._DV.Salvage.Systems;
 
-public sealed class ShelterCapsuleSystem : SharedShelterCapsuleSystem
+public sealed partial class ShelterCapsuleSystem : SharedShelterCapsuleSystem
 {
     [Dependency] private DungeonSystem _dungeon = default!;
     [Dependency] private EntityLookupSystem _lookup = default!;

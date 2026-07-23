@@ -4,7 +4,7 @@ using Content.Shared.Speech;
 
 namespace Content.Server._DV.Speech.EntitySystems;
 
-public sealed class IrishAccentSystem : EntitySystem
+public sealed partial class IrishAccentSystem : EntitySystem
 {
     [Dependency] private ReplacementAccentSystem _replacement = default!;
 

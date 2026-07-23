@@ -18,7 +18,7 @@ namespace Content.Server.StationEvents.Events;
 /// <remarks>
 /// starcup: DeltaV modified the upstream file but we want both event variants, so DeltaV's VentCrittersRule -> VentCrittersRuleLocalized and is moved here
 /// </remarks>
-public sealed class VentCrittersRuleLocalized : StationEventSystem<VentCrittersRuleLocalizedComponent> // starcup: VentCrittersRule -> VentCrittersRuleLocalized
+public sealed partial class VentCrittersRuleLocalized : StationEventSystem<VentCrittersRuleLocalizedComponent> // starcup: VentCrittersRule -> VentCrittersRuleLocalized
 {
     /*
      * DO NOT COPY PASTE THIS TO MAKE YOUR MOB EVENT.

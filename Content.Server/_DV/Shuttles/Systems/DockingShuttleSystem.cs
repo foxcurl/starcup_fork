@@ -10,7 +10,7 @@ using Content.Shared.Station.Components;
 
 namespace Content.Server._DV.Shuttles.Systems;
 
-public sealed class DockingShuttleSystem : SharedDockingShuttleSystem
+public sealed partial class DockingShuttleSystem : SharedDockingShuttleSystem
 {
     [Dependency] private DockingConsoleSystem _console = default!;
     [Dependency] private EntityWhitelistSystem _whitelist = default!;

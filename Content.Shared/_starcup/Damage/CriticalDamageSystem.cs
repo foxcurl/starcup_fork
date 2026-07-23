@@ -7,7 +7,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared._starcup.Damage;
 
-public sealed class CriticalDamageSystem : EntitySystem
+public sealed partial class CriticalDamageSystem : EntitySystem
 {
     [Dependency] private ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private IGameTiming _gameTiming = default!;

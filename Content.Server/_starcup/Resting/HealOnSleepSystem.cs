@@ -7,7 +7,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server._starcup.Resting;
 
-public sealed class HealOnSleepSystem : EntitySystem
+public sealed partial class HealOnSleepSystem : EntitySystem
 {
     [Dependency] private IGameTiming _timing = default!;
     [Dependency] private DamageableSystem _damageableSystem = default!;

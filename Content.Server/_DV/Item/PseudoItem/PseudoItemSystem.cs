@@ -15,7 +15,7 @@ using Content.Shared.Verbs;
 
 namespace Content.Server._DV.Item.PseudoItem;
 
-public sealed class PseudoItemSystem : SharedPseudoItemSystem
+public sealed partial class PseudoItemSystem : SharedPseudoItemSystem
 {
     // [Dependency] private StorageSystem _storage = default!; // starcup: unused
     // [Dependency] private ItemSystem _item = default!; // starcup: unused

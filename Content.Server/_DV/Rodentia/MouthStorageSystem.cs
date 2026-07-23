@@ -4,7 +4,7 @@ using Content.Shared.Speech;
 
 namespace Content.Server._DV.Rodentia;
 
-public sealed class MouthStorageSystem : SharedMouthStorageSystem
+public sealed partial class MouthStorageSystem : SharedMouthStorageSystem
 {
     [Dependency] private ReplacementAccentSystem _replacement = default!;
 

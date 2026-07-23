@@ -5,7 +5,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Client._starcup.UserInterface.RichText;
 
-public sealed class SizeTag : IMarkupTagHandler
+public sealed partial class SizeTag : IMarkupTagHandler
 {
     [Dependency] private IResourceCache _resourceCache = default!;
     [Dependency] private IPrototypeManager _prototypeManager = default!;

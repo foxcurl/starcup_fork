@@ -6,7 +6,7 @@ using Robust.Client.GameObjects;
 
 namespace Content.Client._starcup.Resting;
 
-public sealed class RestingSystem : SharedRestingSystem
+public sealed partial class RestingSystem : SharedRestingSystem
 {
     [Dependency] private SpriteSystem _sprite = default!;
 

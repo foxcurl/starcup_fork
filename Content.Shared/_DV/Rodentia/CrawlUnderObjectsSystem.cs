@@ -15,7 +15,7 @@ namespace Content.Shared._DV.Rodentia;
 /// <summary>
 /// Not to be confused with laying down, <see cref="CrawlUnderObjectsComponent"/> lets you move under tables.
 /// </summary>
-public sealed class CrawlUnderObjectsSystem : EntitySystem
+public sealed partial class CrawlUnderObjectsSystem : EntitySystem
 {
     [Dependency] private MovementSpeedModifierSystem _moveSpeed = default!;
     [Dependency] private SharedActionsSystem _actions = default!;

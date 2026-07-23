@@ -9,7 +9,7 @@ namespace Content.Server._DV.Objectives.Systems;
 /// <summary>
 /// Handles teach a lesson condition logic, does not assign target.
 /// </summary>
-public sealed class TeachLessonConditionSystem : EntitySystem
+public sealed partial class TeachLessonConditionSystem : EntitySystem
 {
     [Dependency] private CodeConditionSystem _codeCondition = default!;
     [Dependency] private SharedMindSystem _mind = default!;

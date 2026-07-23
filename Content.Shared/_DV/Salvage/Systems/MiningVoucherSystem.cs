@@ -10,7 +10,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Shared._DV.Salvage.Systems;
 
-public sealed class MiningVoucherSystem : EntitySystem
+public sealed partial class MiningVoucherSystem : EntitySystem
 {
     [Dependency] private EntityWhitelistSystem _whitelist = default!;
     [Dependency] private IGameTiming _timing = default!;

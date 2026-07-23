@@ -9,7 +9,7 @@ using Robust.Shared.Random;
 
 namespace Content.Server._starcup.Spawners.EntitySystems;
 
-public sealed class ForcedJobContainerSpawnPointSystem : EntitySystem
+public sealed partial class ForcedJobContainerSpawnPointSystem : EntitySystem
 {
     [Dependency] private ContainerSystem _container = default!;
     [Dependency] private IRobustRandom _random = default!;

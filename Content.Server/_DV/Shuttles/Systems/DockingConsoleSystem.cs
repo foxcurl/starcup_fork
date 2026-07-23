@@ -15,7 +15,7 @@ using Robust.Shared.Map.Components;
 
 namespace Content.Server._DV.Shuttles.Systems;
 
-public sealed class DockingConsoleSystem : SharedDockingConsoleSystem
+public sealed partial class DockingConsoleSystem : SharedDockingConsoleSystem
 {
     [Dependency] private EntityWhitelistSystem _whitelist = default!;
     // [Dependency] private SharedMapSystem _map = default!; // starcup: unused

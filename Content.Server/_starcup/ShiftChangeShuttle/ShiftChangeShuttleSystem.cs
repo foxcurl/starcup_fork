@@ -23,7 +23,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Server._starcup.Shuttles;
 
-public sealed class ShiftChangeShuttleSystem : EntitySystem
+public sealed partial class ShiftChangeShuttleSystem : EntitySystem
 {
 
     private static readonly Vector2 ShuttleSpawnOffset = new(9000, 9000);

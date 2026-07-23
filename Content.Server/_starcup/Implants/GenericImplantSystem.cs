@@ -7,7 +7,7 @@ namespace Content.Server._starcup.Implants;
 /// Applies configured components to the implanted entity and, upon extraction, removes components which the entity did
 /// not already have prior to implanting.
 /// </summary>
-public sealed class GenericImplantSystem : EntitySystem
+public sealed partial class GenericImplantSystem : EntitySystem
 {
     [Dependency] private IComponentFactory _componentFactory = default!;
 

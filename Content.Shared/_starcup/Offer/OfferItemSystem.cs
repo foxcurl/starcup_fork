@@ -17,7 +17,7 @@ namespace Content.Shared._starcup.Hands;
 /// <summary>
 /// Facilitates item offering interactions between players. Adapted from Starlight's SharedHandsSystem.Offer.cs
 /// </summary>
-public sealed class OfferItemSystem : EntitySystem
+public sealed partial class OfferItemSystem : EntitySystem
 {
     [Dependency] private AlertsSystem _alertsSystem = default!;
     [Dependency] private SharedPopupSystem _popupSystem = default!;

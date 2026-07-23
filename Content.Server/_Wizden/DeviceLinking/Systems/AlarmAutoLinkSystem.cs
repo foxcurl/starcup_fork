@@ -16,7 +16,7 @@ namespace Content.Server._Wizden.DeviceLinking.Systems;
  * This file is obsolete if that PR has been merged.
  */
 
-public sealed class AlarmAutoLinkSystem : EntitySystem
+public sealed partial class AlarmAutoLinkSystem : EntitySystem
 {
     [Dependency] private DeviceListSystem _deviceListSystem = default!;
     [Dependency] private MapSystem _mapSystem = default!;

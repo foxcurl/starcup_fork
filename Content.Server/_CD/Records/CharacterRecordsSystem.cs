@@ -16,7 +16,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Records;
 
-public sealed class CharacterRecordsSystem : EntitySystem
+public sealed partial class CharacterRecordsSystem : EntitySystem
 {
     [Dependency] private IPrototypeManager _prototype = default!;
     [Dependency] private InventorySystem _inventory = default!;

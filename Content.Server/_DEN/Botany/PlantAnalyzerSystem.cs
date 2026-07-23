@@ -18,7 +18,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server._DEN.Botany;
 
-public sealed class PlantAnalyzerSystem : AbstractAnalyzerSystem<PlantAnalyzerComponent, PlantAnalyzerDoAfterEvent>
+public sealed partial class PlantAnalyzerSystem : AbstractAnalyzerSystem<PlantAnalyzerComponent, PlantAnalyzerDoAfterEvent>
 {
     [Dependency] private UserInterfaceSystem _uiSystem = default!;
     [Dependency] private IEntityManager _entityManager = default!;

@@ -37,7 +37,7 @@ using Robust.Shared.Physics.Components;
 
 namespace Content.Server.Carrying
 {
-    public sealed class CarryingSystem : EntitySystem
+    public sealed partial class CarryingSystem : EntitySystem
     {
         [Dependency] private VirtualItemSystem  _virtualItemSystem = default!;
         [Dependency] private CarryingSlowdownSystem _slowdown = default!;

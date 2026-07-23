@@ -15,7 +15,7 @@ using Robust.Shared.Prototypes;
 namespace Content.Server._starcup.Administration.Commands;
 
 [AdminCommand(AdminFlags.Admin)]
-public sealed class SpawnCharacter : LocalizedEntityCommands
+public sealed partial class SpawnCharacter : LocalizedEntityCommands
 {
     [Dependency] private IEntityManager _entityManager = default!;
     [Dependency] private IServerPreferencesManager _prefs = default!;

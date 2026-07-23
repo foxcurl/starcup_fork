@@ -3,7 +3,7 @@ using Robust.Client.GameObjects;
 
 namespace Content.Client._starcup.Footprints;
 
-public sealed class FootprintSystem : EntitySystem
+public sealed partial class FootprintSystem : EntitySystem
 {
     [Dependency] private SpriteSystem _sprite = default!;
 

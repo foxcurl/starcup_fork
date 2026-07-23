@@ -9,7 +9,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Client._starcup.MKC;
 
-public sealed class PowerCoreSystem : SharedPowerCoreSystem
+public sealed partial class PowerCoreSystem : SharedPowerCoreSystem
 {
     [Dependency] private IPlayerManager _player = default!;
     [Dependency] private IGameTiming _timing = default!;

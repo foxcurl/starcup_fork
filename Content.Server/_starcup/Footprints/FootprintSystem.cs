@@ -20,7 +20,7 @@ using Robust.Shared.Random;
 
 namespace Content.Server._starcup.Footprints;
 
-public sealed class FootprintSystem : EntitySystem
+public sealed partial class FootprintSystem : EntitySystem
 {
     [Dependency] private IConfigurationManager _configuration = default!;
     [Dependency] private GravitySystem _gravity = default!;

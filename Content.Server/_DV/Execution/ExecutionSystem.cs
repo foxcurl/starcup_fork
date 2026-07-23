@@ -34,7 +34,7 @@ namespace Content.Server.Execution;
 /// <remarks>
 /// Upstream won't have this for years so it goes in the DeltaV folder.
 /// </remarks>
-public sealed class ExecutionSystem : EntitySystem
+public sealed partial class ExecutionSystem : EntitySystem
 {
     [Dependency] private SharedDoAfterSystem _doAfterSystem = default!;
     [Dependency] private SharedPopupSystem _popupSystem = default!;

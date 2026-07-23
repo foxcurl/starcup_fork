@@ -15,7 +15,7 @@ using Robust.Shared.Serialization;
 
 namespace Content.Shared._CD.Silicons.StationAi;
 
-public abstract class SharedStationAiShellUserSystem : EntitySystem
+public abstract partial class SharedStationAiShellUserSystem : EntitySystem
 {
     [Dependency] private SharedActionsSystem _actions = default!;
     [Dependency] private SharedStationAiSystem _stationAiSystem = default!;

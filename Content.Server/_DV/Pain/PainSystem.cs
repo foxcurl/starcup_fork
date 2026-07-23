@@ -6,7 +6,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server._DV.Pain;
 
-public sealed class PainSystem : SharedPainSystem
+public sealed partial class PainSystem : SharedPainSystem
 {
     [Dependency] private IGameTiming _timing = default!;
     [Dependency] private IPrototypeManager _prototype = default!;

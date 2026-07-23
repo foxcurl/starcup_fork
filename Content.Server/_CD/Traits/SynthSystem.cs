@@ -7,7 +7,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Traits;
 
-public sealed class SynthSystem : EntitySystem
+public sealed partial class SynthSystem : EntitySystem
 {
     // Begin DeltaV - make strings static readonly
     private static readonly ProtoId<TypingIndicatorPrototype> RobotTypingIndicator = "robot";

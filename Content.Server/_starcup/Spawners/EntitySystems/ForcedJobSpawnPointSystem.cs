@@ -11,7 +11,7 @@ namespace Content.Server._starcup.Spawners.EntitySystems;
 /// <summary>
 /// System for jobs that are always forced to spawn at job specific spawn points and never at general ones
 /// </summary>
-public sealed class ForcedJobSpawnPointSystem : EntitySystem
+public sealed partial class ForcedJobSpawnPointSystem : EntitySystem
 {
     [Dependency] private IRobustRandom _random = default!;
     [Dependency] private StationSystem _stationSystem = default!;

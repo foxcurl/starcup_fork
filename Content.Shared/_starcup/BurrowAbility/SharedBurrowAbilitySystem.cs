@@ -2,7 +2,7 @@ using Content.Shared.Actions;
 
 namespace Content.Shared._starcup.BurrowAbility;
 
-public sealed class BurrowAbilitySystem : EntitySystem
+public sealed partial class BurrowAbilitySystem : EntitySystem
 {
     [Dependency] private SharedActionsSystem _actionsSystem = default!;
 

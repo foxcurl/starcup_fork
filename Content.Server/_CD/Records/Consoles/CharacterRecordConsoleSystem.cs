@@ -11,7 +11,7 @@ using Robust.Server.GameObjects;
 
 namespace Content.Server._CD.Records.Consoles;
 
-public sealed class CharacterRecordConsoleSystem : EntitySystem
+public sealed partial class CharacterRecordConsoleSystem : EntitySystem
 {
     [Dependency] private CharacterRecordsSystem _characterRecords = default!;
     [Dependency] private CriminalRecordsConsoleSystem _criminalRecordsConsole = default!; // DeltaV - i hate this, forward to criminal records console

@@ -13,7 +13,7 @@ using Robust.Shared.Serialization.Manager;
 
 namespace Content.Shared._starcup.Chaplain;
 
-public sealed class SanctifyItemSystem : EntitySystem
+public sealed partial class SanctifyItemSystem : EntitySystem
 {
     [Dependency] private ISerializationManager _seriMan = default!;
     [Dependency] private IPrototypeManager _protoMan = default!;

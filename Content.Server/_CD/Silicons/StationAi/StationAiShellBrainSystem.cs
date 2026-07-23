@@ -9,7 +9,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._CD.Silicons.StationAi;
 
-public sealed class StationAiShellBrainSystem : EntitySystem
+public sealed partial class StationAiShellBrainSystem : EntitySystem
 {
     [Dependency] private StationAiShellUserSystem _shelluser = default!;
     [Dependency] private MetaDataSystem _metaData = default!;

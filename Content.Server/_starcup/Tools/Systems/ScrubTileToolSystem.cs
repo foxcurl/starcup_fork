@@ -7,7 +7,7 @@ using Robust.Shared.Map.Components;
 
 namespace Content.Server._starcup.Tools.Systems;
 
-public sealed class ScrubTileToolSystem : SharedScrubTileToolSystem
+public sealed partial class ScrubTileToolSystem : SharedScrubTileToolSystem
 {
     [Dependency] private DecalSystem _decalSystem = default!;
     [Dependency] private EntityLookupSystem _lookupSystem = default!;

@@ -9,7 +9,7 @@ using Robust.Shared.Timing;
 
 namespace Content.Server._DV.Weather;
 
-public sealed class WeatherSchedulerSystem : EntitySystem
+public sealed partial class WeatherSchedulerSystem : EntitySystem
 {
     [Dependency] private IChatManager _chat = default!;
     [Dependency] private IGameTiming _timing = default!;

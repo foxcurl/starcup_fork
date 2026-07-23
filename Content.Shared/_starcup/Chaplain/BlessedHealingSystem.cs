@@ -7,7 +7,7 @@ using Robust.Shared.Player;
 
 namespace Content.Shared._starcup.Chaplain;
 
-public sealed class BlessedHealingSystem : EntitySystem
+public sealed partial class BlessedHealingSystem : EntitySystem
 {
     [Dependency] private MobStateSystem _mobStateSystem = default!;
     [Dependency] private DamageableSystem _damageableSystem = default!;

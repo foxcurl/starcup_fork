@@ -7,7 +7,7 @@ using Content.Shared.Verbs;
 
 namespace Content.Shared._RMC14.Examine;
 
-public sealed class CMExamineSystem : EntitySystem
+public sealed partial class CMExamineSystem : EntitySystem
 {
     [Dependency] private HealthExaminableSystem _healthExaminable = default!;
     [Dependency] private IdExaminableSystem _idExaminable = default!;

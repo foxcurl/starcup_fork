@@ -5,7 +5,7 @@ using Robust.Client.GameObjects;
 
 namespace Content.Client._DV.VendingMachines;
 
-public sealed class ShopVendorSystem : SharedShopVendorSystem
+public sealed partial class ShopVendorSystem : SharedShopVendorSystem
 {
     [Dependency] private AnimationPlayerSystem _animationPlayer = default!;
     [Dependency] private AppearanceSystem _appearance = default!;

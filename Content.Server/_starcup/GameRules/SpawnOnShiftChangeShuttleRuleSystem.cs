@@ -20,7 +20,7 @@ namespace Content.Server._starcup.GameRules;
 /// <summary>
 /// Spawns players on a shift change shuttle.
 /// </summary>
-public sealed class SpawnOnShiftChangeShuttleRuleSystem : GameRuleSystem<SpawnOnShiftChangeShuttleRuleComponent>
+public sealed partial class SpawnOnShiftChangeShuttleRuleSystem : GameRuleSystem<SpawnOnShiftChangeShuttleRuleComponent>
 {
     [Dependency] private ShiftChangeShuttleSystem _shiftChangeShuttle = default!;
     [Dependency] private SharedTransformSystem _transform = default!;
