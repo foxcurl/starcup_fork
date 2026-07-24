@@ -90,7 +90,7 @@
   parent: ClothingEyesBase
   id: ClothingEyesGlassesGorlexBallistic
   name: Gorlex ballistic goggles
-  description: A pair of surplus ballistic goggles from the Neocorporate Wars. These are likely still in use by the Gorlex Marauders. More likely, the type who can't let go of the battles they fought.
+  description:  A pair of surplus ballistic goggles from the Neocorporate Wars, the type worn by people who can't let go of past battles.
   components:
   - type: Sprite
     sprite: _starcup/Clothing/Eyes/Glasses/Surplus_Ballistic_Goggles_Gorlex.rsi
@@ -112,8 +112,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: ClothingEyesGlassesSurplusBallisticInterdyne
-  name: Interdyne Breaker ballistic goggles
-  description: A pair of surplus ballistic goggles from the one of the Breaker armories of Interdyne Pharmaceuticals. While these are outdated, don't really protect all that much more then newer solutions, and are bulky; they have flooded the underground markets, making them a semi-common surplus find.
+  name: Interdyne ballistic goggles
+  description: A pair of surplus ballistic goggles as issued to Interdyne Pharmaceuticals's troops. While these are outdated, don't really protect all that much more then newer solutions, and are bulky; they have flooded the underground markets, making them a semi-common surplus find.
   components:
   - type: Sprite
     sprite: _starcup/Clothing/Eyes/Glasses/Surplus_Ballistic_Goggles_Interdyne.rsi
