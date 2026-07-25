@@ -4033,3 +4033,11 @@
   id: 8504
   time: '2026-07-23T07:46:28.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/907
+- author: RadsammyT
+  changes:
+  - message: Added screen filters as an inherent trait for MKCs and as an optional
+      vision trait.
+    type: Add
+  id: 8505
+  time: '2026-07-25T02:33:51.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/911
