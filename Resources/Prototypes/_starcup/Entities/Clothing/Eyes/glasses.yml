@@ -113,7 +113,7 @@
   parent: ClothingEyesBase
   id: ClothingEyesGlassesSurplusBallisticInterdyne
   name: Interdyne ballistic goggles
-  description: A pair of surplus ballistic goggles as issued to Interdyne Pharmaceuticals's troops. While these are outdated, don't really protect all that much more then newer solutions, and are bulky; they have flooded the underground markets, making them a semi-common surplus find.
+  description: A pair of surplus ballistic goggles as issued to Interdyne Pharmaceuticals's troops. Bulky, outdated, and surprisingly ineffective against ballistic projectiles, they have nevertheless flooded the underground markets.
   components:
   - type: Sprite
     sprite: _starcup/Clothing/Eyes/Glasses/Surplus_Ballistic_Goggles_Interdyne.rsi
