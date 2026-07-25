@@ -90,7 +90,7 @@
   parent: ClothingEyesBase
   id: ClothingEyesGlassesGorlexBallistic
   name: Gorlex ballistic goggles
-  description:  A pair of surplus ballistic goggles from the Neocorporate Wars, the type worn by people who can't let go of past battles.
+  description:  A pair of surplus ballistic goggles from the Neocorporate Wars. Despite their outdated design making them little use against modern-day ballistics, they remain popular with Gorlex veterans who have trouble letting go of the past.
   components:
   - type: Sprite
     sprite: _starcup/Clothing/Eyes/Glasses/Surplus_Ballistic_Goggles_Gorlex.rsi
