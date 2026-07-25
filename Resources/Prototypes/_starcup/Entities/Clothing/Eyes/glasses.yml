@@ -45,7 +45,7 @@
   parent: ClothingEyesBase
   id: ClothingEyesGlassesSecBallistic
   name: security ballistic goggles
-  description: A pair of surplus ballistic goggles from the Neocorporate Wars, likely used by ground forces. Retrofitted with a civilian security HUD. Despite their name, they won't protect you from ballistics.
+  description: A pair of surplus ballistic goggles from the Neocorporate Wars, likely used by ground forces. Retrofitted with a civilian security HUD. Surprisingly useless against actual ballistics.
   components:
   - type: Sprite
     sprite: _starcup/Clothing/Eyes/Glasses/Security_Ballistic_goggles.rsi
