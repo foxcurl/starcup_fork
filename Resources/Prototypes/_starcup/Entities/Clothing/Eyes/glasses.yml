@@ -166,7 +166,7 @@
   parent: ClothingEyesBase
   id: ClothingEyesGlassesSurplusBallisticCanteen
   name: hallmaster surplus balistic goggles
-  description: A pair of surplus ballistic goggles from the Neocorporate Wars, retrofitted with a thirst monitor. While there is near-to-no reason to keep using these, some dive bars still use them. Sealed to protect from onion fumes and hot oil!
+  description: A pair of surplus ballistic goggles from the Neocorporate Wars retrofitted with a thirst monitor. Surprisingly useless against actual ballistics, they've found some popularity in dive bars. Sealed to protect from hot oil and onion fumes!
   components:
   - type: Sprite
     sprite: _starcup/Clothing/Eyes/Glasses/Surplus_Ballistic_Goggles_Canteen.rsi
