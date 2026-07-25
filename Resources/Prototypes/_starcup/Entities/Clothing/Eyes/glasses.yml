@@ -133,7 +133,7 @@
   parent: ClothingEyesBase
   id: ClothingEyesGlassesSurplusBallisticSea
   name: surplus ballistic goggles
-  description: A pair of surplus ballistic goggles from the Neocorporate Wars, likely used by oceanic and other waterborne forces. It's not really able to protect you from ballistic projectiles, but they do function well as a hardy pair of goggles. Sealed for oceanic environments!
+  description: A pair of surplus ballistic goggles from the Neocorporate Wars, likely used by naval forces. It's not really able to protect you from ballistic projectiles, but they do function well as a hardy pair of goggles. Sealed for oceanic environments!
   components:
   - type: Sprite
     sprite: _starcup/Clothing/Eyes/Glasses/Surplus_Ballistic_Goggles_Sea.rsi
