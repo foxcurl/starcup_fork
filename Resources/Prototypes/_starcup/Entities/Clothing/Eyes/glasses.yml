@@ -73,7 +73,7 @@
   parent: ClothingEyesBase
   id: ClothingEyesGlassesSurplusBallisticSandy
   name: surplus ballistic goggles
-  description: A pair of surplus ballistic goggles from the Neocorporate Wars, likely used by ground forces. It's not really able to protect you from ballistic projectiles, but they do function well as a hardy pair of goggles. Tinted to protect from hot and sunny environments!
+  description: A pair of surplus ballistic goggles from the Neocorporate Wars, likely used by ground forces. Surprisingly useless against actual ballistics, but at least the dark tint keeps the sun out of your eyes.
   components:
   - type: Sprite
     sprite: _starcup/Clothing/Eyes/Glasses/Surplus_Ballistic_Goggles_Sandy.rsi
