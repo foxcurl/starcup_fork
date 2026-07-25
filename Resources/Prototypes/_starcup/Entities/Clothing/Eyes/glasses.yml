@@ -149,7 +149,7 @@
   parent: ClothingEyesBase
   id: ClothingEyesGlassesSurplusBallisticForest
   name: surplus ballistic goggles
-  description: A pair of surplus ballistic goggles from the Neocorporate Wars, likely used by ground forces. It's not really able to protect you from ballistic projectiles, but they do function well as a hardy pair of goggles. More tinted for the forest-y environments!
+  description: A pair of surplus ballistic goggles from the Neocorporate Wars, likely used by ground forces. It's not really able to protect you from ballistic projectiles, but they do function well as a hardy pair of goggles. Tinted green to blend in with forest environments!
   components:
   - type: Sprite
     sprite: _starcup/Clothing/Eyes/Glasses/Surplus_Ballistic_Goggles_Wooded.rsi
