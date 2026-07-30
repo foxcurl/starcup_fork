@@ -4048,3 +4048,17 @@
   id: 8506
   time: '2026-07-27T19:03:04.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/934
+- author: KoboldCatgirl
+  changes:
+  - message: (Ptarmigan) fixed various unpowered machines
+    type: Fix
+  - message: (Ptarmigan) added various equipment to the departments, plus a pressure
+      control valve to Brig and Botany
+    type: Tweak
+  - message: (Ptarmigan) reworked Engineering Yard for a cleaner, safer atmos
+    type: Tweak
+  - message: (Ptarmigan) made miscellaneous QOL changes, including clearer Evac signage
+    type: Tweak
+  id: 8507
+  time: '2026-07-30T19:54:02.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/956
