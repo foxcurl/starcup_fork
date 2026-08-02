@@ -4079,3 +4079,16 @@
   id: 8509
   time: '2026-08-01T03:19:02.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/951
+- author: KoboldCatgirl
+  changes:
+  - message: Standardized cold protection levels on various overpowered winterwear,
+      including trench coats and armored coats.
+    type: Fix
+  - message: Gaiters, colored gloves, and various coats now provide some cold protection!
+    type: Tweak
+  - message: Fixed some Security personnel's winterwear not providing the proper armored
+      protection!
+    type: Fix
+  id: 8510
+  time: '2026-08-02T16:46:16.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/958
