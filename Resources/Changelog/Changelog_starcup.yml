@@ -4092,3 +4092,11 @@
   id: 8510
   time: '2026-08-02T16:46:16.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/958
+- author: KoboldCatgirl
+  changes:
+  - message: Ptarmigan Outpost has been removed for the foreseeable future from all
+      shift rotations due to safety concerns.
+    type: Remove
+  id: 8511
+  time: '2026-08-09T03:35:35.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/963
