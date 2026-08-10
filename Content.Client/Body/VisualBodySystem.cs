@@ -225,14 +225,6 @@ public sealed partial class VisualBodySystem : SharedVisualBodySystem
                 else
                     _sprite.LayerSetColor(target, layerId, Color.White);
 
-                // MACRO START - marking layer shaders
-                if (proto.Shaders is not null &&
-                    proto.Shaders.TryGetValue(rsi.RsiState, out var shader))
-                {
-                    EnsureComp<SpriteComponent>(target, out var spriteComp); // why is this method in the component?????
-                    spriteComp.LayerSetShader(index + i + 1, shader);
-                }
-                // MACRO END
                 if (displacement != null && proto.CanBeDisplaced)
                 {
                     _displacement.TryAddDisplacement(

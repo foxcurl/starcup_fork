@@ -5,7 +5,7 @@ using System.Numerics;
 using Robust.Shared.Utility;
 using Content.Server.Shuttles.Events;
 using Content.Shared.IdentityManagement;
-using Content.Server.Bible.Components; // #IMP
+using Content.Shared.Bible.Components; // #IMP
 
 namespace Content.Server.Pinpointer;
 

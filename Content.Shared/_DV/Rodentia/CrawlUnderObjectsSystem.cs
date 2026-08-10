@@ -143,7 +143,7 @@ public sealed partial class CrawlUnderObjectsSystem : EntitySystem
 
         _appearance.SetData(ent, SneakingVisuals.Sneaking, enabled);
 
-        _moveSpeed.RefreshMovementSpeedModifiers(ent);
+        _moveSpeed.RefreshMovementSpeedModifiers(ent.AsType());
 
         var ev = new CrawlingUpdatedEvent(enabled, ent.Comp);
         RaiseLocalEvent(ent, ref ev);

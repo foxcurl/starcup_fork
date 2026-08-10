@@ -1,4 +1,6 @@
+using Content.Shared._starcup.Chaplain; // starcup
 using Robust.Shared.GameStates;
+using Robust.Shared.Prototypes; // starcup
 
 namespace Content.Shared.Bible.Components;
 
@@ -6,7 +8,7 @@ namespace Content.Shared.Bible.Components;
 /// Marks entity as bible user.
 /// </summary>
 [RegisterComponent, NetworkedComponent]
-[Access(typeof(BibleSystem))]
+[Access(new[] { typeof(BibleSystem), typeof(SanctifyItemSystem) })] // starcup: allow sanctify to access
 public sealed partial class BibleUserComponent : Component
 {
     public override bool SendOnlyToOwner => true;

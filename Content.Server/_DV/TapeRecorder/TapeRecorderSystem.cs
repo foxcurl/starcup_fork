@@ -1,7 +1,6 @@
 using Content.Server.Chat.Systems;
 using Content.Server.Hands.Systems;
 using Content.Server.Speech;
-using Content.Server.Speech.Components;
 using Content.Shared.Chat;
 using Content.Shared.Paper;
 using Content.Shared.Speech;
@@ -12,6 +11,7 @@ using Robust.Server.Audio;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using System.Text;
+using Content.Shared.Speech.Components;
 
 namespace Content.Server._DV.TapeRecorder;
 

@@ -1,11 +1,12 @@
 using Content.Server.CriminalRecords.Systems; // DeltaV - i hate this, forward to criminal records console
 using Content.Server.Station.Systems;
-using Content.Server.StationRecords.Systems;
 using Content.Server.StationRecords;
 using Content.Shared.CriminalRecords;
 using Content.Shared.CriminalRecords.Components; // DeltaV - i hate this, forward to criminal records console
 using Content.Shared.Security;
 using Content.Shared.StationRecords;
+using Content.Shared.StationRecords.Systems;
+using Content.Shared.StationRecords.Components;
 using Content.Shared._CD.Records;
 using Robust.Server.GameObjects;
 
