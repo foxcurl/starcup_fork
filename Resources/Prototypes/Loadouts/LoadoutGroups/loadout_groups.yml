@@ -85,10 +85,11 @@
   # imp edit end
   - GlassesJamjar
   - GlassesJensen
-  # Mothees Surplus Goggles Bonanza starts here. here's hoping its gonna be the last time I make an edit.
+  # begin starcup: Mothees Surplus Goggles Bonanza
   - SurpBallisticY
   - SurpBallisticG
   - SurpBallisticB
+  # end starcup
 
 - type: loadoutGroup
   id: GroupTankHarness

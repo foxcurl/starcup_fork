@@ -423,6 +423,7 @@
     - id: FoodMeatCutlet
   - type: Item
     storedOffset: -2,1
+    sprite: Objects/Consumable/Food/meat.rsi
     inhandVisuals:
       left:
       - state: plain-inhand-left

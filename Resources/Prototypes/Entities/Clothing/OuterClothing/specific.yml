@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: [ClothingOuterBase, TemperatureProtectionMinimal, AllowSuitStorageClothingGasTanks, BaseChameleon]
   id: ClothingOuterChameleon
   name: vest
@@ -14,6 +14,9 @@
     - type: ChameleonClothing
       slot: [outerClothing]
       default: ClothingOuterVest
+    - type: TemperatureProtection # Same as a basic winter coat.
+      heatingCoefficient: 1.1
+      coolingCoefficient: 0.6  # starcup: nerf cold protection on winter coats (0.1 -> 0.6)
     - type: Armor
       modifiers:
         coefficients:
