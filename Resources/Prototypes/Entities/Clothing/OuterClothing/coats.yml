@@ -104,7 +104,7 @@
   # end starcup
 
 - type: entity
-  parent: ClothingOuterStorageToggleableBase
+  parent: ClothingOuterStorageBase
   id: ClothingOuterCoatJensen
   name: jensen coat
   description: A jensen coat.

@@ -481,7 +481,7 @@ PresentRandomAsh: PresentRandomCoal
 CrateCrewMonitoringBoards: CrateCrewMonitoring
 
 # 2024-11-25
-CrateSlimepersonLifeSupport: CrateNitrogenInternals
+# CrateSlimepersonLifeSupport: CrateNitrogenInternals
 
 # 2024-12-01
 DungeonMasterCircuitBoard: GameMasterCircuitBoard
