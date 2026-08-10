@@ -15,7 +15,7 @@
       state: ian
   - type: Inventory
     speciesId: dog
-    templateId: petAdvanced
+    templateId: Corgi
     displacements:
       head:
         sizeMaps:
@@ -27,6 +27,11 @@
           32:
             sprite: Mobs/Pets/displacements.rsi
             state: corgi_eyes_displacement
+      mask:
+        sizeMaps:
+          32:
+            sprite: Mobs/Pets/displacements.rsi
+            state: corgi_mask_displacement
   - type: DamageStateVisuals
     states:
       Alive:
@@ -101,7 +106,7 @@
       gender: female
   - type: Inventory
     speciesId: dog
-    templateId: petAdvanced
+    templateId: Corgi
     displacements:
       head:
         sizeMaps:
@@ -113,6 +118,11 @@
           32:
             sprite: Mobs/Pets/displacements.rsi
             state: corgi_eyes_displacement
+      mask:
+        sizeMaps:
+          32:
+            sprite: Mobs/Pets/displacements.rsi
+            state: corgi_mask_displacement
 
 - type: entity
   name: real mouse
@@ -247,7 +257,7 @@
 
 - type: entity
   name: Bingus
-  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobBingus
   description: Bingus my beloved...
   components:
@@ -319,7 +329,7 @@
 
 - type: entity
   name: McGriff
-  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobMcGriff
   description: This dog can tell something smells around here, and that something is CRIME!
   components:
@@ -441,7 +451,7 @@
 
 - type: entity
   name: Walter
-  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable]
+  parent: [SimpleMobBase, StripableInventoryBase, BaseSlicingRefinable, BaseMobDestructible]
   id: MobWalter
   description: He likes chems and treats. Walter.
   components:

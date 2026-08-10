@@ -202,8 +202,8 @@
     proto: regal
   - type: StaticPrice
     price: 3000
-#  - type: AddAccentClothing # DeltaV - remove clothing-forced accents
-#    accent: MobsterAccent
+  # - type: MobsterAccent # DeltaV - remove clothing-forced accents
+  #   relayAccent: true
 
 - type: entity
   parent: ClothingHeadBase # starcup: remove contraband label
@@ -264,8 +264,8 @@
     sprite: Clothing/Head/Hats/dogears.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/dogears.rsi
-#  - type: AddAccentClothing # DeltaV - remove clothing-forced accents
-#    accent: BarkAccent
+  # - type: BarkAccent # DeltaV - remove clothing-forced accents
+  #   relayAccent: true
 
 - type: entity
   parent: ClothingHeadBase

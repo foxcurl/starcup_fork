@@ -1,6 +1,8 @@
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Events;
 using Content.Shared.Destructible;
+using Content.Shared.Glue;
+using Content.Shared.Lube;
 using Content.Shared.Nutrition;
 using Content.Shared.Prototypes;
 using Content.Shared.Rejuvenate;
@@ -53,14 +55,26 @@ public abstract partial class SharedGodmodeSystem : EntitySystem
         args.Cancelled = true;
     }
 
+    private void OnDestruction(Entity<GodmodeComponent> ent, ref DestructionAttemptEvent args)
+    {
+        args.Cancel();
+    }
+
     private void BeforeEdible(Entity<GodmodeComponent> ent, ref IngestibleEvent args)
     {
         args.Cancelled = true;
     }
 
-    private void OnDestruction(Entity<GodmodeComponent> ent, ref DestructionAttemptEvent args)
+    [SubscribeLocalEvent]
+    private void OnGluedEffectAttemptEvent(Entity<GodmodeComponent> entity, ref GluedEffectAttemptEvent args)
     {
-        args.Cancel();
+        args.Cancelled = true;
+    }
+
+    [SubscribeLocalEvent]
+    private void OnGluedEffectAttemptEvent(Entity<GodmodeComponent> entity, ref LubedEffectAttemptEvent args)
+    {
+        args.Cancelled = true;
     }
 
     public virtual void EnableGodmode(EntityUid uid, GodmodeComponent? godmode = null)

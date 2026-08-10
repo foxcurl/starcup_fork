@@ -1,6 +1,6 @@
 - type: entity
   name: behonker
-  parent: [ SimpleSpaceMobBase, FlyingMobBase, MobCombat, BaseSlicingRefinable ]
+  parent: [ SimpleSpaceMobBase, FlyingMobBase, MobCombat, BaseSlicingRefinable, BaseMobDestructible ]
   id: BaseMobBehonker
   abstract: true
   description: A floating demon aspect of the honkmother.
@@ -35,28 +35,13 @@
         - SemiAuto
       soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_clown.ogg
     - type: SpamEmitSound
-      minInterval: 4
-      maxInterval: 12
       sound:
-        collection: BehonkerHorn # starcup
+        collection: BikeHorn
     - type: NpcFactionMember
       factions:
         - SimpleHostile
     - type: Speech
       speechVerb: Cluwne
-    # begin starcup
-      speechSounds: BehonkerSpeechSounds
-      allowedEmotes: ['CreatureLaugh', 'BuzzNonSilicon']
-    - type: Vocal
-      emoteSounds: BehonkerSpeechEmotes
-      screamId: CreatureLaugh
-      emoteAction: ActionEmitSound
-    - type: Tag
-      tags:
-      - DoorBumpOpener
-      - StunImmune
-      - CreatureEmotes
-    # end starcup
     - type: CombatMode
     - type: MobMover
     - type: InputMover
@@ -130,7 +115,7 @@
         reagents:
         - ReagentId: Laughter
           Quantity: 300
-
+          
 - type: entity
   name: behonker
   parent: BaseMobBehonker

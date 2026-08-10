@@ -2,7 +2,7 @@
   name: rat king
   suffix: original
   id: MobRatKing
-  parent: [ BaseMobRat, SimpleMobBase, MobCombat, BaseSlicingRefinable, MobNightVision ]
+  parent: [ BaseMobRat, SimpleMobBase, MobCombat, BaseSlicingRefinable, MobNightVision, BaseMobDestructible ]
   description: The sheperd of the swarm, its mind and voice. It speaks their holy word. And that word is *more.* # starcup: changed for tone
   components:
   - type: CombatMode
@@ -358,9 +358,10 @@
   components:
   - type: Action
     useDelay: 4
-    icon:
-      sprite: Interface/Actions/actions_rat_king.rsi
-      state: ratKingArmy
+  - type: Sprite
+    sprite: Interface/Actions/actions_rat_king.rsi
+    layers:
+    - state: ratKingArmy
   - type: InstantAction
     event: !type:RatKingRaiseArmyActionEvent
 
@@ -372,9 +373,10 @@
   components:
   - type: Action
     useDelay: 6
-    icon:
-      sprite: Interface/Actions/actions_rat_king.rsi
-      state: ratKingDomain
+  - type: Sprite
+    sprite: Interface/Actions/actions_rat_king.rsi
+    layers:
+    - state: ratKingDomain
   - type: InstantAction
     event: !type:RatKingDomainActionEvent
 
@@ -386,13 +388,15 @@
   components:
   - type: Action
     useDelay: 1
-    icon:
-      sprite: Interface/Actions/actions_rat_king.rsi
-      state: stayOff
-    iconOn:
-      sprite: Interface/Actions/actions_rat_king.rsi
-      state: stay
     priority: 5
+  - type: Sprite
+    sprite: Interface/Actions/actions_rat_king.rsi
+    layers:
+    - state: stayOff
+      map: ["enum.ActionVisuals.Icon"]
+    - state: stay
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
   - type: InstantAction
     event: !type:RatKingOrderActionEvent
       type: Stay
@@ -405,13 +409,15 @@
   components:
   - type: Action
     useDelay: 1
-    icon:
-      sprite: Interface/Actions/actions_rat_king.rsi
-      state: followOff
-    iconOn:
-      sprite: Interface/Actions/actions_rat_king.rsi
-      state: follow
     priority: 6
+  - type: Sprite
+    sprite: Interface/Actions/actions_rat_king.rsi
+    layers:
+    - state: followOff
+      map: ["enum.ActionVisuals.Icon"]
+    - state: follow
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
   - type: InstantAction
     event: !type:RatKingOrderActionEvent
       type: Follow
@@ -424,13 +430,15 @@
   components:
   - type: Action
     useDelay: 1
-    icon:
-      sprite: Interface/Actions/actions_rat_king.rsi
-      state: attackOff
-    iconOn:
-      sprite: Interface/Actions/actions_rat_king.rsi
-      state: attack
     priority: 7
+  - type: Sprite
+    sprite: Interface/Actions/actions_rat_king.rsi
+    layers:
+    - state: attackOff
+      map: ["enum.ActionVisuals.Icon"]
+    - state: attack
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
   - type: InstantAction
     event: !type:RatKingOrderActionEvent
       type: CheeseEm
@@ -443,13 +451,15 @@
   components:
   - type: Action
     useDelay: 1
-    icon:
-      sprite: Interface/Actions/actions_rat_king.rsi
-      state: looseOff
-    iconOn:
-      sprite: Interface/Actions/actions_rat_king.rsi
-      state: loose
     priority: 8
+  - type: Sprite
+    sprite: Interface/Actions/actions_rat_king.rsi
+    layers:
+    - state: looseOff
+      map: ["enum.ActionVisuals.Icon"]
+    - state: loose
+      map: ["enum.ActionVisuals.IconToggled"]
+      visible: false
   - type: InstantAction
     event:
       !type:RatKingOrderActionEvent

@@ -38,8 +38,8 @@
     sprite: Clothing/Head/Hats/beret_french.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_french.rsi
-#  - type: AddAccentClothing # DeltaV - remove clothing-forced accents
-#    accent: FrenchAccent
+# - type: FrenchAccent # DeltaV - remove clothing-forced accents
+#   relayAccent: true
   - type: Tag
     tags:
     - PetWearable
@@ -187,6 +187,7 @@
     tags:
     - PetWearable
     - CorgiWearable
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingHeadBase
@@ -202,6 +203,7 @@
     tags:
     - PetWearable
     - CorgiWearable
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingHeadBase
@@ -265,6 +267,7 @@
     tags:
     - PetWearable
     - CorgiWearable
+    - WhitelistChameleon
 
 - type: entity
   parent: [ClothingHeadBase, BaseCommandContraband]
@@ -314,6 +317,7 @@
     tags:
     - PetWearable
     - CorgiWearable
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingHeadBase
@@ -503,9 +507,9 @@
     tags:
     - PetWearable
     - CorgiWearable
-  - type: AddAccentClothing
-    accent: ReplacementAccent
-    replacement: pirate
+  - type: ReplacementAccent
+    accent: pirate
+    relayAccent: true
 
 - type: entity
   parent: ClothingHeadBase
@@ -552,7 +556,6 @@
   components:
   - type: Clothing
     sprite: Clothing/Head/Hats/santahat.rsi
-  - type: Appearance
   - type: HideLayerClothing
     layers:
       Hair: HEAD
@@ -592,8 +595,8 @@
     sprite: Clothing/Head/Hats/sombrero.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/sombrero.rsi
-  # - type: AddAccentClothing # DeltaV - remove clothing-forced accents
-  #   accent: SpanishAccent
+  # - type: SpanishAccent # DeltaV - remove clothing-forced accents
+  #   relayAccent: true
   - type: Tag
     tags:
     - PetWearable
@@ -680,9 +683,8 @@
   components:
   - type: Clothing
     sprite: Clothing/Head/Hats/ushanka.rsi
-  - type: Appearance
-#  - type: AddAccentClothing # DeltaV - remove clothing-forced accents
-#    accent: RussianAccent
+  # - type: RussianAccent # DeltaV - remove clothing-forced accents
+  #   relayAccent: true
   - type: Foldable
     canFoldInsideContainer: true
   - type: FoldableClothing
@@ -773,6 +775,7 @@
     tags:
     - PetWearable
     - CorgiWearable
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingHeadBase
@@ -1061,9 +1064,9 @@
     sprite: Clothing/Head/Hats/piratetricord.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/piratetricord.rsi
-  - type: AddAccentClothing
-    accent: ReplacementAccent
-    replacement: pirate
+  - type: ReplacementAccent
+    accent: pirate
+    relayAccent: true
 
 - type: entity
   parent: ClothingHeadBase
@@ -1342,9 +1345,9 @@
       sprite: Clothing/Head/Hats/cowboyhatbrown.rsi
     - type: Clothing
       sprite: Clothing/Head/Hats/cowboyhatbrown.rsi
-    # - type: AddAccentClothing # DeltaV - remove clothing-forced accents
-    #   accent: ReplacementAccent
-    #   replacement: cowboy
+    # - type: ReplacementAccent # DeltaV - remove clothing-forced accents
+    #   accent: cowboy
+    #   relayAccent: true
     - type: Tag
       tags:
       - PetWearable
@@ -1493,6 +1496,7 @@
     tags:
     - PetWearable
     - CorgiWearable
+    - WhitelistChameleon
 
 - type: entity
   parent: ClothingHeadBase
