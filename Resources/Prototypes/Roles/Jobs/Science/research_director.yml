@@ -13,7 +13,6 @@
   #   time: 10h
   whitelisted: true
   # end starcup
-  weight: 10
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
   supervisors: job-supervisors-captain

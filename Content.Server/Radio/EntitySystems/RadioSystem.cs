@@ -7,22 +7,21 @@ using Content.Shared.Chat;
 using Content.Shared.Database;
 using Content.Shared.Radio;
 using Content.Shared.Radio.Components;
+using Content.Shared.Radio.EntitySystems;
 using Content.Shared.Speech;
-using Content.Shared.Ghost; // Nuclear-14
+using Content.Shared.Ghost.Components; // Nuclear-14
+using Content.Shared.FixedPoint; // Nuclear-14
 using Robust.Shared.Map;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
 
 namespace Content.Server.Radio.EntitySystems;
 
-/// <summary>
-///     This system handles intrinsic radios and the general process of converting radio messages into chat messages.
-/// </summary>
-public sealed partial class RadioSystem : EntitySystem
+/// <inheritdoc/>
+public sealed partial class RadioSystem : SharedRadioSystem
 {
     [Dependency] private INetManager _netMan = default!;
     [Dependency] private IReplayRecordingManager _replay = default!;
@@ -52,18 +51,6 @@ public sealed partial class RadioSystem : EntitySystem
         }
     }
 
-    //Nuclear-14
-    /// <summary>
-    /// Gets the message frequency, if there is no such frequency, returns the standard channel frequency.
-    /// </summary>
-    public int GetFrequency(EntityUid source, RadioChannelPrototype channel)
-    {
-        if (TryComp<RadioMicrophoneComponent>(source, out var radioMicrophone))
-            return radioMicrophone.Frequency;
-
-        return channel.Frequency;
-    }
-
     private void OnIntrinsicReceive(EntityUid uid, IntrinsicRadioReceiverComponent component, ref RadioReceiveEvent args)
     {
         if (!TryComp(uid, out ActorComponent? actor))
@@ -87,20 +74,8 @@ public sealed partial class RadioSystem : EntitySystem
         _netMan.ServerSendMessage(msg, actor.PlayerSession.Channel);
     }
 
-    /// <summary>
-    /// Send radio message to all active radio listeners
-    /// </summary>
-    public void SendRadioMessage(EntityUid messageSource, string message, ProtoId<RadioChannelPrototype> channel, EntityUid radioSource, bool escapeMarkup = true, int? frequency = null) // Frontier: added frequency
-    {
-        SendRadioMessage(messageSource, message, ProtoMan.Index(channel), radioSource, escapeMarkup: escapeMarkup, frequency: frequency); // Frontier: added frequency
-    }
-
-    /// <summary>
-    /// Send radio message to all active radio listeners
-    /// </summary>
-    /// <param name="messageSource">Entity that spoke the message</param>
-    /// <param name="radioSource">Entity that picked up the message and will send it, e.g. headset</param>
-    public void SendRadioMessage(EntityUid messageSource, string message, RadioChannelPrototype channel, EntityUid radioSource, bool escapeMarkup = true, int? frequency = null) // Frontier: added frequency
+    /// <inheritdoc/>
+    public override void SendRadioMessage(EntityUid messageSource, string message, RadioChannelPrototype channel, EntityUid radioSource, bool escapeMarkup = true, FixedPoint2? frequency = null) // NF14 - added frequency
     {
         // TODO if radios ever garble / modify messages, feedback-prevention needs to be handled better than this.
         if (!_messages.Add(message))

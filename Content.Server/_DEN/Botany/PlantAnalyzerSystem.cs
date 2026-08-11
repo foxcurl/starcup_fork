@@ -2,10 +2,11 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Server._DEN.AbstractAnalyzer;
 using Content.Server._DEN.Botany.Components;
-using Content.Server.Botany.Components;
 using Content.Server.Botany.Systems;
 using Content.Server.Popups;
 using Content.Shared._DEN.Botany.PlantAnalyzer;
+using Content.Shared.Botany.Systems;
+using Content.Shared.Botany.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction;
 using Content.Shared.Labels.EntitySystems;
@@ -85,7 +86,7 @@ public sealed partial class PlantAnalyzerSystem : AbstractAnalyzerSystem<PlantAn
                     consumeGasses: [.. plantHolder.Seed.ConsumeGasses.Keys]
                 );
                 produceData = new PlantAnalyzerProduceData(
-                    yield: plantHolder.Seed.ProductPrototypes.Count == 0 ? 0 : BotanySystem.CalculateTotalYield(plantHolder.Seed.Yield, plantHolder.YieldMod),
+                    yield: plantHolder.Seed.ProductPrototypes.Count == 0 ? 0 : PlantHarvestSystem.CalculateTotalYield(plantHolder.Seed.Yield, plantHolder.YieldMod),
                     potency: plantHolder.Seed.Potency,
                     chemicals: [.. plantHolder.Seed.Chemicals.Keys],
                     produce: plantHolder.Seed.ProductPrototypes,

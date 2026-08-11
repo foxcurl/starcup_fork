@@ -11,7 +11,6 @@
 #    role: JobBorg
 #    time: 5h
 # end starcup
-  weight: 10
   whitelisted: true # starcup
   icon: JobIconStationAi
   supervisors: job-supervisors-rd

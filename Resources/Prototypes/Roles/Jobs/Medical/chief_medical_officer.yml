@@ -18,7 +18,6 @@
 #      time: 10h
   whitelisted: true
 # end starcup
-  weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"
   supervisors: job-supervisors-captain

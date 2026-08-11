@@ -19,7 +19,6 @@
   #     time: 10h
   whitelisted: true
   # end starcup
-  weight: 10
   startingGear: HoSGear
   icon: "JobIconHeadOfSecurity"
   supervisors: job-supervisors-captain

@@ -12,7 +12,6 @@
       department: Security
       time: 2h # starcup: 10h > 2h
   # end starcup
-  weight: 5
   startingGear: WardenGear
   icon: "JobIconWarden"
   supervisors: job-supervisors-hos
