@@ -58,50 +58,51 @@ public sealed partial class PlantAnalyzerSystem : AbstractAnalyzerSystem<PlantAn
         PlantAnalyzerProduceData? produceData = null;
         if (_entityManager.TryGetComponent<PlantHolderComponent>(target, out var plantHolder))
         {
-            if (plantHolder.Seed is not null)
-            {
-                plantData = new PlantAnalyzerPlantData(
-                    seedDisplayName: plantHolder.Seed.DisplayName,
-                    health: plantHolder.Health,
-                    endurance: plantHolder.Seed.Endurance,
-                    age: plantHolder.Age,
-                    lifespan: plantHolder.Seed.Lifespan,
-                    dead: plantHolder.Dead,
-                    viable: plantHolder.Seed.Viable,
-                    mutating: plantHolder.MutationLevel > 0f,
-                    kudzu: plantHolder.Seed.TurnIntoKudzu
-                );
-                tolerancesData = new PlantAnalyzerTolerancesData(
-                    waterConsumption: plantHolder.Seed.WaterConsumption,
-                    nutrientConsumption: plantHolder.Seed.NutrientConsumption,
-                    toxinsTolerance: plantHolder.Seed.ToxinsTolerance,
-                    pestTolerance: plantHolder.Seed.PestTolerance,
-                    weedTolerance: plantHolder.Seed.WeedTolerance,
-                    lowPressureTolerance: plantHolder.Seed.LowPressureTolerance,
-                    highPressureTolerance: plantHolder.Seed.HighPressureTolerance,
-                    idealHeat: plantHolder.Seed.IdealHeat,
-                    heatTolerance: plantHolder.Seed.HeatTolerance,
-                    idealLight: plantHolder.Seed.IdealLight,
-                    lightTolerance: plantHolder.Seed.LightTolerance,
-                    consumeGasses: [.. plantHolder.Seed.ConsumeGasses.Keys]
-                );
-                produceData = new PlantAnalyzerProduceData(
-                    yield: plantHolder.Seed.ProductPrototypes.Count == 0 ? 0 : PlantHarvestSystem.CalculateTotalYield(plantHolder.Seed.Yield, plantHolder.YieldMod),
-                    potency: plantHolder.Seed.Potency,
-                    chemicals: [.. plantHolder.Seed.Chemicals.Keys],
-                    produce: plantHolder.Seed.ProductPrototypes,
-                    exudeGasses: [.. plantHolder.Seed.ExudeGasses.Keys],
-                    seedless: plantHolder.Seed.Seedless
-                );
-            }
-            trayData = new PlantAnalyzerTrayData(
-                waterLevel: plantHolder.WaterLevel,
-                nutritionLevel: plantHolder.NutritionLevel,
-                toxins: plantHolder.Toxins,
-                pestLevel: plantHolder.PestLevel,
-                weedLevel: plantHolder.WeedLevel,
-                chemicals: plantHolder.SoilSolution?.Comp.Solution.Contents.Select(r => r.Reagent.Prototype).ToList()
-            );
+            // FIXME: Botany has been refactored, these fields have been relocated to other components
+            // if (plantHolder.Seed is not null)
+            // {
+            //     plantData = new PlantAnalyzerPlantData(
+            //         seedDisplayName: plantHolder.Seed.DisplayName,
+            //         health: plantHolder.Health,
+            //         endurance: plantHolder.Seed.Endurance,
+            //         age: plantHolder.Age,
+            //         lifespan: plantHolder.Seed.Lifespan,
+            //         dead: plantHolder.Dead,
+            //         viable: plantHolder.Seed.Viable,
+            //         mutating: plantHolder.MutationLevel > 0f,
+            //         kudzu: plantHolder.Seed.TurnIntoKudzu
+            //     );
+            //     tolerancesData = new PlantAnalyzerTolerancesData(
+            //         waterConsumption: plantHolder.Seed.WaterConsumption,
+            //         nutrientConsumption: plantHolder.Seed.NutrientConsumption,
+            //         toxinsTolerance: plantHolder.Seed.ToxinsTolerance,
+            //         pestTolerance: plantHolder.Seed.PestTolerance,
+            //         weedTolerance: plantHolder.Seed.WeedTolerance,
+            //         lowPressureTolerance: plantHolder.Seed.LowPressureTolerance,
+            //         highPressureTolerance: plantHolder.Seed.HighPressureTolerance,
+            //         idealHeat: plantHolder.Seed.IdealHeat,
+            //         heatTolerance: plantHolder.Seed.HeatTolerance,
+            //         idealLight: plantHolder.Seed.IdealLight,
+            //         lightTolerance: plantHolder.Seed.LightTolerance,
+            //         consumeGasses: [.. plantHolder.Seed.ConsumeGasses.Keys]
+            //     );
+            //     produceData = new PlantAnalyzerProduceData(
+            //         yield: plantHolder.Seed.ProductPrototypes.Count == 0 ? 0 : PlantHarvestSystem.CalculateTotalYield(plantHolder.Seed.Yield, plantHolder.YieldMod),
+            //         potency: plantHolder.Seed.Potency,
+            //         chemicals: [.. plantHolder.Seed.Chemicals.Keys],
+            //         produce: plantHolder.Seed.ProductPrototypes,
+            //         exudeGasses: [.. plantHolder.Seed.ExudeGasses.Keys],
+            //         seedless: plantHolder.Seed.Seedless
+            //     );
+            // }
+            // trayData = new PlantAnalyzerTrayData(
+            //     waterLevel: plantHolder.WaterLevel,
+            //     nutritionLevel: plantHolder.NutritionLevel,
+            //     toxins: plantHolder.Toxins,
+            //     pestLevel: plantHolder.PestLevel,
+            //     weedLevel: plantHolder.WeedLevel,
+            //     chemicals: plantHolder.SoilSolution?.Comp.Solution.Contents.Select(r => r.Reagent.Prototype).ToList()
+            // );
         }
 
         return new PlantAnalyzerScannedUserMessage(

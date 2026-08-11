@@ -3,6 +3,7 @@ using Content.Server.Kitchen.Components;
 using Content.Server.Weapons.Ranged.Systems;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Clumsy;
+using Content.Shared.Clumsy.Components;
 using Content.Shared.Damage;
 using Content.Shared.Damage.Components;
 using Content.Shared.Damage.Systems;
@@ -270,7 +271,7 @@ public sealed partial class ExecutionSystem : EntitySystem
 
         // Clumsy people have a chance to shoot themselves
         if (!component.ClumsyProof &&
-            TryComp<ClumsyComponent>(attacker, out var clumsy) &&
+            TryComp<ClumsyGunStatusEffectComponent>(attacker, out var clumsy) &&
             _random.Prob(1f/3f))
         {
             ShowExecutionPopup("execution-popup-gun-clumsy-internal", Filter.Entities(attacker), PopupType.Medium, attacker, victim, weapon);

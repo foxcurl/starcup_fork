@@ -20,7 +20,7 @@ public sealed partial class ScrubTileToolSystem : SharedScrubTileToolSystem
         foreach (var decal in decals)
         {
             if (decal.Decal.Cleanable)
-                _decalSystem.RemoveDecal(tileRef.GridUid, decal.Index, decalGrid);
+                _decalSystem.RemoveDecal(tileRef.GridUid, decal.Index);
         }
         return true;
     }

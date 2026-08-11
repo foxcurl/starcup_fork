@@ -131,7 +131,7 @@ public sealed partial class ReadyManifestSystem : EntitySystem
         foreach (var job in jobs)
         {
             var priority = profile.JobPriorities[job];
-            if (priority == JobPriority.High || (_prototypeManager.Index(job).Weight >= 10 && priority > JobPriority.Never))
+            if (priority == JobPriority.High)
             {
                 priorityJobs.Add(job);
             }

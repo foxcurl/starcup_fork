@@ -13,7 +13,8 @@ using Robust.Shared.Player; // Frontier
 using Content.Shared.Ghost; // Frontier
 using Content.Server.Administration.Managers; // Frontier
 using Content.Server.Administration; // Frontier
-using Content.Shared.GameTicking; // Frontier
+using Content.Shared.GameTicking;
+using Content.Shared.Ghost.Components; // Frontier
 
 namespace Content.Server._Corvax.Respawn;
 
