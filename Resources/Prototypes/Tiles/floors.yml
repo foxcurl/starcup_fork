@@ -1450,7 +1450,6 @@
 # weather: false  # starcup: early merge of #38638
   footstepSounds:
     collection: FootstepAsteroid
-  itemDrop: FloorTileItemAstroAsteroidSand
 
 - type: tile
   parent: [ BaseStationTile, FloorAsteroidSandBorderless ]
@@ -1462,7 +1461,6 @@
 # weather: false  # starcup: early merge of #38638
   footstepSounds:
     collection: FootstepAsteroid
-  itemDrop: FloorTileItemAstroAsteroidSand
 
 - type: tile
   parent: [ BaseStationTile, FloorDesert ]
@@ -1475,7 +1473,6 @@
 #  weather: false  # starcup: early merge of #38638
   footstepSounds:
     collection: FootstepAsteroid
-  itemDrop: FloorTileItemDesertAstroSand
 
 - type: tile
   parent: [ BaseStationTile, FloorAsteroidIronsand ]
