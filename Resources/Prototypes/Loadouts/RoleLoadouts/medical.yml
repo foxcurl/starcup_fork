@@ -32,7 +32,7 @@
   - MedicalBackpack
   - ChiefMedicalOfficerShoes
   - Glasses
-  - AssistiveItems
+  # - AssistiveItems
   - SurvivalMedical
   - Accessibility # starcup
   - Cosmetics # starcup
@@ -116,7 +116,7 @@
   - ParamedicOuterClothing
   - ParamedicShoes
   - Glasses
-  - AssistiveItems
+  # - AssistiveItems
   - SurvivalMedical
   - Accessibility # starcup
   - Cosmetics # starcup

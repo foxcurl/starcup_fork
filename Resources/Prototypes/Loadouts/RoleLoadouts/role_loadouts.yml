@@ -161,7 +161,7 @@
   - LibrarianOuterClothing # starcup
   - LibrarianShoes # starcup
   - Glasses
-  - AssistiveItems
+  # - AssistiveItems
   - Survival
   - Accessibility # starcup
   - Cosmetics # starcup
@@ -203,7 +203,7 @@
   - ChaplainShoes # starcup
   - ChaplainPDAstarcup
   - Glasses
-  - AssistiveItems
+  # - AssistiveItems
   - Survival
   - Accessibility # starcup
   - Cosmetics # starcup
@@ -333,7 +333,7 @@
   - LogisticsGloves # starcup
   - QuartermasterShoes
   - Glasses
-  - AssistiveItems
+  # - AssistiveItems
   - Survival
   - Accessibility # starcup
   - Cosmetics # starcup
@@ -392,7 +392,7 @@
   - StationEngineerBackpack
   - ChiefEngineerOuterClothing
   - ChiefEngineerShoes
-  - AssistiveItems
+  # - AssistiveItems
   - SurvivalExtended
   - Accessibility # starcup
   - Cosmetics # starcup
@@ -430,7 +430,7 @@
   - StationEngineerOuterClothing
   - StationEngineerShoes
   - StationEngineerID
-  - AssistiveItems
+  # - AssistiveItems
   - SurvivalExtended
   - Accessibility # starcup
   - Cosmetics # starcup
@@ -471,7 +471,7 @@
   - ScientistGloves
   - ResearchDirectorShoes
   - Glasses
-  - AssistiveItems
+  # - AssistiveItems
   - Survival
   - Accessibility # starcup
   - Cosmetics # starcup
@@ -511,7 +511,7 @@
   - ResearchAssistantOuterClothing # starcup
   - ScientistShoes # starcup
   - Glasses
-  - AssistiveItems
+  # - AssistiveItems
   - Survival
   - Accessibility # starcup
   - Cosmetics # starcup

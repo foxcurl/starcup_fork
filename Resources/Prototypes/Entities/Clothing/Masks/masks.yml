@@ -631,7 +631,7 @@
     - Snout
 
 - type: entity
-  parent: ClothingMaskBase
+  parent: [ ClothingMaskBase, TemperatureProtectionMinimal ] # starcup: minimal temp protection
   id: ClothingMaskNeckGaiter
   name: neck gaiter
   description: Stylish neck gaiter for your neck, can protect from the cosmic wind?...
@@ -645,8 +645,6 @@
   - type: Tag
     tags:
     - WhitelistChameleon
-  - type: TemperatureProtection  # starcup: not quite as good as a scarf, but doesn't overheat you
-    coolingCoefficient: 0.8
 
 - type: entity
   parent: ClothingMaskNeckGaiter

@@ -920,9 +920,8 @@
   minLimit: 2
   hidden: true
   loadouts:
-  - EmergencyNitrogenMime
-  - EmergencyOxygenMime
-  - EmergencySpeciesMothMime
+  - EmergencyNitrogen
+  - EmergencyOxygen
   - LoadoutSpeciesVoxNitrogen
   - EmergencyBoxMKC # starcup
 
