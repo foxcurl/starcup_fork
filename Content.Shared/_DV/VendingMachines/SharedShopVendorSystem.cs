@@ -20,7 +20,7 @@ public abstract partial class SharedShopVendorSystem : EntitySystem
     [Dependency] private MiningPointsSystem _points = default!;
     [Dependency] protected IGameTiming Timing = default!;
     [Dependency] private IPrototypeManager _proto = default!;
-    [Dependency] private SharedAppearanceSystem _appearance = default!;
+    // [Dependency] private SharedAppearanceSystem _appearance = default!;
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedPointLightSystem _light = default!;
     [Dependency] private SharedPopupSystem _popup = default!;
@@ -140,29 +140,9 @@ public abstract partial class SharedShopVendorSystem : EntitySystem
 
     protected void UpdateVisuals(Entity<ShopVendorComponent> ent)
     {
-        var state = VendingMachineVisualState.Normal;
-        var lit = true;
-        if (ent.Comp.Broken)
-        {
-            state = VendingMachineVisualState.Broken;
-            lit = false;
-        }
-        else if (ent.Comp.Ejecting != null)
-        {
-            state = VendingMachineVisualState.Eject;
-        }
-        else if (ent.Comp.Denying)
-        {
-            state = VendingMachineVisualState.Deny;
-        }
-        else if (!_power.IsPowered(ent.Owner))
-        {
-            state = VendingMachineVisualState.Off;
-            lit = true;
-        }
-
+        // starcup: removed most of this - upstream changes
+        var lit = !ent.Comp.Broken;
         _light.SetEnabled(ent, lit);
-        _appearance.SetData(ent, VendingMachineVisuals.VisualState, state);
     }
 }
 
