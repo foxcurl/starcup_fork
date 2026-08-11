@@ -4,7 +4,6 @@
   name: beehive
   description: A solid wooden beehive for your bees to hive to their heart's content.
   components:
-  - type: Hunger # starcup: added for reproductive purposes
   - type: Animateable
   - type: InteractionOutline
   - type: Sprite

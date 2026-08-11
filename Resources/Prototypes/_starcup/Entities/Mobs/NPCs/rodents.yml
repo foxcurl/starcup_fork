@@ -180,23 +180,12 @@
   - type: FlavorProfile
     flavors:
     - meaty
-  - type: Thirst
-    startingThirst: 25
-    thresholds:
-      OverHydrated: 35
-      Okay: 25
-      Thirsty: 15
-      Parched: 5
-      Dead: 0
-    baseDecayRate: 0.04
-  - type: Hunger
-    thresholds:
-      Overfed: 35
-      Okay: 25
-      Peckish: 12.5
-      Starving: 5
-      Dead: 0
-    baseDecayRate: 0.05
+  - type: Satiation
+    satiations:
+      Hunger:
+        prototype: SnailHunger
+      Thirst:
+        prototype: MouseThirst
   - type: Extractable
     grindableSolutionName: food
   - type: SolutionContainerManager
@@ -351,23 +340,12 @@
   - type: FlavorProfile
     flavors:
     - meaty
-  - type: Thirst
-    startingThirst: 25
-    thresholds:
-      OverHydrated: 35
-      Okay: 25
-      Thirsty: 15
-      Parched: 5
-      Dead: 0
-    baseDecayRate: 0.04
-  - type: Hunger
-    thresholds:
-      Overfed: 35
-      Okay: 25
-      Peckish: 12.5
-      Starving: 5
-      Dead: 0
-    baseDecayRate: 0.05
+  - type: Satiation
+    satiations:
+      Hunger:
+        prototype: SnailHunger
+      Thirst:
+        prototype: MouseThirst
   - type: Extractable
     grindableSolutionName: food
   - type: SolutionContainerManager
@@ -527,23 +505,12 @@
         Base: dead
       Dead:
         Base: splat
-  - type: Thirst
-    startingThirst: 25
-    thresholds:
-      OverHydrated: 35
-      Okay: 25
-      Thirsty: 15
-      Parched: 5
-      Dead: 0
-    baseDecayRate: 0.04
-  - type: Hunger
-    thresholds:
-      Overfed: 35
-      Okay: 25
-      Peckish: 12.5
-      Starving: 5
-      Dead: 0
-    baseDecayRate: 0.05
+  - type: Satiation
+    satiations:
+      Hunger:
+        prototype: SnailHunger
+      Thirst:
+        prototype: MouseThirst
   - type: Extractable
     grindableSolutionName: food
   - type: SolutionContainerManager
@@ -680,23 +647,12 @@
         Base: dead
       Dead:
         Base: splat
-  - type: Thirst
-    startingThirst: 25
-    thresholds:
-      OverHydrated: 35
-      Okay: 25
-      Thirsty: 15
-      Parched: 5
-      Dead: 0
-    baseDecayRate: 0.04
-  - type: Hunger
-    thresholds:
-      Overfed: 35
-      Okay: 25
-      Peckish: 12.5
-      Starving: 5
-      Dead: 0
-    baseDecayRate: 0.05
+  - type: Satiation
+    satiations:
+      Hunger:
+        prototype: SnailHunger
+      Thirst:
+        prototype: MouseThirst
   - type: Extractable
     grindableSolutionName: food
   - type: SolutionContainerManager

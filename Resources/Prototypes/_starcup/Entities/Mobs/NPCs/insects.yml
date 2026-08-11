@@ -622,22 +622,12 @@
   - type: FlavorProfile
     flavors:
     - chewy
-  - type: Thirst
-    startingThirst: 25
-    thresholds:
-      OverHydrated: 30
-      Okay: 20
-      Thirsty: 10
-      Parched: 5
-      Dead: 0
-  - type: Hunger
-    thresholds:
-      Overfed: 30
-      Okay: 20
-      Peckish: 10
-      Starving: 5
-      Dead: 0
-    baseDecayRate: 0.1
+  - type: Satiation
+    satiations:
+      Hunger:
+        prototype: SnailHunger
+      Thirst:
+        prototype: MouseThirst
   - type: Extractable
     grindableSolutionName: food
   - type: SolutionContainerManager
