@@ -51,6 +51,9 @@
       Acidic: [Touch]
   - type: WarpPoint # imp addition
   - type: NameIdentifier # imp addition
+  - type: LightningTarget
+    priority: 2
+    lightningExplode: false
 
 - type: entity
   parent: BaseAction

@@ -3,11 +3,13 @@ using Content.Client.Ghost;
 using Content.Client.UserInterface.Systems.Gameplay;
 using Content.Client.UserInterface.Systems.Ghost.Widgets;
 using Content.Shared.Ghost;
-using Robust.Shared.Console; // Frontier
+using Content.Shared.Ghost.Components;
+using Content.Shared.Ghost.Systems;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.Controllers;
 using Content.Shared._Corvax.Respawn; // Frontier
 using Robust.Shared.Configuration; // Frontier
+using Robust.Shared.Console; // Frontier
 
 namespace Content.Client.UserInterface.Systems.Ghost;
 
