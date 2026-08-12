@@ -276,7 +276,7 @@
 
 - type: entity
   id: OrganMKCCore
-  parent: OrganMKCInternal
+  parent: [ OrganBaseChildInternal, OrganMKCInternal ]
   name: power core
   description: Stores and provides electricity to power an MKC's chassis.
   components:
@@ -292,7 +292,7 @@
 
 - type: entity
   id: OrganMKCPump
-  parent: OrganMKCInternal
+  parent: [ OrganBaseChildInternal, OrganMKCInternal ]
   name: micro pump
   description: Small, but powerful hydraulics allow this little miracle of robotics to distribute lubricant across an MKC's chassis.
   components:
@@ -349,7 +349,7 @@
 
 - type: entity
   id: OrganMKCFluidRegulator
-  parent: OrganMKCInternal
+  parent: [ OrganBaseChildInternal, OrganMKCInternal ]
   name: fluid regulator
   description: Collects built-up fluids from across an MKC's body, then violently expels them.
   components:

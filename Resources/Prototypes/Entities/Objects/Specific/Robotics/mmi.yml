@@ -151,6 +151,8 @@
     # begin starcup: added for MKCs
     - type: Organ
       category: Brain
+    - type: ChildOrgan
+    - type: InternalChildOrgan
     # end starcup
     - type: ChangeVoiceInContainer
       whitelist:
