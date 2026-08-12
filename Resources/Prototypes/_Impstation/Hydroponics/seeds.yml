@@ -1,7 +1,7 @@
 - type: entity
   parent: BasePlant
   id: RosePlants
-  name: seeds-rose-display-name
+  name: rose bush
   components:
   - type: Sprite
     sprite: _Impstation/Objects/Specific/Hydroponics/rose.rsi
@@ -30,7 +30,7 @@
 
 - type: entity
   id: BlackRosePlants
-  name: seeds-blackrose-display-name
+  name: black rose bush
   components:
   - type: Sprite
     sprite: _Impstation/Objects/Specific/Hydroponics/blackRose.rsi
