@@ -136,6 +136,7 @@
   recipeUnlocks:
   - BorgModuleAdvancedTopical
   - AdvancedJetInjector
+  - BorgModuleRoboticsRescue # starcup
 
 - type: technology
   id: AdvancedCleaning
