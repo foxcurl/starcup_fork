@@ -100,7 +100,6 @@
   startingGear: SyndCommAgent
   icon: JobIconSyndCommAgent
   supervisors: job-supervisors-syndcomm-supreme
-  displayWeight: 98
   whitelisted: true
   accessGroups:
   - AllAccess
@@ -176,7 +175,6 @@
   startingGear: SyndCommOfficer
   icon: JobIconSyndCommOfficer
   supervisors: job-supervisors-syndcomm-supreme
-  displayWeight: 99
   whitelisted: true
   accessGroups:
   - AllAccess
@@ -243,7 +241,6 @@
   startingGear: SyndCommOfficial
   icon: JobIconSyndCommOfficial
   supervisors: job-supervisors-syndcomm-supreme
-  displayWeight: 100
   whitelisted: true
   accessGroups:
   - AllAccess
