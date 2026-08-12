@@ -77,6 +77,7 @@
         friction: 0.2
   - type: AtmosExposed
   - type: Temperature
+    heatCapacity: 750
   - type: TemperatureDamage
   - type: InternalTemperature
   - type: Tag

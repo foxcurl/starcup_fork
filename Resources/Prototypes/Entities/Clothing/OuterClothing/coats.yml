@@ -104,7 +104,7 @@
   # end starcup
 
 - type: entity
-  parent: [ ClothingOuterStorageBase, TemperatureProtectionMinimal ] # starcup: temp protection
+  parent: [ ClothingOuterJacketToggleableBase, TemperatureProtectionMinimal ] # starcup: temp protection
   id: ClothingOuterCoatJensen
   name: jensen coat
   description: A jensen coat.
