@@ -1125,10 +1125,10 @@
   components:
   - type: VendingMachine
     pack: SustenanceInventory
+    initialStockQuality: 0.8
   - type: VendingMachineVisuals
     ejectState: eject-unshaded
     denyState: deny-unshaded
-    initialStockQuality: 0.8
   - type: Sprite
     sprite: Structures/Machines/VendingMachines/sustenance.rsi
     layers:
