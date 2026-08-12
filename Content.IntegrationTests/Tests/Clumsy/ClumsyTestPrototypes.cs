@@ -44,6 +44,7 @@ public static class ClumsyTestPrototypes
     zapHeal:
       types:
         Brute: 0
+    damageContainer: Biological # starcup
 
 # Annoying that Defibrillator requires datafield ZapHeal
 - type: damageType

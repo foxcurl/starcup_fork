@@ -55,8 +55,8 @@
 
 - type: loadout
   id: Cane
-  effects:
   # starcup: remove job requirement
+  # effects:
   # - !type:JobRequirementLoadoutEffect
   #   requirement:
   #     !type:RoleTimeRequirement
