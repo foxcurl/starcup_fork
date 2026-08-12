@@ -247,21 +247,18 @@
 - type: entity
   parent: [ OrganBaseHead, OrganSlimePersonExternal ]
   id: OrganSlimePersonHead
-  # begin starcup: put new eye layers on the head
   components:
   - type: VisualOrganMarkings
     markingData:
       layers:
       - HeadBase
       - Head
-      - Eyes # added
       - Hair
       - FacialHair
       - Snout
       - SnoutCover
       - HeadSide
       - HeadTop
-  # end starcup
 
 - type: entity
   parent: [ OrganBaseArmLeft, OrganSlimePersonExternal ]
