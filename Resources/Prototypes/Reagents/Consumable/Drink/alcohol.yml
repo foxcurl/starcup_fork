@@ -484,7 +484,8 @@
       metabolites:
         Ethanol: 0.16 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -508,7 +509,8 @@
       metabolites:
         Ethanol: 0.35 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -547,7 +549,8 @@
       metabolites:
         Ethanol: 0.21 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -571,7 +574,8 @@
       metabolites:
         Ethanol: 0.27 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -656,7 +660,8 @@
       metabolites:
         Ethanol: 0.2 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -749,7 +754,8 @@
       metabolites:
         Ethanol: 0.13 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -808,7 +814,8 @@
       metabolites:
         Ethanol: 0.24 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -870,7 +877,8 @@
       metabolites:
         Ethanol: 0.2 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -914,7 +922,8 @@
       metabolites:
         Ethanol: 0.2 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -954,7 +963,8 @@
       metabolites:
         Ethanol: 0.19 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -1029,7 +1039,8 @@
       metabolites:
         Ethanol: 0.2 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -1053,7 +1064,8 @@
       metabolites:
         Ethanol: 0.17 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -1186,7 +1198,8 @@
       metabolites:
         Ethanol: 0.4 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -1307,7 +1320,8 @@
       metabolites:
         Ethanol: 0.2 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -1365,7 +1379,8 @@
       metabolites:
         Ethanol: 0.32 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -1389,7 +1404,8 @@
       metabolites:
         Ethanol: 0.36 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -1429,7 +1445,8 @@
       metabolites:
         Ethanol: 0.27 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -1489,7 +1506,8 @@
       metabolites:
         Ethanol: 0.16 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -1513,7 +1531,8 @@
       metabolites:
         Ethanol: 0.25 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -1804,7 +1823,8 @@
       metabolites:
         Ethanol: 0.13 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -1848,7 +1868,8 @@
       metabolites:
         Ethanol: 0.13 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 
@@ -1892,7 +1913,8 @@
       metabolites:
         Ethanol: 0.19 # increased from 0.12
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
   # end starcup
 

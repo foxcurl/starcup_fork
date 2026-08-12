@@ -131,7 +131,8 @@
       metabolites:
         Theobromine: 0.1 # starcup: added
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
 
 - type: reagent
@@ -197,7 +198,8 @@
       metabolites:
         Theobromine: 0.1 # starcup: added
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
 
 - type: reagent
@@ -630,7 +632,8 @@
       metabolites:
         Caffeine: 0.1 # starcup: added
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
 
 - type: reagent
@@ -667,5 +670,6 @@
       metabolites:
         Theobromine: 0.1 # starcup: added
       effects:
-      - !type:SatiateThirst
+      - !type:Satiate
+        satiationType: Thirst
         factor: 3
