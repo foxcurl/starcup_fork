@@ -351,7 +351,9 @@
   components:
   - type: Action # starcup: rewritten for action refactor
     checkCanInteract: false
-    icon: _DV/Interface/Actions/harpy_sing.png
+  - type: Sprite
+    layers:
+    - texture: _DV/Interface/Actions/harpy_sing.png
   - type: InstantAction # starcup: rewritten for action refactor
     event: !type:OpenUiActionEvent
       key: enum.InstrumentUiKey.Key

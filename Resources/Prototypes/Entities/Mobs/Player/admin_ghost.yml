@@ -235,16 +235,12 @@
 
 # Begin CD - Character Records
 - type: entity
+  parent: BaseAGhostAction
   id: ActionAGhostShowCharacterRecords
   name: Character Records Interface
   description: View all of the character records
   categories: [ HideSpawnMenu ]
   components:
-  - type: Action # starcup: rewritten for action refactor
-    icon: { sprite: Structures/Machines/parts.rsi, state: box_0 }
-    iconOn: { sprite: Structures/Machines/parts.rsi, state: box_2 }
-    keywords: [ "AI", "console", "interface" ]
-    priority: -10
   - type: InstantAction # starcup: rewritten for action refactor
     event: !type:ToggleIntrinsicUIEvent { key: enum.CharacterRecordConsoleKey.Key }
-# Edn CD - Character Records
+# End CD - Character Records

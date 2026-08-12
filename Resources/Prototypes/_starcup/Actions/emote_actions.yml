@@ -8,10 +8,11 @@
   components:
   - type: Action
     useDelay: 10
-    icon:
-      sprite: _starcup/Interface/Actions/actions_general.rsi
-      state: emit_sound
     checkCanInteract: false
+  - type: Sprite
+    sprite: _starcup/Interface/Actions/actions_general.rsi
+    layers:
+    - state: emit_sound
   - type: InstantAction
     event: !type:EmoteActionEvent
       emote: Scream
