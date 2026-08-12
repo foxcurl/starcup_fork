@@ -4100,3 +4100,11 @@
   id: 8511
   time: '2026-08-09T03:35:35.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/963
+- author: little-meow-meow
+  changes:
+  - message: Reinforced steel wood walls are no longer replaced by rusted reinforced
+      steel walls at round start.
+    type: Fix
+  id: 8512
+  time: '2026-08-12T18:50:10.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/968
