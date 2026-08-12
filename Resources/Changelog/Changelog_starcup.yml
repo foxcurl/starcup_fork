@@ -4108,3 +4108,10 @@
   id: 8512
   time: '2026-08-12T18:50:10.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/968
+- author: Psymbiote
+  changes:
+  - message: New vocal and body emote *sounds* for slime people!
+    type: Add
+  id: 8513
+  time: '2026-08-12T20:56:04.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/962
