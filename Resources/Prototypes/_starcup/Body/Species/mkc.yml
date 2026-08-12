@@ -108,7 +108,6 @@
       types:
         Heat: 0.6 # from 0.1, blunt damage removed
   - type: Temperature
-    currentTemperature: 310.15
     specificHeat: 42
   - type: TemperatureDamage # mirrored from parent, changes noted
     heatDamageThreshold: 365 # from 325
