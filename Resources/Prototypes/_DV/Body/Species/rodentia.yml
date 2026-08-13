@@ -162,6 +162,7 @@
   - type: TypingIndicator
     proto: rodentia
   - type: Vocal
+    emoteSounds: FemaleRodentia # starcup
   - type: Rummager
   - type: AlwaysTriggerMousetrap
   - type: PseudoItem

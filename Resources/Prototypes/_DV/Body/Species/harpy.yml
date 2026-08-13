@@ -225,6 +225,7 @@
     speechVerb: Harpy
     allowedEmotes: ['Meow', 'Hiss', 'Mew', 'Purr', 'Growl', 'Bark', 'Snarl', 'Whine', 'Howl', 'Awoo', 'HarpyHonk', 'HarpyRing', 'HarpyPew', 'HarpyBang', 'HarpyBeep', 'HarpyRev', 'HarpyCaw', 'HarpySquish', 'Chitter', 'Chirp', 'Squeak', 'Click']
   - type: Vocal
+    emoteSounds: SoundsHarpy # starcup
   - type: InstrumentVisuals
   - type: GenericVisualizer
     visuals:

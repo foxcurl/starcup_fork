@@ -150,6 +150,8 @@
     emote: Buzz-Two
   - type: Uncloneable
   - type: ScreenVision
+  - type: Vocal
+    emoteSounds: HumanoidSilicon
 
 - type: entity
   parent: OrganBase
