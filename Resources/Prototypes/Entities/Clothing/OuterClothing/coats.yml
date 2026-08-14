@@ -104,7 +104,7 @@
   # end starcup
 
 - type: entity
-  parent: ClothingOuterStorageToggleableBase
+  parent: [ ClothingOuterJacketToggleableBase, TemperatureProtectionMinimal ] # starcup: temp protection
   id: ClothingOuterCoatJensen
   name: jensen coat
   description: A jensen coat.
@@ -115,9 +115,6 @@
     sprite: Clothing/OuterClothing/Coats/jensencoat.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHatHoodChaplainHood
-  - type: TemperatureProtection # starcup
-    heatingCoefficient: 1.05
-    coolingCoefficient: 0.7
 
 - type: entity
   parent: ClothingOuterCoatJensen
@@ -130,7 +127,7 @@
         id: SyndieHandyFlag
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ ClothingOuterStorageBase, TemperatureProtection ] # starcup: temp protection
   id: ClothingOuterCoatTrench
   name: trench coat
   description: A comfy trench coat.
@@ -140,8 +137,6 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/trenchcoat.rsi
   - type: TemperatureProtection
-    heatingCoefficient: 1.1 # starcup - nerfed from 0.1 (why would it keep you cool?)
-    coolingCoefficient: 0.6  # starcup: nerf cold protection on winter coats (0.1 -> 0.6)
   - type: Armor
     modifiers:
       coefficients:
@@ -389,7 +384,7 @@
   # end starcup
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ ClothingOuterStorageBase, TemperatureProtectionMinimal ] # starcup: temperature protection
   id: ClothingOuterCoatParamedicWB
   name: paramedic windbreaker
   description: A paramedic's trusty windbreaker, for all the space wind.
@@ -398,9 +393,6 @@
     sprite: Clothing/OuterClothing/Coats/windbreaker_paramedic.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/windbreaker_paramedic.rsi
-  - type: TemperatureProtection # starcup
-    heatingCoefficient: 1.05
-    coolingCoefficient: 0.7
 
 - type: entity
   parent: ClothingOuterStorageBase # starcup: remove syndicate contraband label
@@ -495,7 +487,7 @@
     sprite: Clothing/OuterClothing/Coats/space_asshole.rsi
 
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ ClothingOuterStorageFoldableBase, TemperatureProtection ] # starcup: temp protection
   id: ClothingOuterCoatExpensive
   name: expensive coat
   description: Very fluffy pink coat, made out of very expensive fur (clearly).
@@ -504,9 +496,6 @@
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Coats/expensive_coat.rsi
-  - type: TemperatureProtection # starcup
-    heatingCoefficient: 1.1
-    coolingCoefficient: 0.6
 
 - type: entity
   parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatExpensive]
