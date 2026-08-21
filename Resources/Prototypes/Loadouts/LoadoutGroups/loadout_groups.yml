@@ -383,6 +383,7 @@
   # End starcup additions
 
 - type: loadoutGroup
+  parent: [ ColoredBackpacks, ColoredSatchels, ColoredDuffels, ColoredPurses ] # starcup
   id: CommonBackpack
   name: loadout-group-backpack
   loadouts:
