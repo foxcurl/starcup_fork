@@ -4183,3 +4183,12 @@
   id: 8522
   time: '2026-08-21T20:35:44.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/979
+- author: Psymbiote
+  changes:
+  - message: Go to work in style! Purses have been added, alongside new color variants
+      for backpacks, duffel bags and satchels. Passengers and other roles without
+      dedicated work bags can find them in their loadouts!
+    type: Add
+  id: 8523
+  time: '2026-08-21T22:43:05.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/965
