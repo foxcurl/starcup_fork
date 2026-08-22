@@ -4201,3 +4201,15 @@
   id: 8524
   time: '2026-08-21T23:09:28.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/964
+- author: RadsammyT
+  changes:
+  - message: Ported holoflare pistols from BoxStation. Available as T1 Arsenal Research
+      in "Salvage Weaponry" in a protolathe or secfab.
+    type: Add
+  - message: standard flare guns are available to create at an autolathe.
+    type: Add
+  - message: A box of .50 flare shells can be bought at a Salvage Vendor for 800 points.
+    type: Add
+  id: 8525
+  time: '2026-08-22T14:00:08.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/972
