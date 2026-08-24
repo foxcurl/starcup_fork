@@ -4213,3 +4213,12 @@
   id: 8525
   time: '2026-08-22T14:00:08.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/972
+- author: KoboldCatgirl
+  changes:
+  - message: Ovinia can now digest pills.
+    type: Fix
+  - message: Ovinia will now spawn with survival kits.
+    type: Fix
+  id: 8526
+  time: '2026-08-24T13:29:22.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/985
