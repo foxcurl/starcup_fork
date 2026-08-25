@@ -4252,3 +4252,24 @@
   id: 8530
   time: '2026-08-25T15:38:32.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/987
+- author: KoboldCatgirl
+  changes:
+  - message: Cold-weather fashion expansion! Added 18 new beanies, 8 new trapper hats,
+      and 3 new earmuffs to Passenger and other loadouts. The WinterDrobe will contain
+      some as well!
+    type: Add
+  - message: Headwear fashion expansion! Added 6 new hijabs, turbans, sun visors,
+      and artist berets to Passenger and other loadouts. The TheaterDrobe will contain
+      some as well!
+    type: Add
+  - message: Costume fashion expansion! Added tiaras, princess hats, feathered caps,
+      magician capes, white half-masks, kitsune masks, and demon masks to TheaterDrobe
+      and other theatrical kits, plus a few selections to certain loadouts.
+    type: Add
+  - message: Eyewear fashion expansion! Added 4 new colors of tinted and rimless glasses!
+    type: Add
+  - message: Resprited the magician's tophat.
+    type: Tweak
+  id: 8531
+  time: '2026-08-25T17:02:54.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/983
