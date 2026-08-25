@@ -4243,3 +4243,12 @@
   id: 8529
   time: '2026-08-25T15:30:56.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/981
+- author: KoboldCatgirl
+  changes:
+  - message: eliminated console warning spam for vulpekin markings!
+    type: Fix
+  - message: renamed vulpkanin plushie to vulpekin plushie!
+    type: Fix
+  id: 8530
+  time: '2026-08-25T15:38:32.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/987
