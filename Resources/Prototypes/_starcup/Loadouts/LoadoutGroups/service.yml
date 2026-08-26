@@ -554,6 +554,6 @@
 
 # Misc
 - type: loadoutGroup
-  parent: [ Scarfs, RibbonsNeck ] # starcup
+  parent: [ Scarfs, RibbonsNeck, Chokers, Neckerchiefs ] # starcup
   id: NeckFashionable
   name: loadout-group-neck-fashionable

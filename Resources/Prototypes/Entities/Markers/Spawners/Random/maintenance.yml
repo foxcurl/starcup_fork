@@ -194,6 +194,8 @@
         - id: ClothingHeadHatPinClover
         - id: ClothingHeadHatPinButterfly
         - id: ClothingNeckNecklacePendantGoldRuby
+        - id: ClothingNeckBellCollar
+        - id: ClothingNeckCowBellCollar
         - id: ClothingHeadHatCuteTiara
       # end starcup
     # Rare Group
