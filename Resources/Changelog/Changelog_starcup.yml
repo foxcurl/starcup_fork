@@ -4273,3 +4273,12 @@
   id: 8531
   time: '2026-08-25T17:02:54.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/983
+- author: KoboldCatgirl
+  changes:
+  - message: New fashionable neckwear! A whole bunch of new chokers, cloaks, cosmetic
+      collars, and neckerchiefs have been added to loadouts for Passengers, Logistics
+      employees, and others!
+    type: Add
+  id: 8532
+  time: '2026-08-26T00:22:50.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/984
